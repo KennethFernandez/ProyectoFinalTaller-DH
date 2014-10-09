@@ -1,0 +1,6 @@
+verilog work "vga_sync.v"
+verilog work "Tubo.v"
+verilog work "Maquina_pintar.v"
+verilog work "MaquinaNivel1.v"
+verilog work "clock32pps.v"
+verilog work "DrumHero.v"
