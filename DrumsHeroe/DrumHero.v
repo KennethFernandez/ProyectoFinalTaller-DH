@@ -18,7 +18,8 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module DrumHero(start,clk,nivel2,nivel3,boton1,boton2,boton3,boton4,boton5,hsync,vsync,rgb);
+module DrumHero(start,clk,nivel2,nivel3,boton1,boton2,boton3,
+					 boton4,boton5,hsync,vsync,rgb,Activadores, SalidaSiete);
 
 input start;
 input clk;
@@ -27,6 +28,8 @@ input boton1,boton2,boton3,boton4,boton5;
 
 output [2:0] rgb;
 output hsync, vsync;
+output [3:0] Activadores;
+output [6:0] SalidaSiete;
 
 wire comenzar, reiniciar,stop,perdio;
 wire [5:0] EntradaMaquinaPintar;
@@ -35,6 +38,14 @@ wire LeerOEscribir;
 wire [9:0] pixelX,pixelY;
 wire clk32;
 wire [2:0] colorBanda;
+
+wire [15:0] convertidores;
+wire [3:0] dataSieteSegmentos;
+wire [12:0] puntuacion;
+
+wire [9:0] posicionBandaPrincipal;
+
+parameter posicionBandaStatic = 384;
 
 MaquinaNivel1 primeraEtapa(
 .Iniciar(start),
@@ -73,7 +84,7 @@ Tubo tubo1(
 .pixel(colorBanda),
 .maquinaOut(SalidaMaquinaPintar[0]),
 .pintar(EntradaMaquinaPintar[1]),
-.posicionY(384),
+.posicionY(posicionBandaStatic),
 .posicionYS(),
 .contar(1'b0)
 );
@@ -89,7 +100,7 @@ Tubo tubo2(
 .maquinaOut(SalidaMaquinaPintar[1]),
 .pintar(EntradaMaquinaPintar[2]),
 .posicionY(0),
-.posicionYS(),
+.posicionYS(posicionBandaPrincipal),
 .contar(clk32)
 );
 
@@ -99,5 +110,43 @@ clock32pps reloj32(
 .stop(stop),
 .nivel2(nivel2),
 .nivel3(nivel3));
+
+Puntuacion puntuar(
+.posBP1(posicionBandaStatic),
+.posL1(),
+.posL2(),
+.posL3(),
+.posL4(),
+.posL5(), 
+.clk(clk), 
+.puntuacion(puntuacion), 
+.perdio(perdio), 
+.reset(reiniciar)
+);
+
+// Falta la entrada en binario de los datos
+
+DoubleDabbing CBD(
+.Entrada(puntuacion),
+.Salidas(convertidores),
+.clk(clk),
+.reset(reiniciar)
+);
+
+Filtro filtro(
+.Activadores(Activadores),
+.Entrada(convertidores),
+.Salida(dataSieteSegmentos));
+
+SelectorM selectro(
+.clk(clk),
+.Activadores(Activadores)
+);
+
+ControladorSiete siete(
+.Salida(SalidaSiete),
+.Entrada(dataSieteSegmentos)
+);
+
 
 endmodule

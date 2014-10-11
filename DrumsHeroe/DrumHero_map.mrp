@@ -9,29 +9,35 @@ Target Device  : xc3s1000
 Target Package : ft256
 Target Speed   : -5
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Wed Oct 08 21:50:12 2014
+Mapped Date    : Fri Oct 10 08:56:13 2014
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
-  Number of Slice Flip Flops:            33 out of  15,360    1%
-  Number of 4 input LUTs:               108 out of  15,360    1%
+  Number of Slice Flip Flops:           117 out of  15,360    1%
+  Number of 4 input LUTs:               308 out of  15,360    2%
 Logic Distribution:
-  Number of occupied Slices:             63 out of   7,680    1%
-    Number of Slices containing only related logic:      63 out of      63 100%
-    Number of Slices containing unrelated logic:          0 out of      63   0%
+  Number of occupied Slices:            192 out of   7,680    2%
+    Number of Slices containing only related logic:     192 out of     192 100%
+    Number of Slices containing unrelated logic:          0 out of     192   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         108 out of  15,360    1%
-  Number of bonded IOBs:                 14 out of     173    8%
+  Total Number of 4 input LUTs:         342 out of  15,360    2%
+    Number used as logic:               308
+    Number used as a route-thru:         34
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 25 out of     173   14%
   Number of BUFGMUXs:                     1 out of       8   12%
 
-Average Fanout of Non-Clock Nets:                3.43
+Average Fanout of Non-Clock Nets:                3.61
 
-Peak Memory Usage:  210 MB
-Total REAL time to MAP completion:  8 secs 
-Total CPU time to MAP completion:   6 secs 
+Peak Memory Usage:  211 MB
+Total REAL time to MAP completion:  14 secs 
+Total CPU time to MAP completion:   5 secs 
 
 NOTES:
 
@@ -75,14 +81,13 @@ Section 2 - Warnings
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network nivel2_IBUF has no load.
-INFO:LIT:395 - The above info message is repeated 6 more times for the following
+INFO:LIT:243 - Logical network boton1_IBUF has no load.
+INFO:LIT:395 - The above info message is repeated 4 more times for the following
    (max. 5 shown):
-   nivel3_IBUF,
-   boton1_IBUF,
    boton2_IBUF,
    boton3_IBUF,
-   boton4_IBUF
+   boton4_IBUF,
+   boton5_IBUF
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
@@ -111,6 +116,17 @@ Section 6 - IOB Properties
 | IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Activadores<0>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| Activadores<1>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| Activadores<2>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| Activadores<3>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SalidaSiete<0>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SalidaSiete<1>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SalidaSiete<2>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SalidaSiete<3>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SalidaSiete<4>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SalidaSiete<5>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SalidaSiete<6>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | boton1                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | boton2                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | boton3                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |

@@ -1,22 +1,33 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed Oct 08 21:50:18 2014
+// Written by: Map P.20131013 on Fri Oct 10 08:56:25 2014
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "clk" LOCATE = SITE "T9" LEVEL 1;
-COMP "rgb<0>" LOCATE = SITE "T12" LEVEL 1;
-COMP "rgb<1>" LOCATE = SITE "R11" LEVEL 1;
-COMP "rgb<2>" LOCATE = SITE "R12" LEVEL 1;
-COMP "nivel2" LOCATE = SITE "K13" LEVEL 1;
-COMP "nivel3" LOCATE = SITE "K14" LEVEL 1;
 COMP "hsync" LOCATE = SITE "R9" LEVEL 1;
 COMP "start" LOCATE = SITE "J14" LEVEL 1;
 COMP "vsync" LOCATE = SITE "T10" LEVEL 1;
+COMP "Activadores<0>" LOCATE = SITE "E13" LEVEL 1;
+COMP "Activadores<1>" LOCATE = SITE "F14" LEVEL 1;
+COMP "Activadores<2>" LOCATE = SITE "G14" LEVEL 1;
+COMP "Activadores<3>" LOCATE = SITE "D14" LEVEL 1;
+COMP "SalidaSiete<0>" LOCATE = SITE "E14" LEVEL 1;
+COMP "SalidaSiete<1>" LOCATE = SITE "G13" LEVEL 1;
+COMP "SalidaSiete<2>" LOCATE = SITE "N15" LEVEL 1;
+COMP "SalidaSiete<3>" LOCATE = SITE "P15" LEVEL 1;
+COMP "SalidaSiete<4>" LOCATE = SITE "R16" LEVEL 1;
+COMP "SalidaSiete<5>" LOCATE = SITE "F13" LEVEL 1;
+COMP "SalidaSiete<6>" LOCATE = SITE "N16" LEVEL 1;
+COMP "rgb<0>" LOCATE = SITE "T12" LEVEL 1;
+COMP "rgb<1>" LOCATE = SITE "R11" LEVEL 1;
+COMP "rgb<2>" LOCATE = SITE "R12" LEVEL 1;
 COMP "boton1" LOCATE = SITE "L14" LEVEL 1;
 COMP "boton2" LOCATE = SITE "L13" LEVEL 1;
 COMP "boton3" LOCATE = SITE "M14" LEVEL 1;
 COMP "boton4" LOCATE = SITE "M13" LEVEL 1;
 COMP "boton5" LOCATE = SITE "J13" LEVEL 1;
+COMP "nivel2" LOCATE = SITE "K13" LEVEL 1;
+COMP "nivel3" LOCATE = SITE "K14" LEVEL 1;
 NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 SCHEMATIC END;
 

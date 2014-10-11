@@ -86,6 +86,7 @@ module Maquina_pintar(Entrada,Salida,clk,reset,colorRes,colorBanda);
 	 
 	 //Asigno los valores de salida para saber en cual de los estados estoy.
 	 assign colorRes = (state == pintarBandaEstatica)?colorBanda:
+							 (state == pintarBanda1)?colorBanda:
 							 (state == pintar)?3'b111:3'b000;
 							 
 	 assign Salida[0] = (state == pintarBandaEstatica);

@@ -15,19 +15,18 @@ NET "clk" LOC = T9;
 NET "hsync" LOC = R9;
 NET "vsync" LOC = T10;
 
+NET "Activadores[0]" LOC = E13;
+NET "Activadores[1]" LOC = F14;
+NET "Activadores[2]" LOC = G14;
+NET "Activadores[3]" LOC = D14;
 
-#NET "Activadores[0]" LOC = E13;
-#NET "Activadores[1]" LOC = F14;
-#NET "Activadores[2]" LOC = G14;
-#NET "Activadores[3]" LOC = D14;
-#
-#NET "SalidaSiete[0]" LOC = E14;
-#NET "SalidaSiete[1]" LOC = G13;
-#NET "SalidaSiete[2]" LOC = N15;
-#NET "SalidaSiete[3]" LOC = P15;
-#NET "SalidaSiete[4]" LOC = R16;
-#NET "SalidaSiete[5]" LOC = F13;
-#NET "SalidaSiete[6]" LOC = N16;
+NET "SalidaSiete[0]" LOC = E14;
+NET "SalidaSiete[1]" LOC = G13;
+NET "SalidaSiete[2]" LOC = N15;
+NET "SalidaSiete[3]" LOC = P15;
+NET "SalidaSiete[4]" LOC = R16;
+NET "SalidaSiete[5]" LOC = F13;
+NET "SalidaSiete[6]" LOC = N16;
 
 NET "nivel2" LOC = K13;
 NET "nivel3" LOC = K14;

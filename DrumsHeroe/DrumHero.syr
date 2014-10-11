@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.70 secs
+Total CPU time to Xst completion: 0.89 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.72 secs
+Total CPU time to Xst completion: 0.90 secs
  
 --> Reading design: DrumHero.prj
 
@@ -107,12 +107,22 @@ Slice Utilization Ratio Delta      : 5
 Compiling verilog file "vga_sync.v" in library work
 Compiling verilog file "Tubo.v" in library work
 Module <vga_sync> compiled
-Compiling verilog file "Maquina_pintar.v" in library work
+Compiling verilog file "SelectorM.v" in library work
 Module <Tubo> compiled
+Compiling verilog file "Puntuacion.v" in library work
+Module <SelectorM> compiled
+Compiling verilog file "Maquina_pintar.v" in library work
+Module <Puntuacion> compiled
 Compiling verilog file "MaquinaNivel1.v" in library work
 Module <Maquina_pintar> compiled
-Compiling verilog file "clock32pps.v" in library work
+Compiling verilog file "Filtro.v" in library work
 Module <MaquinaNivel1> compiled
+Compiling verilog file "DoubleDabbing.v" in library work
+Module <Filtro> compiled
+Compiling verilog file "ControladorSiete.v" in library work
+Module <DoubleDabbing> compiled
+Compiling verilog file "clock32pps.v" in library work
+Module <ControladorSiete> compiled
 Compiling verilog file "DrumHero.v" in library work
 Module <clock32pps> compiled
 Module <DrumHero> compiled
@@ -123,7 +133,8 @@ Analysis of file <"DrumHero.prj"> succeeded.
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for module <DrumHero> in library <work>.
+Analyzing hierarchy for module <DrumHero> in library <work> with parameters.
+	posicionBandaStatic = "00000000000000000000000110000000"
 
 Analyzing hierarchy for module <MaquinaNivel1> in library <work> with parameters.
 	Inicial = "00000000000000000000000000000000"
@@ -164,11 +175,31 @@ Analyzing hierarchy for module <Tubo> in library <work> with parameters.
 
 Analyzing hierarchy for module <clock32pps> in library <work>.
 
+Analyzing hierarchy for module <Puntuacion> in library <work>.
+
+Analyzing hierarchy for module <DoubleDabbing> in library <work>.
+
+Analyzing hierarchy for module <Filtro> in library <work>.
+
+Analyzing hierarchy for module <SelectorM> in library <work> with parameters.
+	Cuarto = "00000000000000000000011001000000"
+	Primero = "00000000000000000000000110010000"
+	Segundo = "00000000000000000000001100100000"
+	Tercero = "00000000000000000000010010110000"
+
+Analyzing hierarchy for module <ControladorSiete> in library <work>.
+
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing top module <DrumHero>.
+	posicionBandaStatic = 32'sb00000000000000000000000110000000
+WARNING:Xst:852 - "DrumHero.v" line 114: Unconnected input port 'posL1' of instance 'puntuar' is tied to GND.
+WARNING:Xst:852 - "DrumHero.v" line 114: Unconnected input port 'posL2' of instance 'puntuar' is tied to GND.
+WARNING:Xst:852 - "DrumHero.v" line 114: Unconnected input port 'posL3' of instance 'puntuar' is tied to GND.
+WARNING:Xst:852 - "DrumHero.v" line 114: Unconnected input port 'posL4' of instance 'puntuar' is tied to GND.
+WARNING:Xst:852 - "DrumHero.v" line 114: Unconnected input port 'posL5' of instance 'puntuar' is tied to GND.
 Module <DrumHero> is correct for synthesis.
  
 Analyzing module <MaquinaNivel1> in library <work>.
@@ -214,6 +245,25 @@ Module <Tubo> is correct for synthesis.
  
 Analyzing module <clock32pps> in library <work>.
 Module <clock32pps> is correct for synthesis.
+ 
+Analyzing module <Puntuacion> in library <work>.
+Module <Puntuacion> is correct for synthesis.
+ 
+Analyzing module <DoubleDabbing> in library <work>.
+Module <DoubleDabbing> is correct for synthesis.
+ 
+Analyzing module <Filtro> in library <work>.
+Module <Filtro> is correct for synthesis.
+ 
+Analyzing module <SelectorM> in library <work>.
+	Cuarto = 32'sb00000000000000000000011001000000
+	Primero = 32'sb00000000000000000000000110010000
+	Segundo = 32'sb00000000000000000000001100100000
+	Tercero = 32'sb00000000000000000000010010110000
+Module <SelectorM> is correct for synthesis.
+ 
+Analyzing module <ControladorSiete> in library <work>.
+Module <ControladorSiete> is correct for synthesis.
  
 
 =========================================================================
@@ -276,27 +326,28 @@ Unit <vga_sync> synthesized.
 Synthesizing Unit <Tubo>.
     Related source file is "Tubo.v".
 WARNING:Xst:1780 - Signal <posXI> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-    Found 10-bit register for signal <posicionYS>.
+    Found 10-bit up counter for signal <posicionYS>.
     Found 10-bit adder carry out for signal <add0000$addsub0000> created at line 62.
     Found 1-bit register for signal <cuadrado1>.
     Found 10-bit comparator greater for signal <cuadrado1$cmp_gt0000> created at line 62.
     Found 10-bit comparator greater for signal <cuadrado1$cmp_gt0001> created at line 62.
-    Found 10-bit comparator less for signal <cuadrado1$cmp_lt0000> created at line 62.
-    Found 11-bit comparator less for signal <cuadrado1$cmp_lt0001> created at line 62.
+    Found 10-bit comparator lessequal for signal <cuadrado1$cmp_le0000> created at line 62.
+    Found 11-bit comparator lessequal for signal <cuadrado1$cmp_le0001> created at line 62.
     Found 1-bit register for signal <cuadrado2>.
     Found 10-bit comparator greater for signal <cuadrado2$cmp_gt0000> created at line 65.
-    Found 10-bit comparator less for signal <cuadrado2$cmp_lt0000> created at line 65.
+    Found 10-bit comparator lessequal for signal <cuadrado2$cmp_le0000> created at line 65.
     Found 1-bit register for signal <cuadrado3>.
     Found 10-bit comparator greater for signal <cuadrado3$cmp_gt0000> created at line 68.
-    Found 10-bit comparator less for signal <cuadrado3$cmp_lt0000> created at line 68.
+    Found 10-bit comparator lessequal for signal <cuadrado3$cmp_le0000> created at line 68.
     Found 1-bit register for signal <cuadrado4>.
     Found 10-bit comparator greater for signal <cuadrado4$cmp_gt0000> created at line 71.
-    Found 10-bit comparator less for signal <cuadrado4$cmp_lt0000> created at line 71.
+    Found 10-bit comparator lessequal for signal <cuadrado4$cmp_le0000> created at line 71.
     Found 1-bit register for signal <cuadrado5>.
     Found 10-bit comparator greater for signal <cuadrado5$cmp_gt0000> created at line 74.
-    Found 10-bit comparator less for signal <cuadrado5$cmp_lt0000> created at line 74.
+    Found 10-bit comparator lessequal for signal <cuadrado5$cmp_le0000> created at line 74.
     Summary:
-	inferred  15 D-type flip-flop(s).
+	inferred   1 Counter(s).
+	inferred   5 D-type flip-flop(s).
 	inferred   1 Adder/Subtractor(s).
 	inferred  12 Comparator(s).
 Unit <Tubo> synthesized.
@@ -317,6 +368,62 @@ Synthesizing Unit <clock32pps>.
 Unit <clock32pps> synthesized.
 
 
+Synthesizing Unit <Puntuacion>.
+    Related source file is "Puntuacion.v".
+WARNING:Xst:647 - Input <posL5> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 13-bit register for signal <puntuacion>.
+    Found 4-bit up counter for signal <teclasPasadas>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  13 D-type flip-flop(s).
+Unit <Puntuacion> synthesized.
+
+
+Synthesizing Unit <DoubleDabbing>.
+    Related source file is "DoubleDabbing.v".
+    Found 4-bit adder for signal <$add0000> created at line 49.
+    Found 4-bit adder for signal <$add0001> created at line 50.
+    Found 4-bit adder for signal <$add0002> created at line 51.
+    Found 4-bit adder for signal <$add0003> created at line 52.
+    Found 5-bit up counter for signal <contador>.
+    Found 13-bit register for signal <EntradaTemp>.
+    Found 30-bit register for signal <Registro>.
+    Found 4-bit comparator greater for signal <Registro$cmp_gt0000> created at line 49.
+    Found 4-bit comparator greater for signal <Registro$cmp_gt0001> created at line 50.
+    Found 4-bit comparator greater for signal <Registro$cmp_gt0002> created at line 51.
+    Found 4-bit comparator greater for signal <Registro$cmp_gt0003> created at line 52.
+    Found 13-bit comparator not equal for signal <Registro_29$cmp_ne0000> created at line 39.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  43 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   5 Comparator(s).
+Unit <DoubleDabbing> synthesized.
+
+
+Synthesizing Unit <Filtro>.
+    Related source file is "Filtro.v".
+Unit <Filtro> synthesized.
+
+
+Synthesizing Unit <SelectorM>.
+    Related source file is "SelectorM.v".
+    Found 4-bit register for signal <Activadores>.
+    Found 11-bit up counter for signal <contador>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   4 D-type flip-flop(s).
+Unit <SelectorM> synthesized.
+
+
+Synthesizing Unit <ControladorSiete>.
+    Related source file is "ControladorSiete.v".
+    Found 16x7-bit ROM for signal <Salida>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <ControladorSiete> synthesized.
+
+
 Synthesizing Unit <DrumHero>.
     Related source file is "DrumHero.v".
 WARNING:Xst:647 - Input <boton1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -324,10 +431,9 @@ WARNING:Xst:647 - Input <boton2> is never used. This port will be preserved and 
 WARNING:Xst:647 - Input <boton3> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <boton4> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <boton5> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:653 - Signal <perdio> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:646 - Signal <clk32> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <SalidaMaquinaPintar<5:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <EntradaMaquinaPintar<5:2>> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:646 - Signal <posicionBandaPrincipal> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SalidaMaquinaPintar<5:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <EntradaMaquinaPintar<5:3>> is used but never assigned. This sourceless signal will be automatically connected to value 000.
 WARNING:Xst:653 - Signal <EntradaMaquinaPintar<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 Unit <DrumHero> synthesized.
 
@@ -336,23 +442,36 @@ Unit <DrumHero> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 6
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 11
  10-bit adder                                          : 2
- 10-bit adder carry out                                : 1
+ 10-bit adder carry out                                : 2
  19-bit adder                                          : 1
  21-bit adder                                          : 1
  21-bit subtractor                                     : 1
-# Registers                                            : 13
- 1-bit register                                        : 9
- 10-bit register                                       : 3
+ 4-bit adder                                           : 4
+# Counters                                             : 5
+ 10-bit up counter                                     : 2
+ 11-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 50
+ 1-bit register                                        : 44
+ 10-bit register                                       : 2
+ 13-bit register                                       : 2
  19-bit register                                       : 1
-# Comparators                                          : 20
+ 4-bit register                                        : 1
+# Comparators                                          : 37
  10-bit comparator greatequal                          : 2
- 10-bit comparator greater                             : 6
- 10-bit comparator less                                : 6
- 10-bit comparator lessequal                           : 2
- 11-bit comparator less                                : 2
+ 10-bit comparator greater                             : 12
+ 10-bit comparator less                                : 1
+ 10-bit comparator lessequal                           : 12
+ 11-bit comparator less                                : 1
+ 11-bit comparator lessequal                           : 2
+ 13-bit comparator not equal                           : 1
  22-bit comparator equal                               : 2
+ 4-bit comparator greater                              : 4
 
 =========================================================================
 
@@ -374,59 +493,108 @@ Optimizing FSM <segundaEtapa/state/FSM> on signal <state[1:8]> with one-hot enco
  0110  | 00100000
  0111  | 01000000
 -------------------
-WARNING:Xst:1290 - Hierarchical block <reloj32> is unconnected in block <DrumHero>.
-   It will be removed from the design.
-INFO:Xst:2261 - The FF/Latch <FFd2> in Unit <FSM> is equivalent to the following 3 FFs/Latches, which will be removed : <FFd3> <FFd4> <FFd5> 
-INFO:Xst:2261 - The FF/Latch <posicionYS_0> in Unit <tubo1> is equivalent to the following 7 FFs/Latches, which will be removed : <posicionYS_1> <posicionYS_2> <posicionYS_3> <posicionYS_4> <posicionYS_5> <posicionYS_6> <posicionYS_9> 
-INFO:Xst:2261 - The FF/Latch <posicionYS_7> in Unit <tubo1> is equivalent to the following FF/Latch, which will be removed : <posicionYS_8> 
-WARNING:Xst:1426 - The value init of the FF/Latch posicionYS_7 hinder the constant cleaning in the block tubo1.
-   You should achieve better results by setting this init to 1.
+INFO:Xst:2261 - The FF/Latch <FFd2> in Unit <FSM> is equivalent to the following 2 FFs/Latches, which will be removed : <FFd3> <FFd4> 
+INFO:Xst:2261 - The FF/Latch <puntuacion_0> in Unit <puntuar> is equivalent to the following 12 FFs/Latches, which will be removed : <puntuacion_1> <puntuacion_2> <puntuacion_3> <puntuacion_4> <puntuacion_5> <puntuacion_6> <puntuacion_7> <puntuacion_8> <puntuacion_9> <puntuacion_10> <puntuacion_11> <puntuacion_12> 
+WARNING:Xst:1293 - FF/Latch <EntradaTemp_12> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <EntradaTemp_11> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <EntradaTemp_10> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <EntradaTemp_9> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <EntradaTemp_8> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <EntradaTemp_7> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <EntradaTemp_6> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <EntradaTemp_5> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <EntradaTemp_4> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <EntradaTemp_3> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <EntradaTemp_2> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <EntradaTemp_1> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <EntradaTemp_0> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Registro_0> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Registro_2> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Registro_3> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Registro_1> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Registro_4> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Registro_5> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Registro_7> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Registro_8> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Registro_6> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Registro_9> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Registro_10> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Registro_12> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Registro_11> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <puntuacion_0> has a constant value of 0 in block <puntuar>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <FFd2> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <posicionYS_0> has a constant value of 0 in block <tubo1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Registro_13> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 1
-# Adders/Subtractors                                   : 6
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 11
  10-bit adder                                          : 2
- 10-bit adder carry out                                : 1
+ 10-bit adder carry out                                : 2
  19-bit adder                                          : 1
  21-bit adder                                          : 1
  21-bit subtractor                                     : 1
-# Registers                                            : 58
- Flip-Flops                                            : 58
-# Comparators                                          : 20
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 3
+# Counters                                             : 5
+ 10-bit up counter                                     : 2
+ 11-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 112
+ Flip-Flops                                            : 112
+# Comparators                                          : 37
  10-bit comparator greatequal                          : 2
- 10-bit comparator greater                             : 6
- 10-bit comparator less                                : 6
- 10-bit comparator lessequal                           : 2
- 11-bit comparator less                                : 2
+ 10-bit comparator greater                             : 12
+ 10-bit comparator less                                : 1
+ 10-bit comparator lessequal                           : 12
+ 11-bit comparator less                                : 1
+ 11-bit comparator lessequal                           : 2
+ 13-bit comparator not equal                           : 1
  22-bit comparator equal                               : 2
+ 4-bit comparator greater                              : 4
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1426 - The value init of the FF/Latch posicionYS_8 hinder the constant cleaning in the block Tubo.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch posicionYS_7 hinder the constant cleaning in the block Tubo.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1293 - FF/Latch <posicionYS_0> has a constant value of 0 in block <Tubo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <posicionYS_1> has a constant value of 0 in block <Tubo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <posicionYS_2> has a constant value of 0 in block <Tubo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <posicionYS_3> has a constant value of 0 in block <Tubo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <posicionYS_4> has a constant value of 0 in block <Tubo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <posicionYS_5> has a constant value of 0 in block <Tubo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <posicionYS_6> has a constant value of 0 in block <Tubo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <posicionYS_9> has a constant value of 0 in block <Tubo>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <posicionYS_7> in Unit <Tubo> is equivalent to the following FF/Latch, which will be removed : <posicionYS_8> 
+WARNING:Xst:1293 - FF/Latch <puntuacion_0> has a constant value of 0 in block <Puntuacion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <puntuacion_1> has a constant value of 0 in block <Puntuacion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <puntuacion_2> has a constant value of 0 in block <Puntuacion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <puntuacion_3> has a constant value of 0 in block <Puntuacion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <puntuacion_4> has a constant value of 0 in block <Puntuacion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <puntuacion_5> has a constant value of 0 in block <Puntuacion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <puntuacion_6> has a constant value of 0 in block <Puntuacion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <puntuacion_7> has a constant value of 0 in block <Puntuacion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <puntuacion_8> has a constant value of 0 in block <Puntuacion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <puntuacion_9> has a constant value of 0 in block <Puntuacion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <puntuacion_10> has a constant value of 0 in block <Puntuacion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <puntuacion_11> has a constant value of 0 in block <Puntuacion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <puntuacion_12> has a constant value of 0 in block <Puntuacion>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <EntradaTemp_0> in Unit <DoubleDabbing> is equivalent to the following 12 FFs/Latches, which will be removed : <EntradaTemp_1> <EntradaTemp_2> <EntradaTemp_3> <EntradaTemp_4> <EntradaTemp_5> <EntradaTemp_6> <EntradaTemp_7> <EntradaTemp_8> <EntradaTemp_9> <EntradaTemp_10> <EntradaTemp_11> <EntradaTemp_12> 
+WARNING:Xst:1293 - FF/Latch <Registro_11> has a constant value of 0 in block <DoubleDabbing>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Registro_12> has a constant value of 0 in block <DoubleDabbing>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Registro_10> has a constant value of 0 in block <DoubleDabbing>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Registro_9> has a constant value of 0 in block <DoubleDabbing>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Registro_6> has a constant value of 0 in block <DoubleDabbing>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Registro_8> has a constant value of 0 in block <DoubleDabbing>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Registro_7> has a constant value of 0 in block <DoubleDabbing>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Registro_5> has a constant value of 0 in block <DoubleDabbing>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Registro_4> has a constant value of 0 in block <DoubleDabbing>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Registro_1> has a constant value of 0 in block <DoubleDabbing>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Registro_3> has a constant value of 0 in block <DoubleDabbing>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Registro_2> has a constant value of 0 in block <DoubleDabbing>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Registro_0> has a constant value of 0 in block <DoubleDabbing>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <EntradaTemp_0> has a constant value of 0 in block <DoubleDabbing>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Registro_13> has a constant value of 0 in block <DoubleDabbing>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <state_FSM_FFd2> has a constant value of 0 in block <Maquina_pintar>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_FSM_FFd3> has a constant value of 0 in block <Maquina_pintar>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_FSM_FFd4> has a constant value of 0 in block <Maquina_pintar>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_FSM_FFd5> has a constant value of 0 in block <Maquina_pintar>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <DrumHero> ...
 
@@ -434,33 +602,15 @@ Optimizing unit <Maquina_pintar> ...
 
 Optimizing unit <vga_sync> ...
 
-Optimizing unit <Tubo> ...
-
 Optimizing unit <clock32pps> ...
-WARNING:Xst:2677 - Node <primeraEtapa/state> of sequential type is unconnected in block <DrumHero>.
-WARNING:Xst:2677 - Node <reloj32/sigcontador_18> of sequential type is unconnected in block <DrumHero>.
-WARNING:Xst:2677 - Node <reloj32/sigcontador_17> of sequential type is unconnected in block <DrumHero>.
-WARNING:Xst:2677 - Node <reloj32/sigcontador_16> of sequential type is unconnected in block <DrumHero>.
-WARNING:Xst:2677 - Node <reloj32/sigcontador_15> of sequential type is unconnected in block <DrumHero>.
-WARNING:Xst:2677 - Node <reloj32/sigcontador_14> of sequential type is unconnected in block <DrumHero>.
-WARNING:Xst:2677 - Node <reloj32/sigcontador_13> of sequential type is unconnected in block <DrumHero>.
-WARNING:Xst:2677 - Node <reloj32/sigcontador_12> of sequential type is unconnected in block <DrumHero>.
-WARNING:Xst:2677 - Node <reloj32/sigcontador_11> of sequential type is unconnected in block <DrumHero>.
-WARNING:Xst:2677 - Node <reloj32/sigcontador_10> of sequential type is unconnected in block <DrumHero>.
-WARNING:Xst:2677 - Node <reloj32/sigcontador_9> of sequential type is unconnected in block <DrumHero>.
-WARNING:Xst:2677 - Node <reloj32/sigcontador_8> of sequential type is unconnected in block <DrumHero>.
-WARNING:Xst:2677 - Node <reloj32/sigcontador_7> of sequential type is unconnected in block <DrumHero>.
-WARNING:Xst:2677 - Node <reloj32/sigcontador_6> of sequential type is unconnected in block <DrumHero>.
-WARNING:Xst:2677 - Node <reloj32/sigcontador_5> of sequential type is unconnected in block <DrumHero>.
-WARNING:Xst:2677 - Node <reloj32/sigcontador_4> of sequential type is unconnected in block <DrumHero>.
-WARNING:Xst:2677 - Node <reloj32/sigcontador_3> of sequential type is unconnected in block <DrumHero>.
-WARNING:Xst:2677 - Node <reloj32/sigcontador_2> of sequential type is unconnected in block <DrumHero>.
-WARNING:Xst:2677 - Node <reloj32/sigcontador_1> of sequential type is unconnected in block <DrumHero>.
-WARNING:Xst:2677 - Node <reloj32/sigcontador_0> of sequential type is unconnected in block <DrumHero>.
+
+Optimizing unit <DoubleDabbing> ...
+
+Optimizing unit <SelectorM> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block DrumHero, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block DrumHero, actual ratio is 2.
 
 Final Macro Processing ...
 
@@ -468,8 +618,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 33
- Flip-Flops                                            : 33
+# Registers                                            : 117
+ Flip-Flops                                            : 117
 
 =========================================================================
 
@@ -495,33 +645,37 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 14
+# IOs                              : 25
 
 Cell Usage :
-# BELS                             : 120
+# BELS                             : 544
 #      GND                         : 1
-#      INV                         : 2
-#      LUT2                        : 17
+#      INV                         : 15
+#      LUT1                        : 33
+#      LUT2                        : 72
+#      LUT2_D                      : 2
 #      LUT2_L                      : 1
-#      LUT3                        : 11
-#      LUT3_D                      : 1
-#      LUT4                        : 62
-#      LUT4_D                      : 6
+#      LUT3                        : 44
+#      LUT3_D                      : 2
+#      LUT4                        : 151
+#      LUT4_D                      : 7
 #      LUT4_L                      : 7
-#      MUXCY                       : 5
-#      MUXF5                       : 6
+#      MUXCY                       : 120
+#      MUXF5                       : 22
 #      VCC                         : 1
-# FlipFlops/Latches                : 33
+#      XORCY                       : 66
+# FlipFlops/Latches                : 117
 #      FDC                         : 23
-#      FDE                         : 1
-#      FDR                         : 7
-#      FDRS                        : 1
-#      FDS                         : 1
+#      FDE                         : 20
+#      FDR                         : 49
+#      FDRE                        : 15
+#      FDRS                        : 4
+#      FDS                         : 6
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 6
-#      IBUF                        : 1
-#      OBUF                        : 5
+# IO Buffers                       : 19
+#      IBUF                        : 3
+#      OBUF                        : 16
 =========================================================================
 
 Device utilization summary:
@@ -529,11 +683,11 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                       58  out of   7680     0%  
- Number of Slice Flip Flops:             33  out of  15360     0%  
- Number of 4 input LUTs:                107  out of  15360     0%  
- Number of IOs:                          14
- Number of bonded IOBs:                   7  out of    173     4%  
+ Number of Slices:                      182  out of   7680     2%  
+ Number of Slice Flip Flops:            117  out of  15360     0%  
+ Number of 4 input LUTs:                334  out of  15360     2%  
+ Number of IOs:                          25
+ Number of bonded IOBs:                  20  out of    173    11%  
  Number of GCLKs:                         1  out of      8    12%  
 
 ---------------------------
@@ -557,24 +711,24 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 33    |
+clk                                | BUFGP                  | 117   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
------------------------------------+-------------------------------------+-------+
-Control Signal                     | Buffer(FF name)                     | Load  |
------------------------------------+-------------------------------------+-------+
-EntradaMaquinaPintar<0>(XST_GND:G) | NONE(SincronizadorVga/h_count_reg_0)| 23    |
------------------------------------+-------------------------------------+-------+
+------------------------------------+-------------------------------------+-------+
+Control Signal                      | Buffer(FF name)                     | Load  |
+------------------------------------+-------------------------------------+-------+
+reiniciar(primeraEtapa/Reiniciar1:O)| NONE(SincronizadorVga/h_count_reg_0)| 23    |
+------------------------------------+-------------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 6.951ns (Maximum Frequency: 143.860MHz)
-   Minimum input arrival time before clock: 2.323ns
-   Maximum output required time after clock: 10.940ns
+   Minimum period: 10.292ns (Maximum Frequency: 97.159MHz)
+   Minimum input arrival time before clock: 13.524ns
+   Maximum output required time after clock: 11.295ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -583,82 +737,114 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 6.951ns (frequency: 143.860MHz)
-  Total number of paths / destination ports: 628 / 33
+  Clock period: 10.292ns (frequency: 97.159MHz)
+  Total number of paths / destination ports: 9086 / 219
 -------------------------------------------------------------------------
-Delay:               6.951ns (Levels of Logic = 4)
-  Source:            SincronizadorVga/h_count_reg_0 (FF)
-  Destination:       tubo1/cuadrado4 (FF)
+Delay:               10.292ns (Levels of Logic = 15)
+  Source:            reloj32/sigcontador_0 (FF)
+  Destination:       tubo2/posicionYS_0 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: SincronizadorVga/h_count_reg_0 to tubo1/cuadrado4
+  Data Path: reloj32/sigcontador_0 to tubo2/posicionYS_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              8   0.626   1.216  SincronizadorVga/h_count_reg_0 (SincronizadorVga/h_count_reg_0)
-     LUT2:I0->O            3   0.479   0.794  tubo1/cuadrado3_cmp_gt000011_SW0 (N21)
-     LUT4_D:I3->LO         1   0.479   0.123  tubo1/cuadrado3_cmp_gt000011 (N100)
-     LUT4:I3->O            1   0.479   0.704  tubo1/cuadrado4_not000143 (tubo1/cuadrado4_not000143)
-     LUT4:I3->O            1   0.479   0.681  tubo1/cuadrado4_not000177 (tubo1/cuadrado4_not0001)
-     FDR:R                     0.892          tubo1/cuadrado4
+     FDR:C->Q              2   0.626   1.040  reloj32/sigcontador_0 (reloj32/sigcontador_0)
+     LUT3:I0->O            1   0.479   0.000  reloj32/Mcompar_contador_cmp_eq0000_lut<0> (reloj32/Mcompar_contador_cmp_eq0000_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  reloj32/Mcompar_contador_cmp_eq0000_cy<0> (reloj32/Mcompar_contador_cmp_eq0000_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  reloj32/Mcompar_contador_cmp_eq0000_cy<1> (reloj32/Mcompar_contador_cmp_eq0000_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  reloj32/Mcompar_contador_cmp_eq0000_cy<2> (reloj32/Mcompar_contador_cmp_eq0000_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  reloj32/Mcompar_contador_cmp_eq0000_cy<3> (reloj32/Mcompar_contador_cmp_eq0000_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  reloj32/Mcompar_contador_cmp_eq0000_cy<4> (reloj32/Mcompar_contador_cmp_eq0000_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  reloj32/Mcompar_contador_cmp_eq0000_cy<5> (reloj32/Mcompar_contador_cmp_eq0000_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  reloj32/Mcompar_contador_cmp_eq0000_cy<6> (reloj32/Mcompar_contador_cmp_eq0000_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  reloj32/Mcompar_contador_cmp_eq0000_cy<7> (reloj32/Mcompar_contador_cmp_eq0000_cy<7>)
+     MUXCY:CI->O          34   0.265   1.880  reloj32/Mcompar_contador_cmp_eq0000_cy<8> (reloj32/Mcompar_contador_cmp_eq0000_cy<8>)
+     LUT4:I0->O            1   0.479   0.851  reloj32/Mcompar_clk32_lut<7>_SW1 (N95)
+     LUT3:I1->O            1   0.479   0.000  reloj32/Mcompar_clk32_lut<7> (reloj32/Mcompar_clk32_lut<7>)
+     MUXCY:S->O            1   0.435   0.000  reloj32/Mcompar_clk32_cy<7> (reloj32/Mcompar_clk32_cy<7>)
+     MUXCY:CI->O           1   0.265   0.704  reloj32/Mcompar_clk32_cy<8> (reloj32/Mcompar_clk32_cy<8>)
+     LUT4:I3->O           10   0.479   0.964  tubo2/posicionYS_not00011 (tubo2/posicionYS_not0001)
+     FDE:CE                    0.524          tubo2/posicionYS_0
     ----------------------------------------
-    Total                      6.951ns (3.434ns logic, 3.517ns route)
-                                       (49.4% logic, 50.6% route)
+    Total                     10.292ns (4.854ns logic, 5.439ns route)
+                                       (47.2% logic, 52.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 5 / 5
+  Total number of paths / destination ports: 22647 / 65
 -------------------------------------------------------------------------
-Offset:              2.323ns (Levels of Logic = 2)
-  Source:            start (PAD)
-  Destination:       segundaEtapa/state_FSM_FFd8 (FF)
+Offset:              13.524ns (Levels of Logic = 22)
+  Source:            nivel2 (PAD)
+  Destination:       tubo2/posicionYS_0 (FF)
   Destination Clock: clk rising
 
-  Data Path: start to segundaEtapa/state_FSM_FFd8
+  Data Path: nivel2 to tubo2/posicionYS_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             5   0.715   0.953  start_IBUF (start_IBUF)
-     LUT3:I1->O            1   0.479   0.000  segundaEtapa/state_FSM_FFd8-In1 (segundaEtapa/state_FSM_FFd8-In)
-     FDS:D                     0.176          segundaEtapa/state_FSM_FFd8
+     IBUF:I->O             9   0.715   1.250  nivel2_IBUF (nivel2_IBUF)
+     LUT1:I0->O            1   0.479   0.000  reloj32/Msub__sub0001_cy<4>_rt (reloj32/Msub__sub0001_cy<4>_rt)
+     MUXCY:S->O            1   0.435   0.000  reloj32/Msub__sub0001_cy<4> (reloj32/Msub__sub0001_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  reloj32/Msub__sub0001_cy<5> (reloj32/Msub__sub0001_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  reloj32/Msub__sub0001_cy<6> (reloj32/Msub__sub0001_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  reloj32/Msub__sub0001_cy<7> (reloj32/Msub__sub0001_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  reloj32/Msub__sub0001_cy<8> (reloj32/Msub__sub0001_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  reloj32/Msub__sub0001_cy<9> (reloj32/Msub__sub0001_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  reloj32/Msub__sub0001_cy<10> (reloj32/Msub__sub0001_cy<10>)
+     MUXCY:CI->O           1   0.056   0.000  reloj32/Msub__sub0001_cy<11> (reloj32/Msub__sub0001_cy<11>)
+     MUXCY:CI->O           1   0.056   0.000  reloj32/Msub__sub0001_cy<12> (reloj32/Msub__sub0001_cy<12>)
+     MUXCY:CI->O           1   0.056   0.000  reloj32/Msub__sub0001_cy<13> (reloj32/Msub__sub0001_cy<13>)
+     MUXCY:CI->O           1   0.056   0.000  reloj32/Msub__sub0001_cy<14> (reloj32/Msub__sub0001_cy<14>)
+     XORCY:CI->O           3   0.786   1.066  reloj32/Msub__sub0001_xor<15> (reloj32/_sub0001<16>)
+     LUT4:I0->O            1   0.479   0.000  reloj32/Mcompar_contador_cmp_eq0000_lut<7> (reloj32/Mcompar_contador_cmp_eq0000_lut<7>)
+     MUXCY:S->O            1   0.435   0.000  reloj32/Mcompar_contador_cmp_eq0000_cy<7> (reloj32/Mcompar_contador_cmp_eq0000_cy<7>)
+     MUXCY:CI->O          34   0.265   1.880  reloj32/Mcompar_contador_cmp_eq0000_cy<8> (reloj32/Mcompar_contador_cmp_eq0000_cy<8>)
+     LUT4:I0->O            1   0.479   0.851  reloj32/Mcompar_clk32_lut<7>_SW1 (N95)
+     LUT3:I1->O            1   0.479   0.000  reloj32/Mcompar_clk32_lut<7> (reloj32/Mcompar_clk32_lut<7>)
+     MUXCY:S->O            1   0.435   0.000  reloj32/Mcompar_clk32_cy<7> (reloj32/Mcompar_clk32_cy<7>)
+     MUXCY:CI->O           1   0.265   0.704  reloj32/Mcompar_clk32_cy<8> (reloj32/Mcompar_clk32_cy<8>)
+     LUT4:I3->O           10   0.479   0.964  tubo2/posicionYS_not00011 (tubo2/posicionYS_not0001)
+     FDE:CE                    0.524          tubo2/posicionYS_0
     ----------------------------------------
-    Total                      2.323ns (1.370ns logic, 0.953ns route)
-                                       (59.0% logic, 41.0% route)
+    Total                     13.524ns (6.809ns logic, 6.715ns route)
+                                       (50.3% logic, 49.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 44 / 5
+  Total number of paths / destination ports: 391 / 16
 -------------------------------------------------------------------------
-Offset:              10.940ns (Levels of Logic = 4)
-  Source:            SincronizadorVga/h_count_reg_9 (FF)
-  Destination:       rgb<0> (PAD)
+Offset:              11.295ns (Levels of Logic = 5)
+  Source:            selectro/Activadores_1 (FF)
+  Destination:       SalidaSiete<6> (PAD)
   Source Clock:      clk rising
 
-  Data Path: SincronizadorVga/h_count_reg_9 to rgb<0>
+  Data Path: selectro/Activadores_1 to SalidaSiete<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             12   0.626   1.245  SincronizadorVga/h_count_reg_9 (SincronizadorVga/h_count_reg_9)
-     LUT4:I0->O            3   0.479   1.066  SincronizadorVga/video_on28 (SincronizadorVga/video_on28)
-     LUT4:I0->O            1   0.479   0.976  segundaEtapa/colorRes<0>49_SW0 (N92)
-     LUT4:I0->O            1   0.479   0.681  segundaEtapa/colorRes<0>49 (rgb_0_OBUF)
-     OBUF:I->O                 4.909          rgb_0_OBUF (rgb<0>)
+     FDS:C->Q              8   0.626   1.216  selectro/Activadores_1 (selectro/Activadores_1)
+     LUT2:I0->O            6   0.479   0.912  filtro/Salida<3>19 (filtro/Salida<1>19)
+     LUT3:I2->O            1   0.479   0.000  filtro/Salida<3>60_F (N133)
+     MUXF5:I0->O           7   0.314   1.201  filtro/Salida<3>60 (dataSieteSegmentos<3>)
+     LUT4:I0->O            1   0.479   0.681  siete/Mrom_Salida41 (SalidaSiete_4_OBUF)
+     OBUF:I->O                 4.909          SalidaSiete_4_OBUF (SalidaSiete<4>)
     ----------------------------------------
-    Total                     10.940ns (6.972ns logic, 3.968ns route)
-                                       (63.7% logic, 36.3% route)
+    Total                     11.295ns (7.286ns logic, 4.009ns route)
+                                       (64.5% logic, 35.5% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 25.00 secs
-Total CPU time to Xst completion: 25.29 secs
+Total REAL time to Xst completion: 32.00 secs
+Total CPU time to Xst completion: 32.38 secs
  
 --> 
 
-Total memory usage is 220800 kilobytes
+Total memory usage is 224568 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   50 (   0 filtered)
-Number of infos    :    4 (   0 filtered)
+Number of warnings :   79 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
 
