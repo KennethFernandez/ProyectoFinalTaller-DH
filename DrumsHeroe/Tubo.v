@@ -39,7 +39,6 @@ module Tubo(clk, reset, enable, video_on,presentX,presentY,pixel,
 	reg cuadrado3 = 0;
 	reg cuadrado4 = 0;
 	reg cuadrado5 = 0;
-	reg [9:0] posXI = 0;
 	
 	parameter cuadro1 = 80;
 	parameter cuadro2 = 176;

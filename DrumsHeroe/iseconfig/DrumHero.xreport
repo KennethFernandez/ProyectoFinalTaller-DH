@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-10-11T17:06:04</DateModified>
+  <DateModified>2014-10-12T21:05:00</DateModified>
   <ModuleName>DrumHero</ModuleName>
-  <SummaryTimeStamp>2014-10-08T11:33:13</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Rodrigo/Documents/GitHub/ProyectoFinalTaller-DH/DrumsHeroe/iseconfig/DrumHero.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Rodrigo/Documents/GitHub/ProyectoFinalTaller-DH/DrumsHeroe\</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2014-10-12T21:04:45</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/DrumsHeroe/iseconfig/DrumHero.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/DrumsHeroe\</ImplementationReportsDirectory>
   <DateInitialized>2014-10-08T10:36:46</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
