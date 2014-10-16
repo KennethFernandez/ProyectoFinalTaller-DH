@@ -1,0 +1,10 @@
+Command line:
+   TransmisionTest_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53323
+
+Wed Oct 15 23:09:43 2014
+
+
+ Elaboration Time: 0.078 sec

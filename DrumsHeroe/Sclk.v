@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    12:45:14 10/08/2014 
+// Create Date:    23:40:52 10/15/2014 
 // Design Name: 
-// Module Name:    Lrclk 
+// Module Name:    Sclk 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,16 +18,16 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Lrclk(clk,clk3);
+module Sclk(clk,clk3);
 	 
    input clk;
    output reg clk3 = 0;
 	 
-	reg[9:0] contador = 0;
+	reg contador = 0;
 	 
 	 
 	always @ (posedge clk) begin
-	if(contador == 512) begin
+	if(contador == 1) begin
 		contador = 0;
 		clk3=~clk3;
 	end
