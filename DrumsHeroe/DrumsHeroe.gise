@@ -22,28 +22,9 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="DrumsHeroe.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="DrumHero.bld"/>
-    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="DrumHero.cmd_log"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="DrumHero.lso"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="DrumHero.ncd" xil_pn:subbranch="Par"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="DrumHero.ngc"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="DrumHero.ngd"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="DrumHero.ngr"/>
-    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="DrumHero.pad"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="DrumHero.par" xil_pn:subbranch="Par"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="DrumHero.pcf" xil_pn:subbranch="Map"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DrumHero.prj"/>
-    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="DrumHero.ptwx"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="DrumHero.stx"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="DrumHero.syr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="DrumHero.twr" xil_pn:subbranch="Par"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="DrumHero.twx" xil_pn:subbranch="Par"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="DrumHero.unroutes" xil_pn:subbranch="Par"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="DrumHero.ut" xil_pn:subbranch="FPGAConfiguration"/>
-    <file xil_pn:fileType="FILE_XPI" xil_pn:name="DrumHero.xpi"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="DrumHero.xst"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="DrumHero_envsettings.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="CLKTest_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="DrumHero_guide.ncd" xil_pn:origination="imported"/>
+<<<<<<< HEAD
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="DrumHero_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="DrumHero_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="DrumHero_map.ncd" xil_pn:subbranch="Map"/>
@@ -70,10 +51,22 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="drumhero.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="drumhero.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="drumhero.drc" xil_pn:subbranch="FPGAConfiguration"/>
+=======
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Lrclk_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Lrclk_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SonidoTest_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SonidoTest_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="SonidoTest_isim_beh.wdb"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Sonido_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Sonido_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TransmisionTest_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TransmisionTest_stx_beh.prj"/>
+>>>>>>> origin/master
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+<<<<<<< HEAD
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -84,6 +77,13 @@
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1413774553" xil_pn:in_ck="793655572373148048" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1413774553">
+=======
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1413437142" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1413437142">
+>>>>>>> origin/master
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -114,6 +114,7 @@
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
     </transform>
+<<<<<<< HEAD
     <transform xil_pn:end_ts="1413774560" xil_pn:in_ck="793655572373148048" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-635700686689589231" xil_pn:start_ts="1413774553">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -164,19 +165,35 @@
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+=======
+    <transform xil_pn:end_ts="1413438215" xil_pn:in_ck="-5189975123639986834" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1413438215">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+>>>>>>> origin/master
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="DrumHero.lso"/>
-      <outfile xil_pn:name="DrumHero.ngc"/>
-      <outfile xil_pn:name="DrumHero.ngr"/>
-      <outfile xil_pn:name="DrumHero.prj"/>
-      <outfile xil_pn:name="DrumHero.stx"/>
-      <outfile xil_pn:name="DrumHero.syr"/>
-      <outfile xil_pn:name="DrumHero.xst"/>
-      <outfile xil_pn:name="DrumHero_xst.xrpt"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
+      <outfile xil_pn:name="CLKTest.v"/>
+      <outfile xil_pn:name="ControladorSiete.v"/>
+      <outfile xil_pn:name="DoubleDabbing.v"/>
+      <outfile xil_pn:name="DrumHero.v"/>
+      <outfile xil_pn:name="Filtro.v"/>
+      <outfile xil_pn:name="Lrclk.v"/>
+      <outfile xil_pn:name="MaquinaNivel1.v"/>
+      <outfile xil_pn:name="Maquina_pintar.v"/>
+      <outfile xil_pn:name="Puntuacion.v"/>
+      <outfile xil_pn:name="Sclk.v"/>
+      <outfile xil_pn:name="SelectorM.v"/>
+      <outfile xil_pn:name="Sonido.v"/>
+      <outfile xil_pn:name="SonidoTest.v"/>
+      <outfile xil_pn:name="TransmisionDAC.v"/>
+      <outfile xil_pn:name="TransmisionTest.v"/>
+      <outfile xil_pn:name="Tubo.v"/>
+      <outfile xil_pn:name="clock32pps.v"/>
+      <outfile xil_pn:name="vga_sync.v"/>
     </transform>
+<<<<<<< HEAD
     <transform xil_pn:end_ts="1413857144" xil_pn:in_ck="3617049893029002642" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4784892190762576840" xil_pn:start_ts="1413857143">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -235,14 +252,80 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
+=======
+    <transform xil_pn:end_ts="1413438236" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="395858184012329059" xil_pn:start_ts="1413438236">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
+    <transform xil_pn:end_ts="1413438236" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="9202422976553784859" xil_pn:start_ts="1413438236">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1413437142" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="7131063283110357309" xil_pn:start_ts="1413437142">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1413438219" xil_pn:in_ck="-5189975123639986834" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1413438219">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="CLKTest.v"/>
+      <outfile xil_pn:name="ControladorSiete.v"/>
+      <outfile xil_pn:name="DoubleDabbing.v"/>
+      <outfile xil_pn:name="DrumHero.v"/>
+      <outfile xil_pn:name="Filtro.v"/>
+      <outfile xil_pn:name="Lrclk.v"/>
+      <outfile xil_pn:name="MaquinaNivel1.v"/>
+      <outfile xil_pn:name="Maquina_pintar.v"/>
+      <outfile xil_pn:name="Puntuacion.v"/>
+      <outfile xil_pn:name="Sclk.v"/>
+      <outfile xil_pn:name="SelectorM.v"/>
+      <outfile xil_pn:name="Sonido.v"/>
+      <outfile xil_pn:name="SonidoTest.v"/>
+      <outfile xil_pn:name="TransmisionDAC.v"/>
+      <outfile xil_pn:name="TransmisionTest.v"/>
+      <outfile xil_pn:name="Tubo.v"/>
+      <outfile xil_pn:name="clock32pps.v"/>
+      <outfile xil_pn:name="vga_sync.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1413438241" xil_pn:in_ck="-5189975123639986834" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6818191636552470114" xil_pn:start_ts="1413438236">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+>>>>>>> origin/master
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="SonidoTest_beh.prj"/>
+      <outfile xil_pn:name="SonidoTest_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+<<<<<<< HEAD
     <transform xil_pn:end_ts="1413857751" xil_pn:in_ck="-947134786995203365" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1413857724">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="DrumHero.twr"/>
       <outfile xil_pn:name="DrumHero.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+=======
+    <transform xil_pn:end_ts="1413438242" xil_pn:in_ck="-6748118201845173012" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5667841501540285349" xil_pn:start_ts="1413438241">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="SonidoTest_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+>>>>>>> origin/master
     </transform>
   </transforms>
 

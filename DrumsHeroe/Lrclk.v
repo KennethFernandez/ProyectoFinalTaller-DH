@@ -23,11 +23,11 @@ module Lrclk(clk,clk3);
    input clk;
    output reg clk3 = 0;
 	 
-	reg[7:0] contador = 0;
+	reg[9:0] contador = 0;
 	 
 	 
 	always @ (posedge clk) begin
-	if(contador == 24) begin
+	if(contador == 512) begin
 		contador = 0;
 		clk3=~clk3;
 	end

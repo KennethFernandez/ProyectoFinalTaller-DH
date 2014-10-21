@@ -1,0 +1,6 @@
+verilog work "TransmisionDAC.v"
+verilog work "Sclk.v"
+verilog work "Lrclk.v"
+verilog work "Sonido.v"
+verilog work "SonidoTest.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,5 @@
+verilog isim_temp "TransmisionDAC.v"
+verilog isim_temp "Sclk.v"
+verilog isim_temp "Lrclk.v"
+verilog isim_temp "Sonido.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

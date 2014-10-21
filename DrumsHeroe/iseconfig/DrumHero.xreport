@@ -1,7 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
+<<<<<<< HEAD
   <DateModified>2014-10-20T20:11:14</DateModified>
+=======
+  <DateModified>2014-10-15T23:06:05</DateModified>
+>>>>>>> origin/master
   <ModuleName>DrumHero</ModuleName>
   <SummaryTimeStamp>2014-10-20T20:09:03</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/DrumsHeroe/iseconfig/DrumHero.xreport</SavedFilePath>

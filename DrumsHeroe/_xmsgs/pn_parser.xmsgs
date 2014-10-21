@@ -8,7 +8,11 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<<<<<<< HEAD
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/DrumsHeroe/DrumHero.v&quot; into library work</arg>
+=======
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Rodrigo/Documents/GitHub/ProyectoFinalTaller-DH/DrumsHeroe/SonidoTest.v&quot; into library work</arg>
+>>>>>>> origin/master
 </msg>
 
 </messages>
