@@ -27,7 +27,7 @@ module DoubleDabbing(Entrada,Salidas,clk,reset);
 	output [15:0] Salidas;
 	
 	reg [4:0] contador = 0;
-	reg [29:0] Registro = 0;
+	reg [28:0] Registro = 0;
 	reg [12:0] EntradaTemp = 0;
 
 	always@(posedge clk)begin

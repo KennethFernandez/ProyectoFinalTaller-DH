@@ -37,13 +37,16 @@ module vga_sync
 	localparam VR = 2;   // v. retrace
 	
 	// mod-2 counter
-	reg mod2_reg;
+	reg mod2_reg = 0;
 	wire mod2_next;
 	// sync counters
-	reg [9:0] h_count_reg, h_count_next ;
-	reg [9:0] v_count_reg, v_count_next ;
+	reg [9:0] h_count_reg = 0; 
+	reg [9:0] h_count_next = 0;
+	reg [9:0] v_count_reg = 0;
+	reg [9:0] v_count_next = 0;
 	// output buffer
-	reg v_sync_reg, h_sync_reg ;
+	reg v_sync_reg = 0;
+	reg h_sync_reg = 0;
 	wire v_sync_next, h_sync_next ;
 	// status signal
 	wire h_end, v_end, pixel_tick ;
@@ -86,9 +89,9 @@ module vga_sync
 	always @*
 		if(pixel_tick) // 25 MHz pulse
 			if (h_end)
-				h_count_next = 0;
+				h_count_next = 10'b0;
 			else 
-				h_count_next = h_count_reg + 1;
+				h_count_next = {h_count_reg + 1}[9:0];
 		else
 			h_count_next = h_count_reg;
 			
@@ -96,9 +99,9 @@ module vga_sync
 	always @*
 		if (pixel_tick & h_end)
 			if (v_end)
-				v_count_next = 0;
+				v_count_next = 10'b0;
 			else
-				v_count_next = v_count_reg+1;
+				v_count_next = {v_count_reg+1}[9:0];
 		else
 			v_count_next = v_count_reg;
 			

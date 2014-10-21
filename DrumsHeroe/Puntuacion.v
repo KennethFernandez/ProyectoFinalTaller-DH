@@ -52,6 +52,6 @@ module Puntuacion(posBP1,posL1,posL2,posL3,posL4,posL5,clk,puntuacion,perdio,res
 	
 	end
 	
-	assign perdio = (teclasPasadas == 5)? 1: 0;
+	assign perdio = (teclasPasadas == 5)? 1'b1: 1'b0;
 
 endmodule

@@ -1,19 +1,14 @@
 Release 14.7 - Bitgen P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
-Loading device for application Rf_Device from file '3s1000.nph' in environment
+Loading device for application Rf_Device from file '6slx16.nph' in environment
 D:\Xillinx\14.7\ISE_DS\ISE\.
-   "DrumHero" is an NCD, version 3.2, device xc3s1000, package ft256, speed -5
+   "DrumHero" is an NCD, version 3.2, device xc6slx16, package csg324, speed -3
 Opened constraints file DrumHero.pcf.
 
-Sun Oct 12 22:03:36 2014
+Mon Oct 20 20:16:13 2014
 
-D:\Xillinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:6 -g CclkPin:PullUp -g M0Pin:PullUp -g M1Pin:PullUp -g M2Pin:PullUp -g ProgPin:PullUp -g DonePin:PullUp -g HswapenPin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g DCMShutdown:Disable -g DCIUpdateMode:AsRequired -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Match_cycle:Auto -g Security:None -g DonePipe:Yes -g DriveDone:No DrumHero.ncd 
+D:\Xillinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g Reset_on_err:No -g ConfigRate:2 -g ProgPin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g ExtMasterCclk_en:No -g SPI_buswidth:1 -g TIMER_CFG:0xFFFF -g multipin_wakeup:No -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No -g en_sw_gsr:No -g drive_awake:No -g sw_clk:Startupclk -g sw_gwe_cycle:5 -g sw_gts_cycle:4 DrumHero.ncd 
 
-INFO:Bitgen:40 - Replacing "Auto" with "NoWait" for option "Match_cycle".  Most
-   commonly, bitgen has determined and will use a specific value instead of the
-   generic command-line value of "Auto".  Alternately, this message appears if
-   the same option is specified multiple times on the command-line.  In this
-   case, the option listed last will be used.
 Summary of Bitgen Options:
 +----------------------+----------------------+
 | Option Name          | Current Setting      |
@@ -26,25 +21,11 @@ Summary of Bitgen Options:
 +----------------------+----------------------+
 | DebugBitstream       | No**                 |
 +----------------------+----------------------+
-| ConfigRate           | 6**                  |
+| ConfigRate           | 2**                  |
 +----------------------+----------------------+
 | StartupClk           | Cclk**               |
 +----------------------+----------------------+
-| DCMShutdown          | Disable**            |
-+----------------------+----------------------+
-| DCIUpdateMode        | AsRequired**         |
-+----------------------+----------------------+
-| CclkPin              | Pullup**             |
-+----------------------+----------------------+
-| DonePin              | Pullup**             |
-+----------------------+----------------------+
-| HswapenPin           | Pullup**             |
-+----------------------+----------------------+
-| M0Pin                | Pullup**             |
-+----------------------+----------------------+
-| M1Pin                | Pullup**             |
-+----------------------+----------------------+
-| M2Pin                | Pullup**             |
+| DonePin              | Pullup*              |
 +----------------------+----------------------+
 | ProgPin              | Pullup**             |
 +----------------------+----------------------+
@@ -64,8 +45,6 @@ Summary of Bitgen Options:
 +----------------------+----------------------+
 | LCK_cycle            | NoWait**             |
 +----------------------+----------------------+
-| Match_cycle          | NoWait               |
-+----------------------+----------------------+
 | DONE_cycle           | 4**                  |
 +----------------------+----------------------+
 | Persist              | No*                  |
@@ -78,21 +57,63 @@ Summary of Bitgen Options:
 +----------------------+----------------------+
 | UserID               | 0xFFFFFFFF**         |
 +----------------------+----------------------+
-| ActivateGclk         | No*                  |
-+----------------------+----------------------+
 | ActiveReconfig       | No*                  |
 +----------------------+----------------------+
-| PartialMask0         | (Not Specified)*     |
+| Partial              | (Not Specified)*     |
 +----------------------+----------------------+
-| PartialMask1         | (Not Specified)*     |
+| Encrypt              | No*                  |
 +----------------------+----------------------+
-| PartialMask2         | (Not Specified)*     |
+| Key0                 | pick*                |
 +----------------------+----------------------+
-| PartialGclk          | (Not Specified)*     |
+| StartCBC             | pick*                |
 +----------------------+----------------------+
-| PartialLeft          | (Not Specified)*     |
+| KeyFile              | (Not Specified)*     |
 +----------------------+----------------------+
-| PartialRight         | (Not Specified)*     |
+| drive_awake          | No**                 |
++----------------------+----------------------+
+| Reset_on_err         | No**                 |
++----------------------+----------------------+
+| suspend_filter       | Yes*                 |
++----------------------+----------------------+
+| en_sw_gsr            | No**                 |
++----------------------+----------------------+
+| en_suspend           | No*                  |
++----------------------+----------------------+
+| sw_clk               | Startupclk**         |
++----------------------+----------------------+
+| sw_gwe_cycle         | 5**                  |
++----------------------+----------------------+
+| sw_gts_cycle         | 4**                  |
++----------------------+----------------------+
+| multipin_wakeup      | No**                 |
++----------------------+----------------------+
+| wakeup_mask          | 0x00*                |
++----------------------+----------------------+
+| ExtMasterCclk_en     | No**                 |
++----------------------+----------------------+
+| ExtMasterCclk_divide | 1*                   |
++----------------------+----------------------+
+| CrcCoverage          | No*                  |
++----------------------+----------------------+
+| glutmask             | Yes*                 |
++----------------------+----------------------+
+| next_config_addr     | 0x00000000*          |
++----------------------+----------------------+
+| next_config_new_mode | No*                  |
++----------------------+----------------------+
+| next_config_boot_mode | 001*                 |
++----------------------+----------------------+
+| next_config_register_write | Enable*              |
++----------------------+----------------------+
+| next_config_reboot   | Enable*              |
++----------------------+----------------------+
+| golden_config_addr   | 0x00000000*          |
++----------------------+----------------------+
+| failsafe_user        | 0x0000*              |
++----------------------+----------------------+
+| TIMER_CFG            | 0xFFFF               |
++----------------------+----------------------+
+| spi_buswidth         | 1**                  |
 +----------------------+----------------------+
 | TimeStamp            | Default*             |
 +----------------------+----------------------+

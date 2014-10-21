@@ -24,7 +24,7 @@ module ControladorSiete(Salida, Entrada);
   output reg [6:0] Salida;
   input  [3:0] Entrada;
  
-  always @(Entrada)
+  always @(Entrada or Salida)
     case (Entrada)
       4'h0: Salida <= 7'b1000000;
       4'h1: Salida <= 7'b1111001;

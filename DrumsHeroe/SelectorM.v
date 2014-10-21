@@ -36,7 +36,7 @@ module SelectorM(clk,Activadores);
 	 begin
 	 
 	 if( contador != 2000)
-		       contador <= contador + 1;
+		       contador <= {contador + 1}[10:0];
 	 else     contador <=  0;
 	 
 	 case(contador) 

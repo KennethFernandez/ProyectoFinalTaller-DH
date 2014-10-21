@@ -1,32 +1,37 @@
-NET "rgb[2]" LOC = R12;
-NET "rgb[1]" LOC = R11;
-NET "rgb[0]" LOC = T12;
+NET "rgb[0]" LOC = T7;
+NET "rgb[1]" LOC = R7;
+NET "rgb[2]" LOC = V6;
+NET "rgb[3]" LOC = T6;
+NET "rgb[4]" LOC = P8;
+NET "rgb[5]" LOC = N7;
+NET "rgb[6]" LOC = V7;
+NET "rgb[7]" LOC = U7;
+
+#NET "boton1" LOC = A8;
+#NET "boton2" LOC = C4;
+#NET "boton3" LOC = B8;
+#NET "boton4" LOC = D9;
+#NET "boton5" LOC = T5;
+NET "start" LOC = C9;
 
 
-NET "boton1" LOC = L14;
-NET "boton2" LOC = L13;
-NET "boton3" LOC = M14;
-NET "boton4" LOC = M13;
-NET "boton5" LOC = J13;
-NET "start" LOC =  J14;
+NET "hsync" LOC = N6;
+NET "hsync" LOC = N6;
+NET "vsync" LOC = P7;
 
-NET "clk" LOC = T9;
+NET "Activadores[0]" LOC = P17;
+NET "Activadores[1]" LOC = P18;
+NET "Activadores[2]" LOC = N15;
+NET "Activadores[3]" LOC = N16;
 
-NET "hsync" LOC = R9;
-NET "vsync" LOC = T10;
+NET "SalidaSiete[0]" LOC = T17;
+NET "SalidaSiete[1]" LOC = T18;
+NET "SalidaSiete[2]" LOC = U17;
+NET "SalidaSiete[3]" LOC = U18;
+NET "SalidaSiete[4]" LOC = M14;
+NET "SalidaSiete[5]" LOC = N14;
+NET "SalidaSiete[6]" LOC = L14;
 
-NET "Activadores[0]" LOC = E13;
-NET "Activadores[1]" LOC = F14;
-NET "Activadores[2]" LOC = G14;
-NET "Activadores[3]" LOC = D14;
-
-NET "SalidaSiete[0]" LOC = E14;
-NET "SalidaSiete[1]" LOC = G13;
-NET "SalidaSiete[2]" LOC = N15;
-NET "SalidaSiete[3]" LOC = P15;
-NET "SalidaSiete[4]" LOC = R16;
-NET "SalidaSiete[5]" LOC = F13;
-NET "SalidaSiete[6]" LOC = N16;
-
-NET "nivel2" LOC = K13;
-NET "nivel3" LOC = K14;
+NET "nivel2" LOC = T10;
+NET "nivel3" LOC = T9;
+NET "clk" LOC = V10;

@@ -29,7 +29,7 @@ module clock32pps(clk,clk32,stop,nivel2,nivel3);
 	 reg [18:0] contador,sigcontador;
 	 
 	 //Usa el flanco de reloj para realizar la operación anteriormente descrita.
-	 always @(posedge clk)begin
+	 always @(posedge clk,posedge stop)begin
 	 
 	 if(stop) sigcontador <= 0;
 	 else sigcontador <= contador;

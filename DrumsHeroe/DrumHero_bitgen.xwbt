@@ -1,8 +1,8 @@
 INTSTYLE=ise
 INFILE=C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\DrumsHeroe\DrumHero.ncd
 OUTFILE=C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\DrumsHeroe\DrumHero.bit
-FAMILY=Spartan3
-PART=xc3s1000-5ft256
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
 WORKINGDIR=C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\DrumsHeroe
 LICENSE=WebPack
 USER_INFO=210920597_0_0_047
