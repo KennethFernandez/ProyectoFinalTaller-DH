@@ -1,0 +1,196 @@
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
+xst -intstyle ise -ifn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.xst" -ofn "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/DrumHero.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DrumHero.ucf -p xc6slx16-csg324-3 DrumHero.ngc DrumHero.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DrumHero_map.ncd DrumHero.ngd DrumHero.pcf 
+par -w -intstyle ise -ol high -mt off DrumHero_map.ncd DrumHero.ncd DrumHero.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DrumHero.twx DrumHero.ncd -o DrumHero.twr DrumHero.pcf -ucf DrumHero.ucf 
+bitgen -intstyle ise -f DrumHero.ut DrumHero.ncd 
