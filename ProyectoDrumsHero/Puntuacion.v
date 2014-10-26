@@ -75,16 +75,16 @@ module Puntuacion(posBP1,posL1,posL2,posL3,posL4,clk,puntuacion,perdio,reset,
 	begin LineaLista[3] <= 1'b0; puntuacion <= puntuacion; teclasPasadas <= teclasPasadas+1;end
 	
 	// Condiciones para activar cuando se equivoca de tecla
-	else if (posL1 > posBP1 | posL1 < posBP1Final && linea1 != botonesBaq && !LineaLista[0]) 
+	else if (posL1 - 64 > posBP1 | posL1 < posBP1Final && linea1 != botonesBaq && !LineaLista[0]) 
 	begin puntuacion <= puntuacion; LineaLista[0] <= 1'b1; teclasPasadas <= teclasPasadas+1;end
 	
-	else if (posL2 > posBP1 | posL2 < posBP1Final && linea2 != botonesBaq && !LineaLista[1]) 
+	else if (posL2 - 64 > posBP1 | posL2 < posBP1Final && linea2 != botonesBaq && !LineaLista[1]) 
 	begin puntuacion <= puntuacion; LineaLista[1] <= 1'b1; teclasPasadas <= teclasPasadas+1;end
 	
-	else if (posL3 > posBP1 | posL3 < posBP1Final && linea3 != botonesBaq && !LineaLista[2]) 
+	else if (posL3 - 64 > posBP1 | posL3 < posBP1Final && linea3 != botonesBaq && !LineaLista[2]) 
 	begin puntuacion <= puntuacion; LineaLista[2] <= 1'b1; teclasPasadas <= teclasPasadas+1;end
 	
-	else if (posL4 > posBP1 | posL4 < posBP1Final && linea4 != botonesBaq && !LineaLista[3]) 
+	else if (posL4 + 64 > posBP1 | posL4 < posBP1Final && linea4 != botonesBaq && !LineaLista[3]) 
 	begin puntuacion <= puntuacion; LineaLista[3] <= 1'b1; teclasPasadas <= teclasPasadas+1;end
 	
 	
