@@ -18,10 +18,14 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module DrumHero(start,clk,nivel2,nivel3,boton1,boton2,boton3,
-					 boton4,boton5,hsync,vsync,rgb,Activadores, SalidaSiete,SalidaLeds);
+module DrumHero(clk,boton1,boton2,boton3,boton4,
+					 boton5,nivel2,nivel3,start,hsync,vsync,rgb,
+					 Activadores, SalidaSiete,SalidaLeds
+					 //,JA
+					 );
 
-	//Las entradas necesarias
+	 //Las entradas necesarias
+	 
 	input start;
 	input clk;
 	input nivel2,nivel3;
@@ -32,7 +36,8 @@ module DrumHero(start,clk,nivel2,nivel3,boton1,boton2,boton3,
 	output [3:0] Activadores;
 	output [6:0] SalidaSiete;
 	output [4:0] SalidaLeds;
-
+	//output [3:0] JA;
+	
 	wire comenzar, reiniciar,stop,perdio;
 	wire [4:0] EntradaMaquinaPintar;
 	wire [4:0] SalidaMaquinaPintar;
@@ -50,6 +55,7 @@ module DrumHero(start,clk,nivel2,nivel3,boton1,boton2,boton3,
 	wire [15:0] convertidores;
 	wire [3:0] dataSieteSegmentos;
 	wire [12:0] puntuacion;
+	wire [12:0] puntuacionInicial;
 	
 	wire [9:0] posicionBanda1;
 	wire [9:0] posicionBanda2;
@@ -66,6 +72,8 @@ module DrumHero(start,clk,nivel2,nivel3,boton1,boton2,boton3,
 	parameter posicionInici2 = 94;
 	parameter posicionInici3 = 188;
 	parameter posicionInici4 = 282;
+	
+	parameter todosLosCubos = 31; 
 	
 	
 	Clock25 clock50(.clk(clk),.clk25(clk50));
@@ -117,10 +125,8 @@ module DrumHero(start,clk,nivel2,nivel3,boton1,boton2,boton3,
 	.maquinaOut(SalidaMaquinaPintar[0]),
 	.pintar(EntradaMaquinaPintar[0]),
 	.posicionY(posicionBandaStatic[9:0]),
-	.posicionYS(),
 	.contar(1'b0),
-	.cubosHilera(5'b11111),
-	.cubosHileraReg()
+	.cubosHilera(todosLosCubos[4:0])
 	);
 
 	Tubo tubo2(
@@ -191,9 +197,12 @@ module DrumHero(start,clk,nivel2,nivel3,boton1,boton2,boton3,
 	.cubosHileraReg(cubosLinea4)
 	);
 
+	wire clk32SinStop;
+
 	clock32pps reloj32(
 	.clk(clk50),
 	.clk32(clk32),
+	.clk32SinStop(clk32SinStop),
 	.stop(stop),
 	.nivel2(nivel2),
 	.nivel3(nivel3));
@@ -205,7 +214,7 @@ module DrumHero(start,clk,nivel2,nivel3,boton1,boton2,boton3,
 	.posL3(posicionBanda3),
 	.posL4(posicionBanda4), 
 	.clk(clk50), 
-	.puntuacion(puntuacion), 
+	.puntuacion(puntuacionInicial), 
 	.perdio(perdio), 
 	.reset(start),
 	.botonesBaq({boton1,boton2,boton3,boton4,boton5}),
@@ -215,8 +224,29 @@ module DrumHero(start,clk,nivel2,nivel3,boton1,boton2,boton3,
 	.linea3(cubosLinea3),
 	.linea4(cubosLinea4)
 	);
+	
+	
+	// El cuarto boton es para el reset
+	// El primero sube la frecuencia
+	// El segundo la baja
+	// El tercero hace que suene es un enable
+	
+//	i2s_tst_top (
+//	.clk(clk50),
+//	.btn1(),
+// .btn2(),
+//	.btn3(),
+// .btn4(),
+//	.Led(SalidaLeds[3:0]),
+//	.JA(JA)	
+//	);
 
-	// Falta la entrada en binario de los datos
+	PuntuacionTotal(
+	.puntuacionEntrada(puntuacionInicial), 
+	.puntuacionSalida(puntuacion), 
+	.enable(clk32SinStop), 
+	.clk(clk50),
+	.standBy(stop));
 
 	DoubleDabbing CBD(
 	.Entrada(puntuacion),

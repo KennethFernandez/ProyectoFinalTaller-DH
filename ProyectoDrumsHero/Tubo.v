@@ -63,7 +63,7 @@ module Tubo(clk, reset, enable, video_on,presentX,presentY,pixel,
 	
 	always @(posedge clk) begin 
 	
-			posicionYS <= (reset || enable)? posicionY: 
+			posicionYS <= (reset | enable)? posicionY: 
 			(contar)? ((posicionYS == puntofinal[9:0])? 10'b0:posicionYS + 1): posicionYS;
 			
 			cubosHileraReg <= (reset | enable)? cubosHilera: 

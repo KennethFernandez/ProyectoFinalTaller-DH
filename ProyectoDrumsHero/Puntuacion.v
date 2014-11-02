@@ -36,70 +36,44 @@ module Puntuacion(posBP1,posL1,posL2,posL3,posL4,clk,puntuacion,perdio,reset,
 	
 	wire posBP1Final = posBP1 + 64;
 	
-	output reg [12:0] puntuacion = 0;
-	reg [12:0] puntuacionPasadas = 0;
+	output reg [12:0] puntuacion = 13'b0;
+	reg [12:0] puntuacionPasadas = 13'b0;
 	output perdio;
 	
 	output [4:0] leds;
-   reg [3:0] LineaLista;
-	reg [3:0] teclasPasadas;
+   reg [3:0] LineaLista = 4'b0;
+	reg [3:0] teclasPasadas = 4'b0;
 	
 	always @( posedge clk) begin
 	
 	if(reset) begin puntuacion  <= 0; LineaLista <= 4'b0000; teclasPasadas <= 0; end
-
-	// Condiciones para cuando se suman puntos limpiar el registro
-	else if (posL1 == 0 && LineaLista[0])
+	
+	else if (posL1 == 0)
 	begin LineaLista[0] <= 1'b0; puntuacion <= puntuacion; teclasPasadas <= teclasPasadas;end
-	
-	else if (posL2 == 0 && LineaLista[1])
+	else if (posL2 == 0)
 	begin LineaLista[1] <= 1'b0; puntuacion <= puntuacion; teclasPasadas <= teclasPasadas;end
-	
-	else if (posL3 == 0 && LineaLista[2])
+	else if (posL3 == 0)
 	begin LineaLista[2] <= 1'b0; puntuacion <= puntuacion; teclasPasadas <= teclasPasadas;end
-	
-	else if (posL4 == 0 && LineaLista[3])
+	else if (posL4 == 0)
 	begin LineaLista[3] <= 1'b0; puntuacion <= puntuacion; teclasPasadas <= teclasPasadas;end
 	
-	// Condiciones para cuando se pasa la fila y no se estriparon los botones
 	else if (posL1 == 479 && !LineaLista[0])
-	begin LineaLista[0] <= 1'b0; puntuacion <= puntuacion; teclasPasadas <= teclasPasadas+1;end
-	
+	begin LineaLista[0] <= 1'b1; puntuacion <= puntuacion; teclasPasadas <= {teclasPasadas+1}[3:0];end
 	else if (posL2 == 479 && !LineaLista[1])
-	begin LineaLista[1] <= 1'b0; puntuacion <= puntuacion; teclasPasadas <= teclasPasadas+1;end
-	
+	begin LineaLista[1] <= 1'b1; puntuacion <= puntuacion; teclasPasadas <= {teclasPasadas+1}[3:0];end
 	else if (posL3 == 479 && !LineaLista[2])
-	begin LineaLista[2] <= 1'b0; puntuacion <= puntuacion; teclasPasadas <= teclasPasadas+1;end
-	
+	begin LineaLista[2] <= 1'b1; puntuacion <= puntuacion; teclasPasadas <= {teclasPasadas+1}[3:0];end
 	else if (posL4 == 479 && !LineaLista[3])
-	begin LineaLista[3] <= 1'b0; puntuacion <= puntuacion; teclasPasadas <= teclasPasadas+1;end
+	begin LineaLista[3] <= 1'b1; puntuacion <= puntuacion; teclasPasadas <= {teclasPasadas+1}[3:0];end
 	
-	// Condiciones para activar cuando se equivoca de tecla
-	else if (posL1 - 64 > posBP1 | posL1 < posBP1Final && linea1 != botonesBaq && !LineaLista[0]) 
-	begin puntuacion <= puntuacion; LineaLista[0] <= 1'b1; teclasPasadas <= teclasPasadas+1;end
-	
-	else if (posL2 - 64 > posBP1 | posL2 < posBP1Final && linea2 != botonesBaq && !LineaLista[1]) 
-	begin puntuacion <= puntuacion; LineaLista[1] <= 1'b1; teclasPasadas <= teclasPasadas+1;end
-	
-	else if (posL3 - 64 > posBP1 | posL3 < posBP1Final && linea3 != botonesBaq && !LineaLista[2]) 
-	begin puntuacion <= puntuacion; LineaLista[2] <= 1'b1; teclasPasadas <= teclasPasadas+1;end
-	
-	else if (posL4 + 64 > posBP1 | posL4 < posBP1Final && linea4 != botonesBaq && !LineaLista[3]) 
-	begin puntuacion <= puntuacion; LineaLista[3] <= 1'b1; teclasPasadas <= teclasPasadas+1;end
-	
-	
-	// Condiciones para activar los registros que dan puntos y puntuar
-	else if (posL1 > posBP1 | posL1 < posBP1Final && linea1 == botonesBaq && !LineaLista[0]) 
-	begin puntuacion <= puntuacion + 1; LineaLista[0] <= 1'b1; teclasPasadas <= teclasPasadas;end
-	
-	else if (posL2 > posBP1 | posL2 < posBP1Final && linea2 == botonesBaq && !LineaLista[1]) 
-	begin puntuacion <= puntuacion + 1; LineaLista[1] <= 1'b1; teclasPasadas <= teclasPasadas;end
-	
-	else if (posL3 > posBP1 | posL3 < posBP1Final && linea3 == botonesBaq && !LineaLista[2]) 
-	begin puntuacion <= puntuacion + 1; LineaLista[2] <= 1'b1; teclasPasadas <= teclasPasadas;end
-	
-	else if (posL4 > posBP1 | posL4 < posBP1Final && linea4 == botonesBaq && !LineaLista[3]) 
-	begin puntuacion <= puntuacion + 1; LineaLista[3] <= 1'b1; teclasPasadas <= teclasPasadas;end
+	else if ((posL1 + 64 > posBP1 | posL1 < posBP1Final) && linea1 == botonesBaq && !LineaLista[0]) 
+	begin puntuacion <= {puntuacion+1}[12:0]; LineaLista[0] <= 1'b1; teclasPasadas <= teclasPasadas;end
+	else if ((posL2 + 64 > posBP1 | posL2 < posBP1Final) && linea2 == botonesBaq && !LineaLista[1]) 
+	begin puntuacion <= {puntuacion+1}[12:0]; LineaLista[1] <= 1'b1; teclasPasadas <= teclasPasadas;end
+	else if ((posL3 + 64 > posBP1 | posL3 < posBP1Final) && linea3 == botonesBaq && !LineaLista[2]) 
+	begin puntuacion <= {puntuacion+1}[12:0]; LineaLista[2] <= 1'b1; teclasPasadas <= teclasPasadas;end
+	else if ((posL4 + 64 > posBP1 | posL4 < posBP1Final) && linea4 == botonesBaq && !LineaLista[3]) 
+	begin puntuacion <= {puntuacion+1}[12:0]; LineaLista[3] <= 1'b1; teclasPasadas <= teclasPasadas;end
 	
 	else begin puntuacion <= puntuacion; LineaLista <= LineaLista; teclasPasadas <= teclasPasadas;end
 	

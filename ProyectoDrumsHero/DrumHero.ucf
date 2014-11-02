@@ -12,6 +12,7 @@ NET "boton2" LOC = N8;
 NET "boton3" LOC = U8;
 NET "boton4" LOC = V8;
 NET "boton5" LOC = T5;
+
 NET "start" LOC = C9;
 
 
@@ -41,5 +42,10 @@ NET "SalidaLeds[1]" LOC = R11;
 NET "SalidaLeds[2]" LOC = N11;
 NET "SalidaLeds[3]" LOC = M11;
 NET "SalidaLeds[4]" LOC = V15;
+
+#Net "JA[0]" LOC = T12; 
+#Net "JA[1]" LOC = V12; 
+#Net "JA[2]" LOC = N10; 
+#Net "JA[3]" LOC = P11; # IOSTANDARD = LVCMOS33; 
 
 

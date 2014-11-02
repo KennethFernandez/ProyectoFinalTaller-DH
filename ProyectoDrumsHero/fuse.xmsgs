@@ -5,5 +5,8 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/PruebaReloj32milis.v" Line 37: Port <arg fmt="%s" index="1">clk32SinStop</arg> is not connected to this instance
+</msg>
+
 </messages>
 

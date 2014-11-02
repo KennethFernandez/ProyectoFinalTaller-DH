@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.43 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.46 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.43 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.46 secs
  
 --> Reading design: DrumHero.prj
 
@@ -113,6 +113,8 @@ Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\P
 Parsing module <Tubo>.
 Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\SelectorM.v" into library work
 Parsing module <SelectorM>.
+Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PuntuacionTotal.v" into library work
+Parsing module <PuntuacionTotal>.
 Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Puntuacion.v" into library work
 Parsing module <Puntuacion>.
 Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Maquina_pintar.v" into library work
@@ -137,11 +139,11 @@ Parsing module <DrumHero>.
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
+WARNING:HDLCompiler:1016 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" Line 117: Port posicionYS is not connected to this instance
 
 Elaborating module <DrumHero>.
 
 Elaborating module <Clock25>.
-WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Clock25.v" Line 30: Result of 32-bit expression is truncated to fit in 2-bit target.
 
 Elaborating module <MaquinaNivel1>.
 
@@ -157,28 +159,15 @@ Elaborating module <Tubo>.
 WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Tubo.v" Line 66: Result of 32-bit expression is truncated to fit in 10-bit target.
 
 Elaborating module <clock32pps>.
-WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\clock32pps.v" Line 42: Result of 20-bit expression is truncated to fit in 19-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\clock32pps.v" Line 39: Result of 20-bit expression is truncated to fit in 19-bit target.
 
 Elaborating module <Puntuacion>.
-WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Puntuacion.v" Line 66: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Puntuacion.v" Line 69: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Puntuacion.v" Line 72: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Puntuacion.v" Line 75: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Puntuacion.v" Line 79: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Puntuacion.v" Line 82: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Puntuacion.v" Line 85: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Puntuacion.v" Line 88: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Puntuacion.v" Line 93: Result of 14-bit expression is truncated to fit in 13-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Puntuacion.v" Line 96: Result of 14-bit expression is truncated to fit in 13-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Puntuacion.v" Line 99: Result of 14-bit expression is truncated to fit in 13-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Puntuacion.v" Line 102: Result of 14-bit expression is truncated to fit in 13-bit target.
+WARNING:HDLCompiler:604 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" Line 236: Module instantiation should have an instance name
+
+Elaborating module <PuntuacionTotal>.
+WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PuntuacionTotal.v" Line 35: Result of 9-bit expression is truncated to fit in 8-bit target.
 
 Elaborating module <DoubleDabbing>.
-WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DoubleDabbing.v" Line 49: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DoubleDabbing.v" Line 50: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DoubleDabbing.v" Line 51: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DoubleDabbing.v" Line 52: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DoubleDabbing.v" Line 55: Result of 6-bit expression is truncated to fit in 5-bit target.
 
 Elaborating module <Filtro>.
 
@@ -197,9 +186,10 @@ Synthesizing Unit <DrumHero>.
         posicionInici2 = 94
         posicionInici3 = 188
         posicionInici4 = 282
-INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" line 96: Output port <p_tick> of the instance <SincronizadorVga> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" line 109: Output port <posicionYS> of the instance <tubo1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" line 109: Output port <cubosHileraReg> of the instance <tubo1> is unconnected or connected to loadless signal.
+        todosLosCubos = 31
+INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" line 104: Output port <p_tick> of the instance <SincronizadorVga> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" line 117: Output port <posicionYS> of the instance <tubo1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" line 117: Output port <cubosHileraReg> of the instance <tubo1> is unconnected or connected to loadless signal.
     Summary:
 	inferred   6 Multiplexer(s).
 Unit <DrumHero> synthesized.
@@ -207,11 +197,8 @@ Unit <DrumHero> synthesized.
 Synthesizing Unit <Clock25>.
     Related source file is "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Clock25.v".
     Found 1-bit register for signal <clk25>.
-    Found 2-bit register for signal <contador>.
-    Found 3-bit adder for signal <n0011[2:0]> created at line 30.
     Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred   3 D-type flip-flop(s).
+	inferred   1 D-type flip-flop(s).
 Unit <Clock25> synthesized.
 
 Synthesizing Unit <MaquinaNivel1>.
@@ -334,19 +321,19 @@ Unit <Tubo> synthesized.
 Synthesizing Unit <clock32pps>.
     Related source file is "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\clock32pps.v".
     Found 19-bit register for signal <sigcontador>.
-    Found 20-bit subtractor for signal <GND_9_o_GND_9_o_sub_3_OUT> created at line 41.
-    Found 32-bit subtractor for signal <GND_9_o_GND_9_o_sub_5_OUT> created at line 41.
-    Found 19-bit adder for signal <sigcontador[18]_GND_9_o_add_6_OUT> created at line 42.
-    Found 18x1-bit multiplier for signal <PWR_9_o_nivel2_MuLt_1_OUT> created at line 41.
-    Found 17x1-bit multiplier for signal <PWR_9_o_nivel3_MuLt_3_OUT> created at line 41.
-    Found 32-bit comparator equal for signal <GND_9_o_GND_9_o_equal_6_o> created at line 41
-    Found 32-bit comparator equal for signal <clk32> created at line 46
+    Found 20-bit subtractor for signal <GND_9_o_GND_9_o_sub_4_OUT> created at line 38.
+    Found 32-bit subtractor for signal <GND_9_o_GND_9_o_sub_6_OUT> created at line 38.
+    Found 19-bit adder for signal <sigcontador[18]_GND_9_o_add_7_OUT> created at line 39.
+    Found 18x1-bit multiplier for signal <PWR_9_o_nivel2_MuLt_2_OUT> created at line 38.
+    Found 17x1-bit multiplier for signal <PWR_9_o_nivel3_MuLt_4_OUT> created at line 38.
+    Found 32-bit comparator equal for signal <GND_9_o_GND_9_o_equal_7_o> created at line 38
+    Found 32-bit comparator equal for signal <clk32SinStop> created at line 43
     Summary:
 	inferred   2 Multiplier(s).
 	inferred   3 Adder/Subtractor(s).
 	inferred  19 D-type flip-flop(s).
 	inferred   2 Comparator(s).
-	inferred   1 Multiplexer(s).
+	inferred   2 Multiplexer(s).
 Unit <clock32pps> synthesized.
 
 Synthesizing Unit <Puntuacion>.
@@ -357,36 +344,46 @@ Synthesizing Unit <Puntuacion>.
     Found 1-bit register for signal <LineaLista<0>>.
     Found 4-bit register for signal <teclasPasadas>.
     Found 13-bit register for signal <puntuacion>.
-    Found 11-bit adder for signal <n0218> created at line 78.
-    Found 11-bit adder for signal <n0220> created at line 81.
-    Found 11-bit adder for signal <n0222> created at line 84.
-    Found 11-bit adder for signal <n0224> created at line 87.
-    Found 4-bit adder for signal <teclasPasadas[3]_GND_12_o_add_33_OUT> created at line 88.
-    Found 13-bit adder for signal <puntuacion[12]_GND_12_o_add_49_OUT> created at line 102.
-    Found 8x5-bit Read Only RAM for signal <_n0333>
-    Found 11-bit comparator greater for signal <GND_12_o_BUS_0006_LessThan_16_o> created at line 78
-    Found 5-bit comparator equal for signal <n0020> created at line 78
-    Found 11-bit comparator greater for signal <GND_12_o_BUS_0008_LessThan_21_o> created at line 81
-    Found 5-bit comparator equal for signal <n0027> created at line 81
-    Found 11-bit comparator greater for signal <GND_12_o_BUS_0010_LessThan_26_o> created at line 84
-    Found 5-bit comparator equal for signal <n0034> created at line 84
-    Found 11-bit comparator greater for signal <GND_12_o_BUS_0012_LessThan_31_o> created at line 87
-    Found 5-bit comparator equal for signal <n0041> created at line 87
-    Found 10-bit comparator greater for signal <posBP1[9]_posL1[9]_LessThan_35_o> created at line 92
-    Found 10-bit comparator greater for signal <posL1[9]_GND_12_o_LessThan_36_o> created at line 92
-    Found 10-bit comparator greater for signal <posBP1[9]_posL2[9]_LessThan_39_o> created at line 95
-    Found 10-bit comparator greater for signal <posL2[9]_GND_12_o_LessThan_40_o> created at line 95
-    Found 10-bit comparator greater for signal <posBP1[9]_posL3[9]_LessThan_43_o> created at line 98
-    Found 10-bit comparator greater for signal <posL3[9]_GND_12_o_LessThan_44_o> created at line 98
-    Found 10-bit comparator greater for signal <posBP1[9]_posL4[9]_LessThan_47_o> created at line 101
-    Found 10-bit comparator greater for signal <posL4[9]_GND_12_o_LessThan_48_o> created at line 101
+    Found 4-bit adder for signal <teclasPasadas[3]_GND_12_o_add_13_OUT> created at line 67.
+    Found 11-bit adder for signal <n0166> created at line 69.
+    Found 11-bit adder for signal <n0169> created at line 71.
+    Found 11-bit adder for signal <n0172> created at line 73.
+    Found 11-bit adder for signal <n0175> created at line 75.
+    Found 13-bit adder for signal <puntuacion[12]_GND_12_o_add_33_OUT> created at line 76.
+    Found 8x5-bit Read Only RAM for signal <_n0273>
+    Found 11-bit comparator greater for signal <GND_12_o_BUS_0006_LessThan_16_o> created at line 69
+    Found 10-bit comparator greater for signal <posL1[9]_GND_12_o_LessThan_17_o> created at line 69
+    Found 5-bit comparator equal for signal <linea1[4]_botonesBaq[4]_equal_18_o> created at line 69
+    Found 11-bit comparator greater for signal <GND_12_o_BUS_0008_LessThan_21_o> created at line 71
+    Found 10-bit comparator greater for signal <posL2[9]_GND_12_o_LessThan_22_o> created at line 71
+    Found 5-bit comparator equal for signal <linea2[4]_botonesBaq[4]_equal_23_o> created at line 71
+    Found 11-bit comparator greater for signal <GND_12_o_BUS_0010_LessThan_26_o> created at line 73
+    Found 10-bit comparator greater for signal <posL3[9]_GND_12_o_LessThan_27_o> created at line 73
+    Found 5-bit comparator equal for signal <linea3[4]_botonesBaq[4]_equal_28_o> created at line 73
+    Found 11-bit comparator greater for signal <GND_12_o_BUS_0012_LessThan_31_o> created at line 75
+    Found 10-bit comparator greater for signal <posL4[9]_GND_12_o_LessThan_32_o> created at line 75
+    Found 5-bit comparator equal for signal <linea4[4]_botonesBaq[4]_equal_33_o> created at line 75
     Summary:
 	inferred   1 RAM(s).
 	inferred   6 Adder/Subtractor(s).
 	inferred  21 D-type flip-flop(s).
-	inferred  16 Comparator(s).
-	inferred  16 Multiplexer(s).
+	inferred  12 Comparator(s).
+	inferred  12 Multiplexer(s).
 Unit <Puntuacion> synthesized.
+
+Synthesizing Unit <PuntuacionTotal>.
+    Related source file is "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PuntuacionTotal.v".
+    Found 13-bit register for signal <puntuacionMaxima>.
+    Found 8-bit register for signal <contador>.
+    Found 8-bit adder for signal <contador[7]_GND_13_o_add_1_OUT> created at line 35.
+    Found 13-bit comparator greater for signal <puntuacionMaxima[12]_puntuacionEntrada[12]_LessThan_6_o> created at line 39
+    Found 8-bit comparator greater for signal <PWR_13_o_contador[7]_LessThan_10_o> created at line 44
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <PuntuacionTotal> synthesized.
 
 Synthesizing Unit <DoubleDabbing>.
     Related source file is "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DoubleDabbing.v".
@@ -394,15 +391,15 @@ Synthesizing Unit <DoubleDabbing>.
     Found 13-bit register for signal <EntradaTemp>.
     Found 29-bit register for signal <Registro>.
     Found 4-bit adder for signal <n0047> created at line 49.
-    Found 4-bit adder for signal <Registro[24]_GND_13_o_add_7_OUT> created at line 50.
-    Found 4-bit adder for signal <Registro[20]_GND_13_o_add_9_OUT> created at line 51.
-    Found 4-bit adder for signal <Registro[16]_GND_13_o_add_11_OUT> created at line 52.
-    Found 5-bit adder for signal <contador[4]_GND_13_o_add_12_OUT> created at line 55.
+    Found 4-bit adder for signal <Registro[24]_GND_14_o_add_7_OUT> created at line 50.
+    Found 4-bit adder for signal <Registro[20]_GND_14_o_add_9_OUT> created at line 51.
+    Found 4-bit adder for signal <Registro[16]_GND_14_o_add_11_OUT> created at line 52.
+    Found 5-bit adder for signal <contador[4]_GND_14_o_add_12_OUT> created at line 55.
     Found 13-bit comparator equal for signal <n0000> created at line 39
-    Found 4-bit comparator greater for signal <GND_13_o_Registro[28]_LessThan_5_o> created at line 49
-    Found 4-bit comparator greater for signal <GND_13_o_Registro[24]_LessThan_7_o> created at line 50
-    Found 4-bit comparator greater for signal <GND_13_o_Registro[20]_LessThan_9_o> created at line 51
-    Found 4-bit comparator greater for signal <GND_13_o_Registro[16]_LessThan_11_o> created at line 52
+    Found 4-bit comparator greater for signal <GND_14_o_Registro[28]_LessThan_5_o> created at line 49
+    Found 4-bit comparator greater for signal <GND_14_o_Registro[24]_LessThan_7_o> created at line 50
+    Found 4-bit comparator greater for signal <GND_14_o_Registro[20]_LessThan_9_o> created at line 51
+    Found 4-bit comparator greater for signal <GND_14_o_Registro[16]_LessThan_11_o> created at line 52
     Summary:
 	inferred   5 Adder/Subtractor(s).
 	inferred  47 D-type flip-flop(s).
@@ -424,7 +421,7 @@ Synthesizing Unit <SelectorM>.
         Cuarto = 1600
     Found 4-bit register for signal <Activadores>.
     Found 11-bit register for signal <contador>.
-    Found 11-bit adder for signal <contador[10]_GND_15_o_add_2_OUT> created at line 39.
+    Found 11-bit adder for signal <contador[10]_GND_16_o_add_2_OUT> created at line 39.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  15 D-type flip-flop(s).
@@ -454,36 +451,39 @@ Macro Statistics
  13-bit adder                                          : 1
  19-bit adder                                          : 1
  20-bit subtractor                                     : 1
- 3-bit adder                                           : 1
  32-bit subtractor                                     : 1
  4-bit adder                                           : 5
  5-bit adder                                           : 1
-# Registers                                            : 61
+ 8-bit adder                                           : 1
+# Registers                                            : 62
  1-bit register                                        : 34
  10-bit register                                       : 7
  11-bit register                                       : 1
- 13-bit register                                       : 2
+ 13-bit register                                       : 3
  19-bit register                                       : 1
- 2-bit register                                        : 1
  29-bit register                                       : 1
  4-bit register                                        : 3
  5-bit register                                        : 6
  7-bit register                                        : 5
-# Comparators                                          : 89
- 10-bit comparator greater                             : 40
+ 8-bit register                                        : 1
+# Comparators                                          : 87
+ 10-bit comparator greater                             : 36
  10-bit comparator lessequal                           : 34
  11-bit comparator greater                             : 4
  13-bit comparator equal                               : 1
+ 13-bit comparator greater                             : 1
  32-bit comparator equal                               : 2
  4-bit comparator greater                              : 4
  5-bit comparator equal                                : 4
-# Multiplexers                                         : 82
- 1-bit 2-to-1 multiplexer                              : 22
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 80
+ 1-bit 2-to-1 multiplexer                              : 23
  10-bit 2-to-1 multiplexer                             : 2
+ 13-bit 2-to-1 multiplexer                             : 1
  19-bit 2-to-1 multiplexer                             : 1
  29-bit 2-to-1 multiplexer                             : 1
  32-bit 2-to-1 multiplexer                             : 5
- 4-bit 2-to-1 multiplexer                              : 18
+ 4-bit 2-to-1 multiplexer                              : 14
  5-bit 2-to-1 multiplexer                              : 2
  8-bit 2-to-1 multiplexer                              : 31
 # FSMs                                                 : 1
@@ -501,10 +501,6 @@ WARNING:Xst:1293 - FF/Latch <cubosHileraReg_1> has a constant value of 1 in bloc
 WARNING:Xst:1293 - FF/Latch <cubosHileraReg_2> has a constant value of 1 in block <tubo1>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <cubosHileraReg_3> has a constant value of 1 in block <tubo1>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <cubosHileraReg_4> has a constant value of 1 in block <tubo1>. This FF/Latch will be trimmed during the optimization process.
-
-Synthesizing (advanced) Unit <Clock25>.
-The following registers are absorbed into counter <contador>: 1 register on signal <contador>.
-Unit <Clock25> synthesized (advanced).
 
 Synthesizing (advanced) Unit <ControladorSiete>.
 INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Salida> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
@@ -541,7 +537,7 @@ Unit <ListaValores> synthesized (advanced).
 Synthesizing (advanced) Unit <Puntuacion>.
 The following registers are absorbed into counter <teclasPasadas>: 1 register on signal <teclasPasadas>.
 The following registers are absorbed into counter <puntuacion>: 1 register on signal <puntuacion>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0333> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0273> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -554,13 +550,17 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0333> will be implemented on LUTs 
     -----------------------------------------------------------------------
 Unit <Puntuacion> synthesized (advanced).
 
+Synthesizing (advanced) Unit <PuntuacionTotal>.
+The following registers are absorbed into counter <contador>: 1 register on signal <contador>.
+Unit <PuntuacionTotal> synthesized (advanced).
+
 Synthesizing (advanced) Unit <SelectorM>.
 The following registers are absorbed into counter <contador>: 1 register on signal <contador>.
 Unit <SelectorM> synthesized (advanced).
 
 Synthesizing (advanced) Unit <clock32pps>.
 The following registers are absorbed into counter <sigcontador>: 1 register on signal <sigcontador>.
-	Multiplier <Mmult_PWR_9_o_nivel3_MuLt_3_OUT> in block <clock32pps> and adder/subtractor <Msub_GND_9_o_GND_9_o_sub_5_OUT> in block <clock32pps> are combined into a MAC<Maddsub_PWR_9_o_nivel3_MuLt_3_OUT>.
+	Multiplier <Mmult_PWR_9_o_nivel3_MuLt_4_OUT> in block <clock32pps> and adder/subtractor <Msub_GND_9_o_GND_9_o_sub_6_OUT> in block <clock32pps> are combined into a MAC<Maddsub_PWR_9_o_nivel3_MuLt_4_OUT>.
 Unit <clock32pps> synthesized (advanced).
 
 Synthesizing (advanced) Unit <vga_sync>.
@@ -592,25 +592,27 @@ Macro Statistics
  11-bit up counter                                     : 1
  13-bit up counter                                     : 1
  19-bit up counter                                     : 1
- 2-bit up counter                                      : 1
  4-bit up counter                                      : 1
  5-bit up counter                                      : 1
-# Registers                                            : 194
- Flip-Flops                                            : 194
-# Comparators                                          : 89
- 10-bit comparator greater                             : 40
+ 8-bit up counter                                      : 1
+# Registers                                            : 207
+ Flip-Flops                                            : 207
+# Comparators                                          : 87
+ 10-bit comparator greater                             : 36
  10-bit comparator lessequal                           : 34
  11-bit comparator greater                             : 4
  13-bit comparator equal                               : 1
+ 13-bit comparator greater                             : 1
  32-bit comparator equal                               : 2
  4-bit comparator greater                              : 4
  5-bit comparator equal                                : 4
-# Multiplexers                                         : 79
- 1-bit 2-to-1 multiplexer                              : 22
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 89
+ 1-bit 2-to-1 multiplexer                              : 36
  19-bit 2-to-1 multiplexer                             : 1
  29-bit 2-to-1 multiplexer                             : 1
  32-bit 2-to-1 multiplexer                             : 5
- 4-bit 2-to-1 multiplexer                              : 18
+ 4-bit 2-to-1 multiplexer                              : 14
  5-bit 2-to-1 multiplexer                              : 1
  8-bit 2-to-1 multiplexer                              : 31
 # FSMs                                                 : 1
@@ -638,15 +640,17 @@ Optimizing FSM <segundaEtapa/FSM_0> on signal <state[1:3]> with gray encoding.
 
 Optimizing unit <DrumHero> ...
 
+Optimizing unit <clock32pps> ...
+
 Optimizing unit <Tubo> ...
 
 Optimizing unit <Puntuacion> ...
 
-Optimizing unit <clock32pps> ...
-
 Optimizing unit <Maquina_pintar> ...
 
 Optimizing unit <vga_sync> ...
+
+Optimizing unit <PuntuacionTotal> ...
 
 Optimizing unit <DoubleDabbing> ...
 WARNING:Xst:1293 - FF/Latch <tubo1/cubosHileraReg_4> has a constant value of 1 in block <DrumHero>. This FF/Latch will be trimmed during the optimization process.
@@ -664,6 +668,7 @@ INFO:Xst:2261 - The FF/Latch <tubo1/posicionYS_8> in Unit <DrumHero> is equivale
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block DrumHero, actual ratio is 9.
+FlipFlop primeraEtapa/state has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -671,8 +676,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 257
- Flip-Flops                                            : 257
+# Registers                                            : 277
+ Flip-Flops                                            : 277
 
 =========================================================================
 
@@ -695,25 +700,26 @@ Top Level Output File Name         : DrumHero.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1051
+# BELS                             : 1113
 #      GND                         : 1
 #      INV                         : 8
-#      LUT1                        : 61
-#      LUT2                        : 72
-#      LUT3                        : 85
-#      LUT4                        : 147
-#      LUT5                        : 72
-#      LUT6                        : 277
-#      MUXCY                       : 194
-#      MUXF7                       : 1
+#      LUT1                        : 68
+#      LUT2                        : 57
+#      LUT3                        : 87
+#      LUT4                        : 163
+#      LUT5                        : 73
+#      LUT6                        : 305
+#      MUXCY                       : 208
+#      MUXF7                       : 2
 #      VCC                         : 1
-#      XORCY                       : 132
-# FlipFlops/Latches                : 257
-#      FD                          : 95
-#      FDC                         : 22
+#      XORCY                       : 140
+# FlipFlops/Latches                : 277
+#      FD                          : 128
+#      FDC                         : 3
 #      FDCE                        : 20
-#      FDR                         : 56
-#      FDRE                        : 64
+#      FDE                         : 13
+#      FDR                         : 77
+#      FDRE                        : 36
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
@@ -728,16 +734,16 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             257  out of  18224     1%  
- Number of Slice LUTs:                  722  out of   9112     7%  
-    Number used as Logic:               722  out of   9112     7%  
+ Number of Slice Registers:             277  out of  18224     1%  
+ Number of Slice LUTs:                  761  out of   9112     8%  
+    Number used as Logic:               761  out of   9112     8%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    757
-   Number with an unused Flip Flop:     500  out of    757    66%  
-   Number with an unused LUT:            35  out of    757     4%  
-   Number of fully used LUT-FF pairs:   222  out of    757    29%  
-   Number of unique control sets:        29
+ Number of LUT Flip Flop pairs used:    797
+   Number with an unused Flip Flop:     520  out of    797    65%  
+   Number with an unused LUT:            36  out of    797     4%  
+   Number of fully used LUT-FF pairs:   241  out of    797    30%  
+   Number of unique control sets:        26
 
 IO Utilization: 
  Number of IOs:                          35
@@ -767,8 +773,8 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 3     |
-clock50/clk25                      | BUFG                   | 254   |
+clk                                | BUFGP                  | 1     |
+clock50/contador                   | BUFG                   | 276   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -779,8 +785,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 6.470ns (Maximum Frequency: 154.568MHz)
-   Minimum input arrival time before clock: 7.167ns
+   Minimum period: 6.911ns (Maximum Frequency: 144.695MHz)
+   Minimum input arrival time before clock: 7.169ns
    Maximum output required time after clock: 9.980ns
    Maximum combinational path delay: No path found
 
@@ -790,93 +796,95 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 2.486ns (frequency: 402.334MHz)
-  Total number of paths / destination ports: 9 / 5
+  Clock period: 1.913ns (frequency: 522.821MHz)
+  Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               2.486ns (Levels of Logic = 1)
-  Source:            clock50/contador_0 (FF)
-  Destination:       clock50/contador_0 (FF)
+Delay:               1.913ns (Levels of Logic = 1)
+  Source:            clock50/contador (FF)
+  Destination:       clock50/contador (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: clock50/contador_0 to clock50/contador_0
+  Data Path: clock50/contador to clock50/contador
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              3   0.447   0.755  clock50/contador_0 (clock50/contador_0)
-     LUT2:I0->O            3   0.203   0.650  clock50/dosciclos<1>1 (clock50/dosciclos)
-     FDR:R                     0.430          clock50/contador_0
+     FD:C->Q               1   0.447   0.579  clock50/contador (clock50/contador)
+     INV:I->O              1   0.206   0.579  clock50/contador_INV_1_o1_INV_0 (clock50/contador_INV_1_o)
+     FD:D                      0.102          clock50/contador
     ----------------------------------------
-    Total                      2.486ns (1.080ns logic, 1.405ns route)
-                                       (43.5% logic, 56.5% route)
+    Total                      1.913ns (0.755ns logic, 1.158ns route)
+                                       (39.5% logic, 60.5% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clock50/clk25'
-  Clock period: 6.470ns (frequency: 154.568MHz)
-  Total number of paths / destination ports: 42681 / 479
+Timing constraint: Default period analysis for Clock 'clock50/contador'
+  Clock period: 6.911ns (frequency: 144.695MHz)
+  Total number of paths / destination ports: 48341 / 461
 -------------------------------------------------------------------------
-Delay:               6.470ns (Levels of Logic = 6)
-  Source:            tubo2/posicionYS_1 (FF)
-  Destination:       puntuar/puntuacion_12 (FF)
-  Source Clock:      clock50/clk25 rising
-  Destination Clock: clock50/clk25 rising
+Delay:               6.911ns (Levels of Logic = 9)
+  Source:            _i000013/contador_5 (FF)
+  Destination:       CBD/Registro_28 (FF)
+  Source Clock:      clock50/contador rising
+  Destination Clock: clock50/contador rising
 
-  Data Path: tubo2/posicionYS_1 to puntuar/puntuacion_12
+  Data Path: _i000013/contador_5 to CBD/Registro_28
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              11   0.447   1.227  tubo2/posicionYS_1 (tubo2/posicionYS_1)
-     LUT6:I1->O            2   0.203   0.617  puntuar/GND_12_o_LineaLista[0]_AND_662_o1111 (puntuar/GND_12_o_LineaLista[0]_AND_662_o111)
-     LUT2:I1->O            1   0.205   0.580  puntuar/GND_12_o_LineaLista[0]_AND_662_o_SW0 (N132)
-     LUT6:I5->O            3   0.205   0.651  puntuar/GND_12_o_LineaLista[0]_AND_662_o (puntuar/GND_12_o_LineaLista[0]_AND_662_o)
-     LUT4:I3->O            4   0.205   0.684  puntuar/Mmux_LineaLista[3]_LineaLista[3]_mux_73_OUT211 (puntuar/Mmux_LineaLista[3]_LineaLista[3]_mux_73_OUT21)
-     LUT5:I4->O           13   0.205   0.933  puntuar/_n0416_inv_rstpot (puntuar/_n0416_inv_rstpot)
-     LUT3:I2->O            1   0.205   0.000  puntuar/puntuacion_0_dpot (puntuar/puntuacion_0_dpot)
-     FDRE:D                    0.102          puntuar/puntuacion_0
+     FD:C->Q               4   0.447   0.931  _i000013/contador_5 (_i000013/contador_5)
+     LUT4:I0->O            2   0.203   0.617  _i000013/PWR_13_o_standBy_AND_665_o_SW0 (N124)
+     LUT6:I5->O           17   0.205   1.028  _i000013/PWR_13_o_standBy_AND_665_o (_i000013/PWR_13_o_standBy_AND_665_o)
+     LUT6:I5->O            1   0.205   0.000  CBD/Mcompar_n0000_lut<0> (CBD/Mcompar_n0000_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  CBD/Mcompar_n0000_cy<0> (CBD/Mcompar_n0000_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  CBD/Mcompar_n0000_cy<1> (CBD/Mcompar_n0000_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  CBD/Mcompar_n0000_cy<2> (CBD/Mcompar_n0000_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  CBD/Mcompar_n0000_cy<3> (CBD/Mcompar_n0000_cy<3>)
+     MUXCY:CI->O          48   0.019   1.520  CBD/Mcompar_n0000_cy<4> (CBD/n0000)
+     LUT4:I3->O           15   0.205   0.981  CBD/_n0082_inv1 (CBD/_n0082_inv)
+     FDRE:CE                   0.322          CBD/Registro_14
     ----------------------------------------
-    Total                      6.470ns (1.777ns logic, 4.693ns route)
-                                       (27.5% logic, 72.5% route)
+    Total                      6.911ns (1.835ns logic, 5.076ns route)
+                                       (26.6% logic, 73.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clock50/clk25'
-  Total number of paths / destination ports: 7967 / 140
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock50/contador'
+  Total number of paths / destination ports: 8185 / 132
 -------------------------------------------------------------------------
-Offset:              7.167ns (Levels of Logic = 7)
-  Source:            boton3 (PAD)
+Offset:              7.169ns (Levels of Logic = 6)
+  Source:            boton4 (PAD)
   Destination:       puntuar/puntuacion_12 (FF)
-  Destination Clock: clock50/clk25 rising
+  Destination Clock: clock50/contador rising
 
-  Data Path: boton3 to puntuar/puntuacion_12
+  Data Path: boton4 to puntuar/puntuacion_12
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   1.222   1.048  boton3_IBUF (boton3_IBUF)
-     LUT6:I0->O            1   0.203   0.580  puntuar/n00205_SW0 (N134)
-     LUT5:I4->O            2   0.205   0.721  puntuar/n00205 (puntuar/n0020)
-     LUT6:I4->O            3   0.203   0.651  puntuar/GND_12_o_LineaLista[0]_AND_662_o (puntuar/GND_12_o_LineaLista[0]_AND_662_o)
-     LUT4:I3->O            4   0.205   0.684  puntuar/Mmux_LineaLista[3]_LineaLista[3]_mux_73_OUT211 (puntuar/Mmux_LineaLista[3]_LineaLista[3]_mux_73_OUT21)
-     LUT5:I4->O           13   0.205   0.933  puntuar/_n0416_inv_rstpot (puntuar/_n0416_inv_rstpot)
-     LUT3:I2->O            1   0.205   0.000  puntuar/puntuacion_0_dpot (puntuar/puntuacion_0_dpot)
-     FDRE:D                    0.102          puntuar/puntuacion_0
+     IBUF:I->O             4   1.222   1.048  boton4_IBUF (boton4_IBUF)
+     LUT6:I0->O            1   0.203   0.580  puntuar/GND_12_o_LineaLista[2]_AND_662_o1 (puntuar/GND_12_o_LineaLista[2]_AND_662_o1)
+     LUT6:I5->O            1   0.205   0.580  puntuar/GND_12_o_LineaLista[2]_AND_662_o2 (puntuar/GND_12_o_LineaLista[2]_AND_662_o2)
+     LUT6:I5->O            2   0.205   0.845  puntuar/GND_12_o_LineaLista[2]_AND_662_o4 (puntuar/GND_12_o_LineaLista[2]_AND_662_o)
+     LUT3:I0->O            2   0.205   0.617  puntuar/_n034411 (puntuar/_n03441)
+     LUT6:I5->O           13   0.205   0.932  puntuar/_n0344_inv (puntuar/_n0344_inv)
+     FDRE:CE                   0.322          puntuar/puntuacion_0
     ----------------------------------------
-    Total                      7.167ns (2.550ns logic, 4.617ns route)
-                                       (35.6% logic, 64.4% route)
+    Total                      7.169ns (2.567ns logic, 4.602ns route)
+                                       (35.8% logic, 64.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clock50/clk25'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock50/contador'
   Total number of paths / destination ports: 1204 / 26
 -------------------------------------------------------------------------
 Offset:              9.980ns (Levels of Logic = 6)
   Source:            SincronizadorVga/h_count_reg_9 (FF)
   Destination:       rgb<7> (PAD)
-  Source Clock:      clock50/clk25 rising
+  Source Clock:      clock50/contador rising
 
   Data Path: SincronizadorVga/h_count_reg_9 to rgb<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDCE:C->Q            23   0.447   1.382  SincronizadorVga/h_count_reg_9 (SincronizadorVga/h_count_reg_9)
-     LUT3:I0->O            1   0.205   0.924  SincronizadorVga/video_on_SW0 (N144)
+     LUT3:I0->O            1   0.205   0.924  SincronizadorVga/video_on_SW0 (N116)
      LUT6:I1->O           21   0.203   1.478  SincronizadorVga/video_on (LeerOEscribir)
      LUT6:I0->O            1   0.203   0.827  tubo5/pixel<6> (colorLinea4<5>)
      LUT6:I2->O            1   0.203   0.684  Mmux_rgb121 (Mmux_rgb12)
@@ -896,28 +904,28 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    2.486|         |         |         |
+clk            |    1.913|         |         |         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock clock50/clk25
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clock50/clk25  |    6.470|         |         |         |
----------------+---------+---------+---------+---------+
+Clock to Setup on destination clock clock50/contador
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+clock50/contador|    6.911|         |         |         |
+----------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 43.00 secs
-Total CPU time to Xst completion: 42.94 secs
+Total REAL time to Xst completion: 54.00 secs
+Total CPU time to Xst completion: 54.08 secs
  
 --> 
 
-Total memory usage is 250200 kilobytes
+Total memory usage is 245420 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   35 (   0 filtered)
+Number of warnings :   20 (   0 filtered)
 Number of infos    :    7 (   0 filtered)
 

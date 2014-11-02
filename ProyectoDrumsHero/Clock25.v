@@ -20,17 +20,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 module Clock25(clk,clk25);
 	
-    input clk;
-    output reg clk25 = 0;
+   input  clk;
+   output clk25;
 	 
-	 reg[1:0] contador = 0;
-	 wire dosciclos;
+	reg contador = 0;
 	 
-	 always @ (posedge clk) begin
-	 contador <= (dosciclos == 1'b1)? 2'b00:contador + 1; 
-	 clk25 <= dosciclos;
-	 end
+	always @ (posedge clk) contador = ~contador; 
 	 
-	assign dosciclos = (contador == 2'b01);
+	assign clk25 = (contador == 1'b1);
 
 endmodule

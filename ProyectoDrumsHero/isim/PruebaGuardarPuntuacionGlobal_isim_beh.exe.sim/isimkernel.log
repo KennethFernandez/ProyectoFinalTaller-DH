@@ -1,0 +1,29 @@
+Command line:
+   PruebaGuardarPuntuacionGlobal_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  26789
+
+Sun Nov 02 01:15:04 2014
+
+
+ Elaboration Time: 0.1248 sec
+
+ Current Memory Usage: 667.005 Meg
+
+ Total Signals          : 19
+ Total Nets             : 42
+ Total Signal Drivers   : 10
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 15
+ Total Traceable Variables  : 24
+ Total Scalar Nets and Variables : 158
+Total Line Count : 34
+
+ Total Simulation Time: 0.327602 sec
+
+ Current Memory Usage: 668.054 Meg
+
+Sun Nov 02 01:22:04 2014
+
