@@ -1,0 +1,29 @@
+Command line:
+   PruebaRecorreRam_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  11915
+
+Sat Nov 08 22:42:06 2014
+
+
+ Elaboration Time: 0.218401 sec
+
+ Current Memory Usage: 663.335 Meg
+
+ Total Signals          : 16
+ Total Nets             : 41
+ Total Signal Drivers   : 8
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 12
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 149
+Total Line Count : 22
+
+ Total Simulation Time: 0.249601 sec
+
+ Current Memory Usage: 664.383 Meg
+
+Sat Nov 08 22:51:12 2014
+

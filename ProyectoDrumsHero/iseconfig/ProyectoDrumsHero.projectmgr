@@ -12,19 +12,21 @@
          <ClosedNode>/DrumHero C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|DrumHero.v/listaV - ListaValores</ClosedNode>
          <ClosedNode>/Prueba2reloj50 C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|Prueba2reloj50.v</ClosedNode>
          <ClosedNode>/Pruebaclk50 C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|Pruebaclk50.v</ClosedNode>
-         <ClosedNode>/SonidoTest C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|SonidoTest.v</ClosedNode>
+         <ClosedNode>/SonidoTest C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|SonidoTest.v/uut - Sonido</ClosedNode>
          <ClosedNode>/TransmisionTest C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|TransmisionTest.v</ClosedNode>
-         <ClosedNode>/i2s_tst C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|i2s_tst.v</ClosedNode>
-         <ClosedNode>/i2s_tst_top C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|i2s_tst_top.v/ui2stst - i2s_tst</ClosedNode>
+         <ClosedNode>/i2s_tst C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|i2s_tst.v/uag - audiogen</ClosedNode>
+         <ClosedNode>/i2s_tst C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|i2s_tst.v/ui2s - i2s_out</ClosedNode>
+         <ClosedNode>/i2s_tst_top C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|i2s_tst_top.v/ui2stst - i2s_tst/uag - audiogen</ClosedNode>
+         <ClosedNode>/i2s_tst_top C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|i2s_tst_top.v/ui2stst - i2s_tst/ui2s - i2s_out</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>i2s_tst_top (C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/i2s_tst_top.v)</SelectedItem>
+         <SelectedItem>transmi - TransmisionDAC (C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/TransmisionDAC.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >14</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >15</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000179000000020000000000000000000000000200000064ffffffff000000810000000300000002000001790000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>i2s_tst_top (C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/i2s_tst_top.v)</CurrentItem>
+      <CurrentItem>transmi - TransmisionDAC (C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/TransmisionDAC.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -32,13 +34,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f6000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f60000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -99,13 +101,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f6000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f60000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_BMM" guiview="Process" >
       <ClosedNodes>
@@ -127,6 +129,7 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/Automatic `includes</ClosedNode>
          <ClosedNode>/CLKTest C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|CLKTest.v</ClosedNode>
+         <ClosedNode>/DrumHero C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|DrumHero.v/ModuloMusica - Sonido</ClosedNode>
          <ClosedNode>/DrumHero C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|DrumHero.v/listaV - ListaValores</ClosedNode>
          <ClosedNode>/Prueba2reloj50 C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|Prueba2reloj50.v</ClosedNode>
          <ClosedNode>/PruebaGuardarPuntuacionGlobal C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|PruebaGuardarPuntuacionGlobal.v</ClosedNode>
@@ -138,15 +141,16 @@
          <ClosedNode>/TransmisionTest C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|TransmisionTest.v</ClosedNode>
          <ClosedNode>/clockde50 C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|clockde50.v</ClosedNode>
          <ClosedNode>/i2s_tst_top C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|i2s_tst_top.v</ClosedNode>
+         <ClosedNode>/pruebaLrck C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|pruebaLrck.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>PruebaReloj32milis (C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/PruebaReloj32milis.v)</SelectedItem>
+         <SelectedItem>PruebaRecorreRam (C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/PruebaRecorreRam.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >17</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >20</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001b4000000020000000000000000000000000200000064ffffffff000000810000000300000002000001b40000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>PruebaReloj32milis (C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/PruebaReloj32milis.v)</CurrentItem>
+      <CurrentItem>PruebaRecorreRam (C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/PruebaRecorreRam.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -167,12 +171,12 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f6000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f60000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
 </Project>

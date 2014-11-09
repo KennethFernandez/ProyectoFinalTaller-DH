@@ -1,22 +1,21 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/PruebaReloj32milis_isim_beh.exe" -prj "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/PruebaReloj32milis_beh.prj" "work.PruebaReloj32milis" "work.glbl" 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/PruebaRecorreRam_isim_beh.exe" -prj "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/PruebaRecorreRam_beh.prj" "work.PruebaRecorreRam" "work.glbl" 
 ISim P.20131013 (signature 0x8ef4fb42)
 Number of CPUs detected in this system: 2
 Turning on mult-threading, number of parallel sub-compilation jobs: 4 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/clock32pps.v" into library work
-Analyzing Verilog file "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/PruebaReloj32milis.v" into library work
+Analyzing Verilog file "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/RecorreRam.v" into library work
+Analyzing Verilog file "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/PruebaRecorreRam.v" into library work
 Analyzing Verilog file "D:/Xillinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:1016 - "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/PruebaReloj32milis.v" Line 37: Port clk32SinStop is not connected to this instance
 Completed static elaboration
 Fuse Memory Usage: 117508 KB
-Fuse CPU Usage: 1731 ms
-Compiling module clock32pps
-Compiling module PruebaReloj32milis
+Fuse CPU Usage: 810 ms
+Compiling module RecorreRam
+Compiling module PruebaRecorreRam
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 3 Verilog Units
-Built simulation executable C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/PruebaReloj32milis_isim_beh.exe
+Built simulation executable C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/PruebaRecorreRam_isim_beh.exe
 Fuse Memory Usage: 122100 KB
-Fuse CPU Usage: 2152 ms
+Fuse CPU Usage: 998 ms

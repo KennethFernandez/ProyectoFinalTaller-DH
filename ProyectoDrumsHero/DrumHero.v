@@ -20,8 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 module DrumHero(clk,boton1,boton2,boton3,boton4,
 					 boton5,nivel2,nivel3,start,hsync,vsync,rgb,
-					 Activadores, SalidaSiete,SalidaLeds
-					 //,JA
+					 Activadores, SalidaSiete,SalidaLeds,
+					 DireccionRAM, DataRAM,SenalesRAM,
+					 MCLK,LRCLK,SDIN
 					 );
 
 	 //Las entradas necesarias
@@ -36,7 +37,14 @@ module DrumHero(clk,boton1,boton2,boton3,boton4,
 	output [3:0] Activadores;
 	output [6:0] SalidaSiete;
 	output [4:0] SalidaLeds;
-	//output [3:0] JA;
+	
+	output MCLK;
+	output LRCLK; 
+	output SDIN;
+	
+	output [25:0] DireccionRAM;
+	output [7:0]  SenalesRAM;
+	input  [15:0] DataRAM;
 	
 	wire comenzar, reiniciar,stop,perdio;
 	wire [4:0] EntradaMaquinaPintar;
@@ -66,6 +74,8 @@ module DrumHero(clk,boton1,boton2,boton3,boton4,
 	wire [4:0] cubosLinea1, cubosLinea2, cubosLinea3, cubosLinea4;
 	
 	wire clk50;
+	wire LClock;
+	wire clk32SinStop;
 
 	parameter posicionBandaStatic = 410;
 	parameter posicionInici1 = 0;
@@ -197,8 +207,6 @@ module DrumHero(clk,boton1,boton2,boton3,boton4,
 	.cubosHileraReg(cubosLinea4)
 	);
 
-	wire clk32SinStop;
-
 	clock32pps reloj32(
 	.clk(clk50),
 	.clk32(clk32),
@@ -224,22 +232,6 @@ module DrumHero(clk,boton1,boton2,boton3,boton4,
 	.linea3(cubosLinea3),
 	.linea4(cubosLinea4)
 	);
-	
-	
-	// El cuarto boton es para el reset
-	// El primero sube la frecuencia
-	// El segundo la baja
-	// El tercero hace que suene es un enable
-	
-//	i2s_tst_top (
-//	.clk(clk50),
-//	.btn1(),
-// .btn2(),
-//	.btn3(),
-// .btn4(),
-//	.Led(SalidaLeds[3:0]),
-//	.JA(JA)	
-//	);
 
 	PuntuacionTotal(
 	.puntuacionEntrada(puntuacionInicial), 
@@ -269,6 +261,22 @@ module DrumHero(clk,boton1,boton2,boton3,boton4,
 	.Salida(SalidaSiete),
 	.Entrada(dataSieteSegmentos)
 	);
+	
+	assign LRCLK = LClock;
+	assign SenalesRAM = {5'b00000,clk50,2'b10};
+	
+	Sonido ModuloMusica(
+	.clk(clk50), 
+	.MCLK(MCLK), 
+	.LRCLK(LClock), 
+	.SDIN(SDIN), 
+	.reset(reiniciar), 
+	.transmisionIn(DataRAM));
+	
+	RecorreRam(
+	.habilitador(LClock),
+	.DireccionRAM(DireccionRAM),
+	.enable(stop));
 
 
 endmodule

@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PruebaReloj32milis_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/PruebaReloj32milis_isim_beh.wdb 
+Running: C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PruebaRecorreRam_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/PruebaRecorreRam_isim_beh.wdb 
 ISim P.20131013 (signature 0x8ef4fb42)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -11,57 +11,6 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# run all
-Stopped at time : 871035 ns : File "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/PruebaReloj32milis.v" Line 59
-# run 10.00s
-Stopped at time : 8345805 ns : File "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/PruebaReloj32milis.v" Line 59
 ISim P.20131013 (signature 0x8ef4fb42)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -70,71 +19,3 @@ This is a Lite version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# run 1.00s
-Stopped at time : 8247303 ns : File "C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/clock32pps.v" Line 34
-ISim P.20131013 (signature 0x8ef4fb42)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-ISim P.20131013 (signature 0x8ef4fb42)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us
-# run 100.00us

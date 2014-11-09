@@ -18,21 +18,20 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Lrclk(clk,clk3);
+module Lrclk(clk,clk2,clk3);
 	 
    input clk;
-   output reg clk3 = 0;
-	 
-	reg[9:0] contador = 0;
+   output clk3;
+	reg clk3 = 0;
+	output clk2;
+	reg clk2 = 0;
+	reg[8:0] contador = 0;
 	 
 	 
 	always @ (posedge clk) begin
-	if(contador == 512) begin
-		contador = 0;
-		clk3=~clk3;
-	end
-	else contador = contador+1;
+	if(contador%16 == 15) clk2 = ~clk2;
+	if(contador == 511) begin clk3 = ~clk3; contador <= 0; end
+	else contador <= contador+9'b1;
 	end
 	
-
 endmodule

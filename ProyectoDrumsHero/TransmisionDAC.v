@@ -18,27 +18,23 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module TransmisionDAC(input [23:0] dataAConvertir, output DataOut, input clk, output signal, input reset
+module TransmisionDAC(input [15:0] dataAConvertir, output DataOut, input clk, input reset
     );
 	
-	reg cont = 0;
-	reg [4:0] contBit = 23;
+	wire [15:0] data = dataAConvertir;
+	reg [3:0] contBit = 4'b1111;
+	reg [15:0] datos = 16'b0;
 	
-	always @ (posedge clk or posedge reset) begin
-	if(reset) begin
-		contBit <= 23;
-		cont <= 0;
-	end
-	else if(cont == 1) begin
-		cont <= 0;
-		if(contBit == 0) contBit <= 23;
-		else begin
-			contBit <= contBit - 1;
-		end
-	end
-	else cont <= cont+1;
+	always @ (negedge clk) begin
+		if(reset)
+			contBit <= 4'b1111;
+		else
+			if(contBit == 16'b0) begin
+				datos <= data;
+				contBit <= 4'b1111; end
+			else
+				contBit <= contBit - 4'b1;
 	end
 	
-	assign DataOut = dataAConvertir[contBit];
-	assign signal = (contBit == 0 ? 1 : 0);
+	assign DataOut = datos[contBit];
 endmodule

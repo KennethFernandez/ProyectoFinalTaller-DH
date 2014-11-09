@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.46 secs
+Total CPU time to Xst completion: 1.28 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.46 secs
+Total CPU time to Xst completion: 1.29 secs
  
 --> Reading design: DrumHero.prj
 
@@ -105,14 +105,22 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\TransmisionDAC.v" into library work
+Parsing module <TransmisionDAC>.
 Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\RandomTenBits.v" into library work
 Parsing module <RandomFourBits>.
+Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Lrclk.v" into library work
+Parsing module <Lrclk>.
 Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\vga_sync.v" into library work
 Parsing module <vga_sync>.
 Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Tubo.v" into library work
 Parsing module <Tubo>.
+Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Sonido.v" into library work
+Parsing module <Sonido>.
 Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\SelectorM.v" into library work
 Parsing module <SelectorM>.
+Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\RecorreRam.v" into library work
+Parsing module <RecorreRam>.
 Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PuntuacionTotal.v" into library work
 Parsing module <PuntuacionTotal>.
 Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Puntuacion.v" into library work
@@ -139,7 +147,7 @@ Parsing module <DrumHero>.
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" Line 117: Port posicionYS is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" Line 127: Port posicionYS is not connected to this instance
 
 Elaborating module <DrumHero>.
 
@@ -175,6 +183,16 @@ Elaborating module <SelectorM>.
 
 Elaborating module <ControladorSiete>.
 
+Elaborating module <Sonido>.
+
+Elaborating module <Lrclk>.
+
+Elaborating module <TransmisionDAC>.
+WARNING:HDLCompiler:604 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" Line 276: Module instantiation should have an instance name
+
+Elaborating module <RecorreRam>.
+WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\RecorreRam.v" Line 32: Result of 32-bit expression is truncated to fit in 26-bit target.
+
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
@@ -187,9 +205,9 @@ Synthesizing Unit <DrumHero>.
         posicionInici3 = 188
         posicionInici4 = 282
         todosLosCubos = 31
-INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" line 104: Output port <p_tick> of the instance <SincronizadorVga> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" line 117: Output port <posicionYS> of the instance <tubo1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" line 117: Output port <cubosHileraReg> of the instance <tubo1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" line 114: Output port <p_tick> of the instance <SincronizadorVga> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" line 127: Output port <posicionYS> of the instance <tubo1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" line 127: Output port <cubosHileraReg> of the instance <tubo1> is unconnected or connected to loadless signal.
     Summary:
 	inferred   6 Multiplexer(s).
 Unit <DrumHero> synthesized.
@@ -434,6 +452,48 @@ Synthesizing Unit <ControladorSiete>.
 	inferred   1 RAM(s).
 Unit <ControladorSiete> synthesized.
 
+Synthesizing Unit <Sonido>.
+    Related source file is "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Sonido.v".
+    Summary:
+	no macro.
+Unit <Sonido> synthesized.
+
+Synthesizing Unit <Lrclk>.
+    Related source file is "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Lrclk.v".
+    Found 1-bit register for signal <clk3>.
+    Found 9-bit register for signal <contador>.
+    Found 1-bit register for signal <clk2>.
+    Found 9-bit adder for signal <contador[8]_GND_19_o_add_3_OUT> created at line 34.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+Unit <Lrclk> synthesized.
+
+Synthesizing Unit <TransmisionDAC>.
+    Related source file is "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\TransmisionDAC.v".
+    Found 16-bit register for signal <datos>.
+    Found 4-bit register for signal <contBit>.
+    Found 4-bit subtractor for signal <contBit[3]_GND_20_o_sub_4_OUT> created at line 36.
+    Found 1-bit 16-to-1 multiplexer for signal <DataOut> created at line 39.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <TransmisionDAC> synthesized.
+
+Synthesizing Unit <RecorreRam>.
+    Related source file is "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\RecorreRam.v".
+    Found 26-bit register for signal <DireccionRAM>.
+    Found 26-bit register for signal <DireccionTemp>.
+    Found 27-bit adder for signal <n0019[26:0]> created at line 32.
+    Found 26-bit comparator lessequal for signal <n0001> created at line 32
+    Found 26-bit comparator greater for signal <n0007> created at line 33
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  52 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <RecorreRam> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
@@ -445,45 +505,54 @@ Macro Statistics
 # Multipliers                                          : 2
  17x1-bit multiplier                                   : 1
  18x1-bit multiplier                                   : 1
-# Adders/Subtractors                                   : 28
+# Adders/Subtractors                                   : 31
  10-bit adder                                          : 7
  11-bit adder                                          : 10
  13-bit adder                                          : 1
  19-bit adder                                          : 1
  20-bit subtractor                                     : 1
+ 27-bit adder                                          : 1
  32-bit subtractor                                     : 1
  4-bit adder                                           : 5
+ 4-bit subtractor                                      : 1
  5-bit adder                                           : 1
  8-bit adder                                           : 1
-# Registers                                            : 62
- 1-bit register                                        : 34
+ 9-bit adder                                           : 1
+# Registers                                            : 69
+ 1-bit register                                        : 36
  10-bit register                                       : 7
  11-bit register                                       : 1
  13-bit register                                       : 3
+ 16-bit register                                       : 1
  19-bit register                                       : 1
+ 26-bit register                                       : 2
  29-bit register                                       : 1
- 4-bit register                                        : 3
+ 4-bit register                                        : 4
  5-bit register                                        : 6
  7-bit register                                        : 5
  8-bit register                                        : 1
-# Comparators                                          : 87
+ 9-bit register                                        : 1
+# Comparators                                          : 89
  10-bit comparator greater                             : 36
  10-bit comparator lessequal                           : 34
  11-bit comparator greater                             : 4
  13-bit comparator equal                               : 1
  13-bit comparator greater                             : 1
+ 26-bit comparator greater                             : 1
+ 26-bit comparator lessequal                           : 1
  32-bit comparator equal                               : 2
  4-bit comparator greater                              : 4
  5-bit comparator equal                                : 4
  8-bit comparator greater                              : 1
-# Multiplexers                                         : 80
+# Multiplexers                                         : 82
+ 1-bit 16-to-1 multiplexer                             : 1
  1-bit 2-to-1 multiplexer                              : 23
  10-bit 2-to-1 multiplexer                             : 2
  13-bit 2-to-1 multiplexer                             : 1
  19-bit 2-to-1 multiplexer                             : 1
  29-bit 2-to-1 multiplexer                             : 1
  32-bit 2-to-1 multiplexer                             : 5
- 4-bit 2-to-1 multiplexer                              : 14
+ 4-bit 2-to-1 multiplexer                              : 15
  5-bit 2-to-1 multiplexer                              : 2
  8-bit 2-to-1 multiplexer                              : 31
 # FSMs                                                 : 1
@@ -534,6 +603,10 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RandomSalida> will be implemented on
     -----------------------------------------------------------------------
 Unit <ListaValores> synthesized (advanced).
 
+Synthesizing (advanced) Unit <Lrclk>.
+The following registers are absorbed into counter <contador>: 1 register on signal <contador>.
+Unit <Lrclk> synthesized (advanced).
+
 Synthesizing (advanced) Unit <Puntuacion>.
 The following registers are absorbed into counter <teclasPasadas>: 1 register on signal <teclasPasadas>.
 The following registers are absorbed into counter <puntuacion>: 1 register on signal <puntuacion>.
@@ -554,9 +627,17 @@ Synthesizing (advanced) Unit <PuntuacionTotal>.
 The following registers are absorbed into counter <contador>: 1 register on signal <contador>.
 Unit <PuntuacionTotal> synthesized (advanced).
 
+Synthesizing (advanced) Unit <RecorreRam>.
+The following registers are absorbed into accumulator <DireccionTemp>: 1 register on signal <DireccionTemp>.
+Unit <RecorreRam> synthesized (advanced).
+
 Synthesizing (advanced) Unit <SelectorM>.
 The following registers are absorbed into counter <contador>: 1 register on signal <contador>.
 Unit <SelectorM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <TransmisionDAC>.
+The following registers are absorbed into counter <contBit>: 1 register on signal <contBit>.
+Unit <TransmisionDAC> synthesized (advanced).
 
 Synthesizing (advanced) Unit <clock32pps>.
 The following registers are absorbed into counter <sigcontador>: 1 register on signal <sigcontador>.
@@ -587,27 +668,34 @@ Macro Statistics
  20-bit subtractor                                     : 1
  3-bit adder                                           : 1
  4-bit adder                                           : 3
-# Counters                                             : 8
+# Counters                                             : 10
  10-bit up counter                                     : 2
  11-bit up counter                                     : 1
  13-bit up counter                                     : 1
  19-bit up counter                                     : 1
+ 4-bit down counter                                    : 1
  4-bit up counter                                      : 1
  5-bit up counter                                      : 1
  8-bit up counter                                      : 1
-# Registers                                            : 207
- Flip-Flops                                            : 207
-# Comparators                                          : 87
+ 9-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 26-bit up accumulator                                 : 1
+# Registers                                            : 251
+ Flip-Flops                                            : 251
+# Comparators                                          : 89
  10-bit comparator greater                             : 36
  10-bit comparator lessequal                           : 34
  11-bit comparator greater                             : 4
  13-bit comparator equal                               : 1
  13-bit comparator greater                             : 1
+ 26-bit comparator greater                             : 1
+ 26-bit comparator lessequal                           : 1
  32-bit comparator equal                               : 2
  4-bit comparator greater                              : 4
  5-bit comparator equal                                : 4
  8-bit comparator greater                              : 1
-# Multiplexers                                         : 89
+# Multiplexers                                         : 90
+ 1-bit 16-to-1 multiplexer                             : 1
  1-bit 2-to-1 multiplexer                              : 36
  19-bit 2-to-1 multiplexer                             : 1
  29-bit 2-to-1 multiplexer                             : 1
@@ -637,14 +725,20 @@ Optimizing FSM <segundaEtapa/FSM_0> on signal <state[1:3]> with gray encoding.
  0100  | 111
  0011  | 101
 -------------------
+WARNING:Xst:1293 - FF/Latch <DireccionTemp_0> has a constant value of 0 in block <RecorreRam>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DireccionRAM_0> has a constant value of 0 in block <RecorreRam>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <DrumHero> ...
+
+Optimizing unit <TransmisionDAC> ...
 
 Optimizing unit <clock32pps> ...
 
 Optimizing unit <Tubo> ...
 
 Optimizing unit <Puntuacion> ...
+
+Optimizing unit <RecorreRam> ...
 
 Optimizing unit <Maquina_pintar> ...
 
@@ -663,11 +757,12 @@ WARNING:Xst:1293 - FF/Latch <tubo1/posicionYS_6> has a constant value of 0 in bl
 WARNING:Xst:1293 - FF/Latch <tubo1/posicionYS_5> has a constant value of 0 in block <DrumHero>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <tubo1/posicionYS_2> has a constant value of 0 in block <DrumHero>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <tubo1/posicionYS_0> has a constant value of 0 in block <DrumHero>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <ModuloMusica/lrclk/clk2> in Unit <DrumHero> is equivalent to the following FF/Latch, which will be removed : <ModuloMusica/lrclk/contador_4> 
 INFO:Xst:2261 - The FF/Latch <tubo1/posicionYS_8> in Unit <DrumHero> is equivalent to the following 4 FFs/Latches, which will be removed : <tubo1/posicionYS_7> <tubo1/posicionYS_4> <tubo1/posicionYS_3> <tubo1/posicionYS_1> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block DrumHero, actual ratio is 9.
+Found area constraint ratio of 100 (+ 5) on block DrumHero, actual ratio is 10.
 FlipFlop primeraEtapa/state has been replicated 1 time(s)
 
 Final Macro Processing ...
@@ -676,8 +771,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 277
- Flip-Flops                                            : 277
+# Registers                                            : 357
+ Flip-Flops                                            : 357
 
 =========================================================================
 
@@ -700,32 +795,36 @@ Top Level Output File Name         : DrumHero.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1113
+# BELS                             : 1266
 #      GND                         : 1
-#      INV                         : 8
-#      LUT1                        : 68
-#      LUT2                        : 57
-#      LUT3                        : 87
-#      LUT4                        : 163
-#      LUT5                        : 73
-#      LUT6                        : 305
-#      MUXCY                       : 208
-#      MUXF7                       : 2
+#      INV                         : 18
+#      LUT1                        : 102
+#      LUT2                        : 59
+#      LUT3                        : 89
+#      LUT4                        : 167
+#      LUT5                        : 89
+#      LUT6                        : 310
+#      MUXCY                       : 252
+#      MUXF7                       : 4
+#      MUXF8                       : 1
 #      VCC                         : 1
-#      XORCY                       : 140
-# FlipFlops/Latches                : 277
+#      XORCY                       : 173
+# FlipFlops/Latches                : 357
 #      FD                          : 128
 #      FDC                         : 3
 #      FDCE                        : 20
-#      FDE                         : 13
-#      FDR                         : 77
+#      FDE                         : 15
+#      FDE_1                       : 16
+#      FDR                         : 110
+#      FDR_1                       : 25
 #      FDRE                        : 36
-# Clock Buffers                    : 2
-#      BUFG                        : 1
+#      FDS                         : 4
+# Clock Buffers                    : 4
+#      BUFG                        : 3
 #      BUFGP                       : 1
-# IO Buffers                       : 34
-#      IBUF                        : 8
-#      OBUF                        : 26
+# IO Buffers                       : 87
+#      IBUF                        : 24
+#      OBUF                        : 63
 
 Device utilization summary:
 ---------------------------
@@ -734,23 +833,23 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             277  out of  18224     1%  
- Number of Slice LUTs:                  761  out of   9112     8%  
-    Number used as Logic:               761  out of   9112     8%  
+ Number of Slice Registers:             357  out of  18224     1%  
+ Number of Slice LUTs:                  834  out of   9112     9%  
+    Number used as Logic:               834  out of   9112     9%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    797
-   Number with an unused Flip Flop:     520  out of    797    65%  
-   Number with an unused LUT:            36  out of    797     4%  
-   Number of fully used LUT-FF pairs:   241  out of    797    30%  
-   Number of unique control sets:        26
+ Number of LUT Flip Flop pairs used:    893
+   Number with an unused Flip Flop:     536  out of    893    60%  
+   Number with an unused LUT:            59  out of    893     6%  
+   Number of fully used LUT-FF pairs:   298  out of    893    33%  
+   Number of unique control sets:        33
 
 IO Utilization: 
- Number of IOs:                          35
- Number of bonded IOBs:                  35  out of    232    15%  
+ Number of IOs:                          88
+ Number of bonded IOBs:                  88  out of    232    37%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+ Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
 
 ---------------------------
 Partition Resource Summary:
@@ -773,8 +872,10 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
+clock50/contador                   | BUFG                   | 286   |
 clk                                | BUFGP                  | 1     |
-clock50/contador                   | BUFG                   | 276   |
+ModuloMusica/lrclk/clk2            | BUFG                   | 20    |
+ModuloMusica/lrclk/clk3            | BUFG                   | 50    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -795,31 +896,9 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 1.913ns (frequency: 522.821MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               1.913ns (Levels of Logic = 1)
-  Source:            clock50/contador (FF)
-  Destination:       clock50/contador (FF)
-  Source Clock:      clk rising
-  Destination Clock: clk rising
-
-  Data Path: clock50/contador to clock50/contador
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               1   0.447   0.579  clock50/contador (clock50/contador)
-     INV:I->O              1   0.206   0.579  clock50/contador_INV_1_o1_INV_0 (clock50/contador_INV_1_o)
-     FD:D                      0.102          clock50/contador
-    ----------------------------------------
-    Total                      1.913ns (0.755ns logic, 1.158ns route)
-                                       (39.5% logic, 60.5% route)
-
-=========================================================================
 Timing constraint: Default period analysis for Clock 'clock50/contador'
   Clock period: 6.911ns (frequency: 144.695MHz)
-  Total number of paths / destination ports: 48341 / 461
+  Total number of paths / destination ports: 48468 / 481
 -------------------------------------------------------------------------
 Delay:               6.911ns (Levels of Logic = 9)
   Source:            _i000013/contador_5 (FF)
@@ -847,6 +926,97 @@ Delay:               6.911ns (Levels of Logic = 9)
                                        (26.6% logic, 73.4% route)
 
 =========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.984ns (frequency: 504.007MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.984ns (Levels of Logic = 1)
+  Source:            clock50/contador (FF)
+  Destination:       clock50/contador (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: clock50/contador to clock50/contador
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.650  clock50/contador (clock50/contador)
+     INV:I->O              1   0.206   0.579  clock50/contador_INV_1_o1_INV_0 (clock50/contador_INV_1_o)
+     FD:D                      0.102          clock50/contador
+    ----------------------------------------
+    Total                      1.984ns (0.755ns logic, 1.229ns route)
+                                       (38.1% logic, 61.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ModuloMusica/lrclk/clk2'
+  Clock period: 3.036ns (frequency: 329.424MHz)
+  Total number of paths / destination ports: 74 / 20
+-------------------------------------------------------------------------
+Delay:               3.036ns (Levels of Logic = 1)
+  Source:            ModuloMusica/transmi/contBit_0 (FF)
+  Destination:       ModuloMusica/transmi/datos_15 (FF)
+  Source Clock:      ModuloMusica/lrclk/clk2 falling
+  Destination Clock: ModuloMusica/lrclk/clk2 falling
+
+  Data Path: ModuloMusica/transmi/contBit_0 to ModuloMusica/transmi/datos_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              9   0.447   1.058  ModuloMusica/transmi/contBit_0 (ModuloMusica/transmi/contBit_0)
+     LUT5:I2->O           16   0.205   1.004  ModuloMusica/transmi/_n0027_inv11 (ModuloMusica/transmi/_n0027_inv)
+     FDE_1:CE                  0.322          ModuloMusica/transmi/datos_0
+    ----------------------------------------
+    Total                      3.036ns (0.974ns logic, 2.062ns route)
+                                       (32.1% logic, 67.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ModuloMusica/lrclk/clk3'
+  Clock period: 4.689ns (frequency: 213.251MHz)
+  Total number of paths / destination ports: 2550 / 100
+-------------------------------------------------------------------------
+Delay:               4.689ns (Levels of Logic = 7)
+  Source:            _i000015/DireccionTemp_6 (FF)
+  Destination:       _i000015/DireccionTemp_25 (FF)
+  Source Clock:      ModuloMusica/lrclk/clk3 falling
+  Destination Clock: ModuloMusica/lrclk/clk3 falling
+
+  Data Path: _i000015/DireccionTemp_6 to _i000015/DireccionTemp_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.447   1.089  _i000015/DireccionTemp_6 (_i000015/DireccionTemp_6)
+     LUT5:I0->O            1   0.203   0.000  _i000015/Mcompar_DireccionTemp[25]_PWR_22_o_LessThan_2_o_lut<1> (_i000015/Mcompar_DireccionTemp[25]_PWR_22_o_LessThan_2_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  _i000015/Mcompar_DireccionTemp[25]_PWR_22_o_LessThan_2_o_cy<1> (_i000015/Mcompar_DireccionTemp[25]_PWR_22_o_LessThan_2_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Mcompar_DireccionTemp[25]_PWR_22_o_LessThan_2_o_cy<2> (_i000015/Mcompar_DireccionTemp[25]_PWR_22_o_LessThan_2_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Mcompar_DireccionTemp[25]_PWR_22_o_LessThan_2_o_cy<3> (_i000015/Mcompar_DireccionTemp[25]_PWR_22_o_LessThan_2_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Mcompar_DireccionTemp[25]_PWR_22_o_LessThan_2_o_cy<4> (_i000015/Mcompar_DireccionTemp[25]_PWR_22_o_LessThan_2_o_cy<4>)
+     MUXCY:CI->O           1   0.213   0.684  _i000015/Mcompar_DireccionTemp[25]_PWR_22_o_LessThan_2_o_cy<5> (_i000015/DireccionTemp[25]_PWR_22_o_LessThan_2_o)
+     LUT2:I0->O           25   0.203   1.192  _i000015/DireccionTemp[25]_enable_AND_672_o_inv1 (_i000015/DireccionTemp[25]_enable_AND_672_o_inv)
+     FDR:R                     0.430          _i000015/DireccionTemp_1
+    ----------------------------------------
+    Total                      4.689ns (1.725ns logic, 2.964ns route)
+                                       (36.8% logic, 63.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ModuloMusica/lrclk/clk2'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              1.903ns (Levels of Logic = 1)
+  Source:            DataRAM<15> (PAD)
+  Destination:       ModuloMusica/transmi/datos_15 (FF)
+  Destination Clock: ModuloMusica/lrclk/clk2 falling
+
+  Data Path: DataRAM<15> to ModuloMusica/transmi/datos_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  DataRAM_15_IBUF (DataRAM_15_IBUF)
+     FDE_1:D                   0.102          ModuloMusica/transmi/datos_15
+    ----------------------------------------
+    Total                      1.903ns (1.324ns logic, 0.579ns route)
+                                       (69.6% logic, 30.4% route)
+
+=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock50/contador'
   Total number of paths / destination ports: 8185 / 132
 -------------------------------------------------------------------------
@@ -872,7 +1042,7 @@ Offset:              7.169ns (Levels of Logic = 6)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock50/contador'
-  Total number of paths / destination ports: 1204 / 26
+  Total number of paths / destination ports: 1205 / 27
 -------------------------------------------------------------------------
 Offset:              9.980ns (Levels of Logic = 6)
   Source:            SincronizadorVga/h_count_reg_9 (FF)
@@ -895,16 +1065,94 @@ Offset:              9.980ns (Levels of Logic = 6)
                                        (40.4% logic, 59.6% route)
 
 =========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ModuloMusica/lrclk/clk3'
+  Total number of paths / destination ports: 25 / 25
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            _i000015/DireccionRAM_25 (FF)
+  Destination:       DireccionRAM<25> (PAD)
+  Source Clock:      ModuloMusica/lrclk/clk3 falling
+
+  Data Path: _i000015/DireccionRAM_25 to DireccionRAM<25>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR_1:C->Q            1   0.447   0.579  _i000015/DireccionRAM_25 (_i000015/DireccionRAM_25)
+     OBUF:I->O                 2.571          DireccionRAM_25_OBUF (DireccionRAM<25>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.668ns (Levels of Logic = 1)
+  Source:            clock50/contador (FF)
+  Destination:       SenalesRAM<2> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: clock50/contador to SenalesRAM<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.650  clock50/contador (clock50/contador)
+     OBUF:I->O                 2.571          SenalesRAM_2_OBUF (SenalesRAM<2>)
+    ----------------------------------------
+    Total                      3.668ns (3.018ns logic, 0.650ns route)
+                                       (82.3% logic, 17.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ModuloMusica/lrclk/clk2'
+  Total number of paths / destination ports: 27 / 1
+-------------------------------------------------------------------------
+Offset:              5.266ns (Levels of Logic = 4)
+  Source:            ModuloMusica/transmi/contBit_0 (FF)
+  Destination:       SDIN (PAD)
+  Source Clock:      ModuloMusica/lrclk/clk2 falling
+
+  Data Path: ModuloMusica/transmi/contBit_0 to SDIN
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              9   0.447   1.174  ModuloMusica/transmi/contBit_0 (ModuloMusica/transmi/contBit_0)
+     LUT6:I1->O            1   0.203   0.000  ModuloMusica/transmi/Mmux_DataOut_4 (ModuloMusica/transmi/Mmux_DataOut_4)
+     MUXF7:I1->O           1   0.140   0.000  ModuloMusica/transmi/Mmux_DataOut_3_f7 (ModuloMusica/transmi/Mmux_DataOut_3_f7)
+     MUXF8:I1->O           1   0.152   0.579  ModuloMusica/transmi/Mmux_DataOut_2_f8 (SDIN_OBUF)
+     OBUF:I->O                 2.571          SDIN_OBUF (SDIN)
+    ----------------------------------------
+    Total                      5.266ns (3.513ns logic, 1.753ns route)
+                                       (66.7% logic, 33.3% route)
+
+=========================================================================
 
 Cross Clock Domains Report:
 --------------------------
+
+Clock to Setup on destination clock ModuloMusica/lrclk/clk2
+-----------------------+---------+---------+---------+---------+
+                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------+---------+---------+---------+---------+
+ModuloMusica/lrclk/clk2|         |         |    3.036|         |
+clock50/contador       |         |         |    5.742|         |
+-----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ModuloMusica/lrclk/clk3
+-----------------------+---------+---------+---------+---------+
+                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------+---------+---------+---------+---------+
+ModuloMusica/lrclk/clk3|         |         |    4.689|         |
+clock50/contador       |         |         |    3.947|         |
+-----------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    1.913|         |         |         |
+clk            |    1.984|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clock50/contador
@@ -918,14 +1166,14 @@ clock50/contador|    6.911|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 54.00 secs
-Total CPU time to Xst completion: 54.08 secs
+Total REAL time to Xst completion: 52.00 secs
+Total CPU time to Xst completion: 52.74 secs
  
 --> 
 
-Total memory usage is 245420 kilobytes
+Total memory usage is 246444 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   20 (   0 filtered)
-Number of infos    :    7 (   0 filtered)
+Number of warnings :   24 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
 

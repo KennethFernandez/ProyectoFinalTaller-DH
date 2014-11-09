@@ -1,3 +1,5 @@
+
+# Las conexiones para Nexys 3 para el VGA
 NET "rgb[0]" LOC = T7;
 NET "rgb[1]" LOC = R7;
 NET "rgb[2]" LOC = V6;
@@ -7,6 +9,7 @@ NET "rgb[5]" LOC = N7;
 NET "rgb[6]" LOC = V7;
 NET "rgb[7]" LOC = U7;
 
+# Linea de botones del FPGA
 NET "boton1" LOC = M8;
 NET "boton2" LOC = N8;
 NET "boton3" LOC = U8;
@@ -15,8 +18,6 @@ NET "boton5" LOC = T5;
 
 NET "start" LOC = C9;
 
-
-NET "hsync" LOC = N6;
 NET "hsync" LOC = N6;
 NET "vsync" LOC = P7;
 
@@ -43,9 +44,76 @@ NET "SalidaLeds[2]" LOC = N11;
 NET "SalidaLeds[3]" LOC = M11;
 NET "SalidaLeds[4]" LOC = V15;
 
-#Net "JA[0]" LOC = T12; 
-#Net "JA[1]" LOC = V12; 
-#Net "JA[2]" LOC = N10; 
-#Net "JA[3]" LOC = P11; # IOSTANDARD = LVCMOS33; 
+#NET "JA[0]" LOC = T12; 
+#NET "JA[1]" LOC = V12; 
+#NET "JA[2]" LOC = N10; 
+#NET "JA[3]" LOC = P11; # IOSTANDARD = LVCMOS33; 
 
+NET "DireccionRAM[25]" LOC = F15;
+NET "DireccionRAM[24]" LOC = F16;
+NET "DireccionRAM[23]" LOC = C17;
+NET "DireccionRAM[22]" LOC = C18;
+NET "DireccionRAM[21]" LOC = F14;
+NET "DireccionRAM[20]" LOC = G14;
+NET "DireccionRAM[19]" LOC = D17;
+NET "DireccionRAM[18]" LOC = D18;
+NET "DireccionRAM[17]" LOC = H12;
+NET "DireccionRAM[16]" LOC = G13;
+NET "DireccionRAM[15]" LOC = E16;
+NET "DireccionRAM[14]" LOC = E18;
+NET "DireccionRAM[13]" LOC = K12;
+NET "DireccionRAM[12]" LOC = K13;
+NET "DireccionRAM[11]" LOC = F17;
+NET "DireccionRAM[10]" LOC = F18;
+NET "DireccionRAM[9]"  LOC = H13;
+NET "DireccionRAM[8]"  LOC = H14;
+NET "DireccionRAM[7]"  LOC = H15;
+NET "DireccionRAM[6]"  LOC = H16;
+NET "DireccionRAM[5]"  LOC = G16;
+NET "DireccionRAM[4]"  LOC = G18;
+NET "DireccionRAM[3]"  LOC = J16;
+NET "DireccionRAM[2]"  LOC = J18;
+NET "DireccionRAM[1]"  LOC = K17;
+NET "DireccionRAM[0]"  LOC = K18;
+
+NET "DataRAM[15]"  LOC = T8;
+NET "DataRAM[14]"  LOC = R8;
+NET "DataRAM[13]"  LOC = U10;
+NET "DataRAM[12]"  LOC = V13;
+NET "DataRAM[11]"  LOC = U13;
+NET "DataRAM[10]"  LOC = P12;
+NET "DataRAM[9]"   LOC = P6;
+NET "DataRAM[8]"   LOC = N5;
+NET "DataRAM[7]"   LOC = R5;
+NET "DataRAM[6]"   LOC = T3;
+NET "DataRAM[5]"   LOC = R3;
+NET "DataRAM[4]"   LOC = V5;
+NET "DataRAM[3]"   LOC = U5;
+NET "DataRAM[2]"   LOC = V14;
+NET "DataRAM[1]"   LOC = T14;
+NET "DataRAM[0]"   LOC = R13;
+
+#OE: L18
+#WE: M16
+#CLK: R10
+#ADV: H18
+#MT-CE: L15
+#MT-UB: K15
+#MT-LB: K16
+#MT-CRE: M18
+
+NET "SenalesRAM[0]"  LOC = L18;
+NET "SenalesRAM[1]"  LOC = M16;
+NET "SenalesRAM[2]"  LOC = R10;
+NET "SenalesRAM[3]"  LOC = H18;
+NET "SenalesRAM[4]"  LOC = L15;
+NET "SenalesRAM[5]"  LOC = K15;
+NET "SenalesRAM[6]"  LOC = K16;
+NET "SenalesRAM[7]"  LOC = M18;
+
+#NET "Wait"        LOC = V4;
+
+NET "MCLK" LOC = T12;
+NET "LRCLK" LOC = V12;
+NET "SDIN" LOC = P11;
 

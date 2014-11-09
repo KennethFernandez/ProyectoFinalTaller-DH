@@ -33,7 +33,6 @@ module SonidoTest;
 	wire SDIN;
 	wire gnd;
 	wire vcc;
-	reg [23:0] transmisionIn;
 	reg reset;
 
 	// Instantiate the Unit Under Test (UUT)
@@ -41,28 +40,20 @@ module SonidoTest;
 		.clk(clk), 
 		.MCLK(MCLK), 
 		.LRCLK(LRCLK), 
-		.SDIN(SDIN), 
-		.gnd(gnd), 
-		.vcc(vcc),
-		.transmisionIn(transmisionIn),
+		.SDIN(SDIN),
 		.reset(reset)
 	);
 
 	initial begin
 		// Initialize Inputs
 		clk = 1;
-		transmisionIn=0;
 		reset = 1;
-		#60 reset = 0;
+		#20 reset = 0;
 		// Wait 100 ns for global reset to finish
-		#3800 transmisionIn = 101;
-		#3860 transmisionIn = 24'b100000000000000000000000;
-		#3860 transmisionIn = 301;
         
 		// Add stimulus here
 
 	end
-      
-		always begin #10 clk = ~clk; end
+		always begin #5 clk = ~clk; end
 endmodule
 

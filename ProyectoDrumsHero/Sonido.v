@@ -18,38 +18,33 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Sonido(input clk, output MCLK, output LRCLK, output SDIN, output gnd, output vcc, input [23:0] transmisionIn, input reset
-   );
+module Sonido(clk, MCLK, LRCLK, SDIN, reset, transmisionIn);
 	
 	//el sclk va a ser de ~1.5625 MHz trabajando en el modo SCLK interno.
+	input [15:0] transmisionIn;
+	input clk;
+	input reset;
 	
-	
+	output MCLK; 
+	output LRCLK; 
+	output SDIN; 
 	//dato leído a transmitir al DAC.
 	
-	wire signal;
 	wire sclk;
 	//frecuencia de transmisión = LRCLK = ~48.8 KHz.
 	Lrclk lrclk(
 		.clk(clk),
+		.clk2(sclk),
 		.clk3(LRCLK)
-	);
-	
-	Sclk sclok(
-		.clk(clk),
-		.clk3(sclk)
 	);
 	
 	TransmisionDAC transmi(
 		.dataAConvertir(transmisionIn),
 		.DataOut(SDIN),
 		.clk(sclk),
-		.signal(signal),
 		.reset(reset)
 	);
 	
-	
-	
 	assign MCLK = clk;
-	assign vcc = 1;
-	assign gnd = 0;
+	
 endmodule
