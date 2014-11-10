@@ -276,7 +276,10 @@ module DrumHero(clk,boton1,boton2,boton3,boton4,
 	RecorreRam(
 	.habilitador(LClock),
 	.DireccionRAM(DireccionRAM),
-	.enable(stop));
+	.enable(1'b0),
+	.nivel2(nivel2),
+	.nivel3(nivel3),
+	.boton(1'b1));
 
 
 endmodule

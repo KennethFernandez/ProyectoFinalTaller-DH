@@ -41,6 +41,6 @@ module clock32pps(clk,clk32,stop,nivel2,nivel3,clk32SinStop);
 	 end
 	 
 	 assign clk32 = (!stop)?(contador == (500000- 250000*nivel2 - 125000*nivel3)):1'b0;
-	 assign clk32SinStop = (contador == (500000- 250000*nivel2 - 125000*nivel3));
+	 assign clk32SinStop =  (contador == (500000- 250000*nivel2 - 125000*nivel3));
 
 endmodule

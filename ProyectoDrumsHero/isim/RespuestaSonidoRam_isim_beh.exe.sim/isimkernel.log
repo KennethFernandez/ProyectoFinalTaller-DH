@@ -1,0 +1,29 @@
+Command line:
+   RespuestaSonidoRam_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  4529
+
+Sun Nov 09 22:13:23 2014
+
+
+ Elaboration Time: 0.327602 sec
+
+ Current Memory Usage: 667.398 Meg
+
+ Total Signals          : 20
+ Total Nets             : 44
+ Total Signal Drivers   : 11
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 16
+ Total Traceable Variables  : 25
+ Total Scalar Nets and Variables : 181
+Total Line Count : 27
+
+ Total Simulation Time: 0.530403 sec
+
+ Current Memory Usage: 824.947 Meg
+
+Mon Nov 10 01:10:55 2014
+

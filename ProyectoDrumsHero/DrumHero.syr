@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 1.28 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.43 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 1.29 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.46 secs
  
 --> Reading design: DrumHero.prj
 
@@ -191,7 +191,8 @@ Elaborating module <TransmisionDAC>.
 WARNING:HDLCompiler:604 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" Line 276: Module instantiation should have an instance name
 
 Elaborating module <RecorreRam>.
-WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\RecorreRam.v" Line 32: Result of 32-bit expression is truncated to fit in 26-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\RecorreRam.v" Line 37: Result of 32-bit expression is truncated to fit in 26-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\RecorreRam.v" Line 48: Result of 32-bit expression is truncated to fit in 26-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -483,15 +484,22 @@ Unit <TransmisionDAC> synthesized.
 
 Synthesizing Unit <RecorreRam>.
     Related source file is "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\RecorreRam.v".
-    Found 26-bit register for signal <DireccionRAM>.
-    Found 26-bit register for signal <DireccionTemp>.
-    Found 27-bit adder for signal <n0019[26:0]> created at line 32.
-    Found 26-bit comparator lessequal for signal <n0001> created at line 32
-    Found 26-bit comparator greater for signal <n0007> created at line 33
+WARNING:Xst:647 - Input <boton> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 26-bit register for signal <DireccionRAMTemp2>.
+    Found 26-bit register for signal <DireccionRAMTemp1>.
+    Found 27-bit adder for signal <n0041[26:0]> created at line 38.
+    Found 28-bit adder for signal <n0044[27:0]> created at line 38.
+    Found 29-bit adder for signal <n0047[28:0]> created at line 38.
+    Found 27-bit adder for signal <n0049[26:0]> created at line 49.
+    Found 28-bit adder for signal <n0052[27:0]> created at line 49.
+    Found 29-bit adder for signal <n0055[28:0]> created at line 49.
+    Found 26-bit comparator greater for signal <n0001> created at line 37
+    Found 26-bit comparator greater for signal <n0009> created at line 48
     Summary:
-	inferred   1 Adder/Subtractor(s).
+	inferred   6 Adder/Subtractor(s).
 	inferred  52 D-type flip-flop(s).
 	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
 Unit <RecorreRam> synthesized.
 
 =========================================================================
@@ -505,13 +513,15 @@ Macro Statistics
 # Multipliers                                          : 2
  17x1-bit multiplier                                   : 1
  18x1-bit multiplier                                   : 1
-# Adders/Subtractors                                   : 31
+# Adders/Subtractors                                   : 36
  10-bit adder                                          : 7
  11-bit adder                                          : 10
  13-bit adder                                          : 1
  19-bit adder                                          : 1
  20-bit subtractor                                     : 1
- 27-bit adder                                          : 1
+ 27-bit adder                                          : 2
+ 28-bit adder                                          : 2
+ 29-bit adder                                          : 2
  32-bit subtractor                                     : 1
  4-bit adder                                           : 5
  4-bit subtractor                                      : 1
@@ -538,18 +548,18 @@ Macro Statistics
  11-bit comparator greater                             : 4
  13-bit comparator equal                               : 1
  13-bit comparator greater                             : 1
- 26-bit comparator greater                             : 1
- 26-bit comparator lessequal                           : 1
+ 26-bit comparator greater                             : 2
  32-bit comparator equal                               : 2
  4-bit comparator greater                              : 4
  5-bit comparator equal                                : 4
  8-bit comparator greater                              : 1
-# Multiplexers                                         : 82
+# Multiplexers                                         : 83
  1-bit 16-to-1 multiplexer                             : 1
  1-bit 2-to-1 multiplexer                              : 23
  10-bit 2-to-1 multiplexer                             : 2
  13-bit 2-to-1 multiplexer                             : 1
  19-bit 2-to-1 multiplexer                             : 1
+ 26-bit 2-to-1 multiplexer                             : 1
  29-bit 2-to-1 multiplexer                             : 1
  32-bit 2-to-1 multiplexer                             : 5
  4-bit 2-to-1 multiplexer                              : 15
@@ -627,10 +637,6 @@ Synthesizing (advanced) Unit <PuntuacionTotal>.
 The following registers are absorbed into counter <contador>: 1 register on signal <contador>.
 Unit <PuntuacionTotal> synthesized (advanced).
 
-Synthesizing (advanced) Unit <RecorreRam>.
-The following registers are absorbed into accumulator <DireccionTemp>: 1 register on signal <DireccionTemp>.
-Unit <RecorreRam> synthesized (advanced).
-
 Synthesizing (advanced) Unit <SelectorM>.
 The following registers are absorbed into counter <contador>: 1 register on signal <contador>.
 Unit <SelectorM> synthesized (advanced).
@@ -661,11 +667,13 @@ Macro Statistics
  17x1-to-32-bit MAC                                    : 1
 # Multipliers                                          : 1
  18x1-bit multiplier                                   : 1
-# Adders/Subtractors                                   : 20
+# Adders/Subtractors                                   : 24
  10-bit adder                                          : 5
  11-bit adder                                          : 9
  19-bit adder                                          : 1
  20-bit subtractor                                     : 1
+ 26-bit adder                                          : 2
+ 26-bit adder carry in                                 : 2
  3-bit adder                                           : 1
  4-bit adder                                           : 3
 # Counters                                             : 10
@@ -678,26 +686,24 @@ Macro Statistics
  5-bit up counter                                      : 1
  8-bit up counter                                      : 1
  9-bit up counter                                      : 1
-# Accumulators                                         : 1
- 26-bit up accumulator                                 : 1
-# Registers                                            : 251
- Flip-Flops                                            : 251
+# Registers                                            : 277
+ Flip-Flops                                            : 277
 # Comparators                                          : 89
  10-bit comparator greater                             : 36
  10-bit comparator lessequal                           : 34
  11-bit comparator greater                             : 4
  13-bit comparator equal                               : 1
  13-bit comparator greater                             : 1
- 26-bit comparator greater                             : 1
- 26-bit comparator lessequal                           : 1
+ 26-bit comparator greater                             : 2
  32-bit comparator equal                               : 2
  4-bit comparator greater                              : 4
  5-bit comparator equal                                : 4
  8-bit comparator greater                              : 1
-# Multiplexers                                         : 90
+# Multiplexers                                         : 91
  1-bit 16-to-1 multiplexer                             : 1
  1-bit 2-to-1 multiplexer                              : 36
  19-bit 2-to-1 multiplexer                             : 1
+ 26-bit 2-to-1 multiplexer                             : 1
  29-bit 2-to-1 multiplexer                             : 1
  32-bit 2-to-1 multiplexer                             : 5
  4-bit 2-to-1 multiplexer                              : 14
@@ -725,8 +731,6 @@ Optimizing FSM <segundaEtapa/FSM_0> on signal <state[1:3]> with gray encoding.
  0100  | 111
  0011  | 101
 -------------------
-WARNING:Xst:1293 - FF/Latch <DireccionTemp_0> has a constant value of 0 in block <RecorreRam>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DireccionRAM_0> has a constant value of 0 in block <RecorreRam>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <DrumHero> ...
 
@@ -734,11 +738,11 @@ Optimizing unit <TransmisionDAC> ...
 
 Optimizing unit <clock32pps> ...
 
+Optimizing unit <RecorreRam> ...
+
 Optimizing unit <Tubo> ...
 
 Optimizing unit <Puntuacion> ...
-
-Optimizing unit <RecorreRam> ...
 
 Optimizing unit <Maquina_pintar> ...
 
@@ -762,7 +766,7 @@ INFO:Xst:2261 - The FF/Latch <tubo1/posicionYS_8> in Unit <DrumHero> is equivale
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block DrumHero, actual ratio is 10.
+Found area constraint ratio of 100 (+ 5) on block DrumHero, actual ratio is 11.
 FlipFlop primeraEtapa/state has been replicated 1 time(s)
 
 Final Macro Processing ...
@@ -771,8 +775,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 357
- Flip-Flops                                            : 357
+# Registers                                            : 359
+ Flip-Flops                                            : 359
 
 =========================================================================
 
@@ -795,30 +799,30 @@ Top Level Output File Name         : DrumHero.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1266
+# BELS                             : 1370
 #      GND                         : 1
-#      INV                         : 18
-#      LUT1                        : 102
-#      LUT2                        : 59
-#      LUT3                        : 89
-#      LUT4                        : 167
-#      LUT5                        : 89
+#      INV                         : 17
+#      LUT1                        : 125
+#      LUT2                        : 63
+#      LUT3                        : 118
+#      LUT4                        : 166
+#      LUT5                        : 86
 #      LUT6                        : 310
-#      MUXCY                       : 252
+#      MUXCY                       : 278
 #      MUXF7                       : 4
 #      MUXF8                       : 1
 #      VCC                         : 1
-#      XORCY                       : 173
-# FlipFlops/Latches                : 357
+#      XORCY                       : 200
+# FlipFlops/Latches                : 359
 #      FD                          : 128
 #      FDC                         : 3
 #      FDCE                        : 20
 #      FDE                         : 15
 #      FDE_1                       : 16
 #      FDR                         : 110
-#      FDR_1                       : 25
+#      FDR_1                       : 26
 #      FDRE                        : 36
-#      FDS                         : 4
+#      FDS                         : 5
 # Clock Buffers                    : 4
 #      BUFG                        : 3
 #      BUFGP                       : 1
@@ -833,15 +837,15 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             357  out of  18224     1%  
- Number of Slice LUTs:                  834  out of   9112     9%  
-    Number used as Logic:               834  out of   9112     9%  
+ Number of Slice Registers:             359  out of  18224     1%  
+ Number of Slice LUTs:                  885  out of   9112     9%  
+    Number used as Logic:               885  out of   9112     9%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    893
-   Number with an unused Flip Flop:     536  out of    893    60%  
-   Number with an unused LUT:            59  out of    893     6%  
-   Number of fully used LUT-FF pairs:   298  out of    893    33%  
+ Number of LUT Flip Flop pairs used:    930
+   Number with an unused Flip Flop:     571  out of    930    61%  
+   Number with an unused LUT:            45  out of    930     4%  
+   Number of fully used LUT-FF pairs:   314  out of    930    33%  
    Number of unique control sets:        33
 
 IO Utilization: 
@@ -875,7 +879,7 @@ Clock Signal                       | Clock buffer(FF name)  | Load  |
 clock50/contador                   | BUFG                   | 286   |
 clk                                | BUFGP                  | 1     |
 ModuloMusica/lrclk/clk2            | BUFG                   | 20    |
-ModuloMusica/lrclk/clk3            | BUFG                   | 50    |
+ModuloMusica/lrclk/clk3            | BUFG                   | 52    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -887,7 +891,7 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 6.911ns (Maximum Frequency: 144.695MHz)
-   Minimum input arrival time before clock: 7.169ns
+   Minimum input arrival time before clock: 7.202ns
    Maximum output required time after clock: 9.980ns
    Maximum combinational path delay: No path found
 
@@ -971,31 +975,32 @@ Delay:               3.036ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'ModuloMusica/lrclk/clk3'
-  Clock period: 4.689ns (frequency: 213.251MHz)
-  Total number of paths / destination ports: 2550 / 100
+  Clock period: 4.591ns (frequency: 217.829MHz)
+  Total number of paths / destination ports: 2740 / 104
 -------------------------------------------------------------------------
-Delay:               4.689ns (Levels of Logic = 7)
-  Source:            _i000015/DireccionTemp_6 (FF)
-  Destination:       _i000015/DireccionTemp_25 (FF)
-  Source Clock:      ModuloMusica/lrclk/clk3 falling
-  Destination Clock: ModuloMusica/lrclk/clk3 falling
+Delay:               4.591ns (Levels of Logic = 8)
+  Source:            _i000015/DireccionRAMTemp2_0 (FF)
+  Destination:       _i000015/DireccionRAMTemp2_25 (FF)
+  Source Clock:      ModuloMusica/lrclk/clk3 rising
+  Destination Clock: ModuloMusica/lrclk/clk3 rising
 
-  Data Path: _i000015/DireccionTemp_6 to _i000015/DireccionTemp_25
+  Data Path: _i000015/DireccionRAMTemp2_0 to _i000015/DireccionRAMTemp2_25
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              6   0.447   1.089  _i000015/DireccionTemp_6 (_i000015/DireccionTemp_6)
-     LUT5:I0->O            1   0.203   0.000  _i000015/Mcompar_DireccionTemp[25]_PWR_22_o_LessThan_2_o_lut<1> (_i000015/Mcompar_DireccionTemp[25]_PWR_22_o_LessThan_2_o_lut<1>)
-     MUXCY:S->O            1   0.172   0.000  _i000015/Mcompar_DireccionTemp[25]_PWR_22_o_LessThan_2_o_cy<1> (_i000015/Mcompar_DireccionTemp[25]_PWR_22_o_LessThan_2_o_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Mcompar_DireccionTemp[25]_PWR_22_o_LessThan_2_o_cy<2> (_i000015/Mcompar_DireccionTemp[25]_PWR_22_o_LessThan_2_o_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Mcompar_DireccionTemp[25]_PWR_22_o_LessThan_2_o_cy<3> (_i000015/Mcompar_DireccionTemp[25]_PWR_22_o_LessThan_2_o_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Mcompar_DireccionTemp[25]_PWR_22_o_LessThan_2_o_cy<4> (_i000015/Mcompar_DireccionTemp[25]_PWR_22_o_LessThan_2_o_cy<4>)
-     MUXCY:CI->O           1   0.213   0.684  _i000015/Mcompar_DireccionTemp[25]_PWR_22_o_LessThan_2_o_cy<5> (_i000015/DireccionTemp[25]_PWR_22_o_LessThan_2_o)
-     LUT2:I0->O           25   0.203   1.192  _i000015/DireccionTemp[25]_enable_AND_672_o_inv1 (_i000015/DireccionTemp[25]_enable_AND_672_o_inv)
-     FDR:R                     0.430          _i000015/DireccionTemp_1
+     FDR:C->Q              5   0.447   1.059  _i000015/DireccionRAMTemp2_0 (_i000015/DireccionRAMTemp2_0)
+     LUT5:I0->O            1   0.203   0.000  _i000015/Mcompar_n0009_lut<0> (_i000015/Mcompar_n0009_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  _i000015/Mcompar_n0009_cy<0> (_i000015/Mcompar_n0009_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Mcompar_n0009_cy<1> (_i000015/Mcompar_n0009_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Mcompar_n0009_cy<2> (_i000015/Mcompar_n0009_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Mcompar_n0009_cy<3> (_i000015/Mcompar_n0009_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Mcompar_n0009_cy<4> (_i000015/Mcompar_n0009_cy<4>)
+     MUXCY:CI->O           1   0.213   0.579  _i000015/Mcompar_n0009_cy<5> (_i000015/Mcompar_n0009_cy<5>)
+     INV:I->O             26   0.206   1.206  _i000015/Mcompar_n0009_cy<5>_inv1_INV_0 (_i000015/n0009)
+     FDR:R                     0.430          _i000015/DireccionRAMTemp2_0
     ----------------------------------------
-    Total                      4.689ns (1.725ns logic, 2.964ns route)
-                                       (36.8% logic, 63.2% route)
+    Total                      4.591ns (1.747ns logic, 2.844ns route)
+                                       (38.1% logic, 61.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'ModuloMusica/lrclk/clk2'
@@ -1020,29 +1025,86 @@ Offset:              1.903ns (Levels of Logic = 1)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock50/contador'
   Total number of paths / destination ports: 8185 / 132
 -------------------------------------------------------------------------
-Offset:              7.169ns (Levels of Logic = 6)
-  Source:            boton4 (PAD)
-  Destination:       puntuar/puntuacion_12 (FF)
+Offset:              7.202ns (Levels of Logic = 17)
+  Source:            nivel2 (PAD)
+  Destination:       tubo5/posicionYS_9 (FF)
   Destination Clock: clock50/contador rising
 
-  Data Path: boton4 to puntuar/puntuacion_12
+  Data Path: nivel2 to tubo5/posicionYS_9
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   1.222   1.048  boton4_IBUF (boton4_IBUF)
-     LUT6:I0->O            1   0.203   0.580  puntuar/GND_12_o_LineaLista[2]_AND_662_o1 (puntuar/GND_12_o_LineaLista[2]_AND_662_o1)
-     LUT6:I5->O            1   0.205   0.580  puntuar/GND_12_o_LineaLista[2]_AND_662_o2 (puntuar/GND_12_o_LineaLista[2]_AND_662_o2)
-     LUT6:I5->O            2   0.205   0.845  puntuar/GND_12_o_LineaLista[2]_AND_662_o4 (puntuar/GND_12_o_LineaLista[2]_AND_662_o)
-     LUT3:I0->O            2   0.205   0.617  puntuar/_n034411 (puntuar/_n03441)
-     LUT6:I5->O           13   0.205   0.932  puntuar/_n0344_inv (puntuar/_n0344_inv)
-     FDRE:CE                   0.322          puntuar/puntuacion_0
+     IBUF:I->O            16   1.222   1.349  nivel2_IBUF (nivel2_IBUF)
+     LUT5:I0->O            1   0.203   0.000  reloj32/Mcompar_GND_9_o_GND_9_o_equal_7_o_lut<1> (reloj32/Mcompar_GND_9_o_GND_9_o_equal_7_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  reloj32/Mcompar_GND_9_o_GND_9_o_equal_7_o_cy<1> (reloj32/Mcompar_GND_9_o_GND_9_o_equal_7_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  reloj32/Mcompar_GND_9_o_GND_9_o_equal_7_o_cy<2> (reloj32/Mcompar_GND_9_o_GND_9_o_equal_7_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  reloj32/Mcompar_GND_9_o_GND_9_o_equal_7_o_cy<3> (reloj32/Mcompar_GND_9_o_GND_9_o_equal_7_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  reloj32/Mcompar_GND_9_o_GND_9_o_equal_7_o_cy<4> (reloj32/Mcompar_GND_9_o_GND_9_o_equal_7_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  reloj32/Mcompar_GND_9_o_GND_9_o_equal_7_o_cy<5> (reloj32/Mcompar_GND_9_o_GND_9_o_equal_7_o_cy<5>)
+     MUXCY:CI->O          26   0.213   1.207  reloj32/Mcompar_GND_9_o_GND_9_o_equal_7_o_cy<6> (reloj32/GND_9_o_GND_9_o_equal_7_o)
+     LUT6:I5->O            1   0.205   0.000  reloj32/Mcompar_clk32SinStop_lut<0> (reloj32/Mcompar_clk32SinStop_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  reloj32/Mcompar_clk32SinStop_cy<0> (reloj32/Mcompar_clk32SinStop_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  reloj32/Mcompar_clk32SinStop_cy<1> (reloj32/Mcompar_clk32SinStop_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  reloj32/Mcompar_clk32SinStop_cy<2> (reloj32/Mcompar_clk32SinStop_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  reloj32/Mcompar_clk32SinStop_cy<3> (reloj32/Mcompar_clk32SinStop_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  reloj32/Mcompar_clk32SinStop_cy<4> (reloj32/Mcompar_clk32SinStop_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  reloj32/Mcompar_clk32SinStop_cy<5> (reloj32/Mcompar_clk32SinStop_cy<5>)
+     MUXCY:CI->O          68   0.213   1.771  reloj32/Mcompar_clk32SinStop_cy<6> (clk32SinStop)
+     LUT6:I4->O            1   0.203   0.000  tubo5/posicionYS_9_rstpot (tubo5/posicionYS_9_rstpot)
+     FD:D                      0.102          tubo5/posicionYS_9
     ----------------------------------------
-    Total                      7.169ns (2.567ns logic, 4.602ns route)
-                                       (35.8% logic, 64.2% route)
+    Total                      7.202ns (2.876ns logic, 4.326ns route)
+                                       (39.9% logic, 60.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ModuloMusica/lrclk/clk3'
+  Total number of paths / destination ports: 202 / 52
+-------------------------------------------------------------------------
+Offset:              3.444ns (Levels of Logic = 28)
+  Source:            nivel2 (PAD)
+  Destination:       _i000015/DireccionRAMTemp2_25 (FF)
+  Destination Clock: ModuloMusica/lrclk/clk3 rising
+
+  Data Path: nivel2 to _i000015/DireccionRAMTemp2_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.222   1.109  nivel2_IBUF (nivel2_IBUF)
+     LUT3:I1->O            1   0.203   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_lut<0> (_i000015/Madd_n0055[28:0]_Madd_Madd_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0> (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_0 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>1)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_1 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>2)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_2 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>3)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_3 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>4)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_4 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>5)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_5 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>6)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_6 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>7)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_7 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>8)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_8 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>9)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_9 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>10)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_10 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>11)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_11 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>12)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_12 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>13)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_13 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>14)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_14 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>15)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_15 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>16)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_16 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>17)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_17 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>18)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_18 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>19)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_19 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>20)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_20 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>21)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_21 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>22)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_22 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>23)
+     MUXCY:CI->O           0   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_23 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>24)
+     XORCY:CI->O           1   0.180   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_xor<0>_24 (_i000015/n0055[28:0]<25>)
+     FDR:D                     0.102          _i000015/DireccionRAMTemp2_25
+    ----------------------------------------
+    Total                      3.444ns (2.335ns logic, 1.109ns route)
+                                       (67.8% logic, 32.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock50/contador'
-  Total number of paths / destination ports: 1205 / 27
+  Total number of paths / destination ports: 1231 / 53
 -------------------------------------------------------------------------
 Offset:              9.980ns (Levels of Logic = 6)
   Source:            SincronizadorVga/h_count_reg_9 (FF)
@@ -1066,22 +1128,23 @@ Offset:              9.980ns (Levels of Logic = 6)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ModuloMusica/lrclk/clk3'
-  Total number of paths / destination ports: 25 / 25
+  Total number of paths / destination ports: 52 / 26
 -------------------------------------------------------------------------
-Offset:              3.597ns (Levels of Logic = 1)
-  Source:            _i000015/DireccionRAM_25 (FF)
-  Destination:       DireccionRAM<25> (PAD)
+Offset:              4.619ns (Levels of Logic = 2)
+  Source:            _i000015/DireccionRAMTemp1_0 (FF)
+  Destination:       DireccionRAM<0> (PAD)
   Source Clock:      ModuloMusica/lrclk/clk3 falling
 
-  Data Path: _i000015/DireccionRAM_25 to DireccionRAM<25>
+  Data Path: _i000015/DireccionRAMTemp1_0 to DireccionRAM<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR_1:C->Q            1   0.447   0.579  _i000015/DireccionRAM_25 (_i000015/DireccionRAM_25)
-     OBUF:I->O                 2.571          DireccionRAM_25_OBUF (DireccionRAM<25>)
+     FDR_1:C->Q            5   0.447   0.819  _i000015/DireccionRAMTemp1_0 (_i000015/DireccionRAMTemp1_0)
+     LUT3:I1->O            1   0.203   0.579  _i000015/Mmux_DireccionRAM110 (DireccionRAM_0_OBUF)
+     OBUF:I->O                 2.571          DireccionRAM_0_OBUF (DireccionRAM<0>)
     ----------------------------------------
-    Total                      3.597ns (3.018ns logic, 0.579ns route)
-                                       (83.9% logic, 16.1% route)
+    Total                      4.619ns (3.221ns logic, 1.398ns route)
+                                       (69.7% logic, 30.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -1135,7 +1198,7 @@ Clock to Setup on destination clock ModuloMusica/lrclk/clk2
 Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------+---------+---------+---------+---------+
 ModuloMusica/lrclk/clk2|         |         |    3.036|         |
-clock50/contador       |         |         |    5.742|         |
+clock50/contador       |         |         |    5.735|         |
 -----------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ModuloMusica/lrclk/clk3
@@ -1143,8 +1206,7 @@ Clock to Setup on destination clock ModuloMusica/lrclk/clk3
                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------+---------+---------+---------+---------+
-ModuloMusica/lrclk/clk3|         |         |    4.689|         |
-clock50/contador       |         |         |    3.947|         |
+ModuloMusica/lrclk/clk3|    4.591|         |    4.559|         |
 -----------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
@@ -1166,12 +1228,12 @@ clock50/contador|    6.911|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 52.00 secs
-Total CPU time to Xst completion: 52.74 secs
+Total REAL time to Xst completion: 58.00 secs
+Total CPU time to Xst completion: 58.01 secs
  
 --> 
 
-Total memory usage is 246444 kilobytes
+Total memory usage is 246436 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   24 (   0 filtered)

@@ -20,13 +20,13 @@
          <ClosedNode>/i2s_tst_top C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|i2s_tst_top.v/ui2stst - i2s_tst/ui2s - i2s_out</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>transmi - TransmisionDAC (C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/TransmisionDAC.v)</SelectedItem>
+         <SelectedItem>RecorreRam - RecorreRam (C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/RecorreRam.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >15</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000179000000020000000000000000000000000200000064ffffffff000000810000000300000002000001790000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>transmi - TransmisionDAC (C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/TransmisionDAC.v)</CurrentItem>
+      <CurrentItem>RecorreRam - RecorreRam (C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/RecorreRam.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -123,18 +123,20 @@
       <CurrentItem/>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/Automatic `includes</ClosedNode>
          <ClosedNode>/CLKTest C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|CLKTest.v</ClosedNode>
+         <ClosedNode>/DrumHero C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|DrumHero.v</ClosedNode>
          <ClosedNode>/DrumHero C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|DrumHero.v/ModuloMusica - Sonido</ClosedNode>
          <ClosedNode>/DrumHero C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|DrumHero.v/listaV - ListaValores</ClosedNode>
          <ClosedNode>/Prueba2reloj50 C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|Prueba2reloj50.v</ClosedNode>
          <ClosedNode>/PruebaGuardarPuntuacionGlobal C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|PruebaGuardarPuntuacionGlobal.v</ClosedNode>
          <ClosedNode>/PruebaListaValores C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|PruebaListaValores.v</ClosedNode>
          <ClosedNode>/PruebaRandomFourBits C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|RandomFourBits.v</ClosedNode>
+         <ClosedNode>/PruebaRecorreRam C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|PruebaRecorreRam.v</ClosedNode>
          <ClosedNode>/PruebaReloj32milis C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|PruebaReloj32milis.v</ClosedNode>
          <ClosedNode>/Pruebaclk50 C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|Pruebaclk50.v</ClosedNode>
          <ClosedNode>/SonidoTest C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|SonidoTest.v</ClosedNode>
@@ -144,13 +146,13 @@
          <ClosedNode>/pruebaLrck C:|Users|Sonia|Documents|GitHub|ProyectoFinalTaller-DH|ProyectoDrumsHero|pruebaLrck.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>PruebaRecorreRam (C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/PruebaRecorreRam.v)</SelectedItem>
+         <SelectedItem>RespuestaSonidoRam (C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/RespuestaSonidoRam.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >20</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001b4000000020000000000000000000000000200000064ffffffff000000810000000300000002000001b40000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>PruebaRecorreRam (C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/PruebaRecorreRam.v)</CurrentItem>
+      <CurrentItem>RespuestaSonidoRam (C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/ProyectoDrumsHero/RespuestaSonidoRam.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -171,12 +173,12 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f6000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f60000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
 </Project>
