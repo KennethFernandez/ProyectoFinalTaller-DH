@@ -1,0 +1,107 @@
+xst -intstyle ise -ifn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.xst" -ofn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PmodAD1GGWP.ucf -p xc6slx16-csg324-3 "PmodAD1GGWP.ngc" PmodAD1GGWP.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PmodAD1GGWP.ucf -p xc6slx16-csg324-3 "PmodAD1GGWP.ngc" PmodAD1GGWP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PmodAD1GGWP_map.ncd PmodAD1GGWP.ngd PmodAD1GGWP.pcf 
+par -w -intstyle ise -ol high -mt off PmodAD1GGWP_map.ncd PmodAD1GGWP.ncd PmodAD1GGWP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PmodAD1GGWP.twx PmodAD1GGWP.ncd -o PmodAD1GGWP.twr PmodAD1GGWP.pcf -ucf PmodAD1GGWP.ucf 
+bitgen -intstyle ise -f PmodAD1GGWP.ut PmodAD1GGWP.ncd 
+xst -intstyle ise -ifn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.xst" -ofn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PmodAD1GGWP.ucf -p xc6slx16-csg324-3 "PmodAD1GGWP.ngc" PmodAD1GGWP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PmodAD1GGWP_map.ncd PmodAD1GGWP.ngd PmodAD1GGWP.pcf 
+xst -intstyle ise -ifn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.xst" -ofn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PmodAD1GGWP.ucf -p xc6slx16-csg324-3 "PmodAD1GGWP.ngc" PmodAD1GGWP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PmodAD1GGWP_map.ncd PmodAD1GGWP.ngd PmodAD1GGWP.pcf 
+par -w -intstyle ise -ol high -mt off PmodAD1GGWP_map.ncd PmodAD1GGWP.ncd PmodAD1GGWP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PmodAD1GGWP.twx PmodAD1GGWP.ncd -o PmodAD1GGWP.twr PmodAD1GGWP.pcf -ucf PmodAD1GGWP.ucf 
+bitgen -intstyle ise -f PmodAD1GGWP.ut PmodAD1GGWP.ncd 
+xst -intstyle ise -ifn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.xst" -ofn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PmodAD1GGWP.ucf -p xc6slx16-csg324-3 "PmodAD1GGWP.ngc" PmodAD1GGWP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PmodAD1GGWP_map.ncd PmodAD1GGWP.ngd PmodAD1GGWP.pcf 
+par -w -intstyle ise -ol high -mt off PmodAD1GGWP_map.ncd PmodAD1GGWP.ncd PmodAD1GGWP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PmodAD1GGWP.twx PmodAD1GGWP.ncd -o PmodAD1GGWP.twr PmodAD1GGWP.pcf -ucf PmodAD1GGWP.ucf 
+bitgen -intstyle ise -f PmodAD1GGWP.ut PmodAD1GGWP.ncd 
+xst -intstyle ise -ifn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.xst" -ofn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PmodAD1GGWP.ucf -p xc6slx16-csg324-3 "PmodAD1GGWP.ngc" PmodAD1GGWP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PmodAD1GGWP_map.ncd PmodAD1GGWP.ngd PmodAD1GGWP.pcf 
+par -w -intstyle ise -ol high -mt off PmodAD1GGWP_map.ncd PmodAD1GGWP.ncd PmodAD1GGWP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PmodAD1GGWP.twx PmodAD1GGWP.ncd -o PmodAD1GGWP.twr PmodAD1GGWP.pcf -ucf PmodAD1GGWP.ucf 
+bitgen -intstyle ise -f PmodAD1GGWP.ut PmodAD1GGWP.ncd 
+xst -intstyle ise -ifn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.xst" -ofn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PmodAD1GGWP.ucf -p xc6slx16-csg324-3 "PmodAD1GGWP.ngc" PmodAD1GGWP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PmodAD1GGWP_map.ncd PmodAD1GGWP.ngd PmodAD1GGWP.pcf 
+par -w -intstyle ise -ol high -mt off PmodAD1GGWP_map.ncd PmodAD1GGWP.ncd PmodAD1GGWP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PmodAD1GGWP.twx PmodAD1GGWP.ncd -o PmodAD1GGWP.twr PmodAD1GGWP.pcf -ucf PmodAD1GGWP.ucf 
+bitgen -intstyle ise -f PmodAD1GGWP.ut PmodAD1GGWP.ncd 
+xst -intstyle ise -ifn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.xst" -ofn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PmodAD1GGWP.ucf -p xc6slx16-csg324-3 "PmodAD1GGWP.ngc" PmodAD1GGWP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PmodAD1GGWP_map.ncd PmodAD1GGWP.ngd PmodAD1GGWP.pcf 
+par -w -intstyle ise -ol high -mt off PmodAD1GGWP_map.ncd PmodAD1GGWP.ncd PmodAD1GGWP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PmodAD1GGWP.twx PmodAD1GGWP.ncd -o PmodAD1GGWP.twr PmodAD1GGWP.pcf -ucf PmodAD1GGWP.ucf 
+bitgen -intstyle ise -f PmodAD1GGWP.ut PmodAD1GGWP.ncd 
+xst -intstyle ise -ifn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.xst" -ofn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PmodAD1GGWP.ucf -p xc6slx16-csg324-3 "PmodAD1GGWP.ngc" PmodAD1GGWP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PmodAD1GGWP_map.ncd PmodAD1GGWP.ngd PmodAD1GGWP.pcf 
+par -w -intstyle ise -ol high -mt off PmodAD1GGWP_map.ncd PmodAD1GGWP.ncd PmodAD1GGWP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PmodAD1GGWP.twx PmodAD1GGWP.ncd -o PmodAD1GGWP.twr PmodAD1GGWP.pcf -ucf PmodAD1GGWP.ucf 
+bitgen -intstyle ise -f PmodAD1GGWP.ut PmodAD1GGWP.ncd 
+xst -intstyle ise -ifn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.xst" -ofn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PmodAD1GGWP.ucf -p xc6slx16-csg324-3 "PmodAD1GGWP.ngc" PmodAD1GGWP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PmodAD1GGWP_map.ncd PmodAD1GGWP.ngd PmodAD1GGWP.pcf 
+par -w -intstyle ise -ol high -mt off PmodAD1GGWP_map.ncd PmodAD1GGWP.ncd PmodAD1GGWP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PmodAD1GGWP.twx PmodAD1GGWP.ncd -o PmodAD1GGWP.twr PmodAD1GGWP.pcf -ucf PmodAD1GGWP.ucf 
+bitgen -intstyle ise -f PmodAD1GGWP.ut PmodAD1GGWP.ncd 
+xst -intstyle ise -ifn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.xst" -ofn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PmodAD1GGWP.ucf -p xc6slx16-csg324-3 "PmodAD1GGWP.ngc" PmodAD1GGWP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PmodAD1GGWP_map.ncd PmodAD1GGWP.ngd PmodAD1GGWP.pcf 
+xst -intstyle ise -ifn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.xst" -ofn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PmodAD1GGWP.ucf -p xc6slx16-csg324-3 "PmodAD1GGWP.ngc" PmodAD1GGWP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PmodAD1GGWP_map.ncd PmodAD1GGWP.ngd PmodAD1GGWP.pcf 
+par -w -intstyle ise -ol high -mt off PmodAD1GGWP_map.ncd PmodAD1GGWP.ncd PmodAD1GGWP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PmodAD1GGWP.twx PmodAD1GGWP.ncd -o PmodAD1GGWP.twr PmodAD1GGWP.pcf -ucf PmodAD1GGWP.ucf 
+bitgen -intstyle ise -f PmodAD1GGWP.ut PmodAD1GGWP.ncd 
+xst -intstyle ise -ifn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.xst" -ofn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.syr" 
+xst -intstyle ise -ifn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.xst" -ofn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PmodAD1GGWP.ucf -p xc6slx16-csg324-3 "PmodAD1GGWP.ngc" PmodAD1GGWP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PmodAD1GGWP_map.ncd PmodAD1GGWP.ngd PmodAD1GGWP.pcf 
+xst -intstyle ise -ifn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.xst" -ofn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PmodAD1GGWP.ucf -p xc6slx16-csg324-3 "PmodAD1GGWP.ngc" PmodAD1GGWP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PmodAD1GGWP_map.ncd PmodAD1GGWP.ngd PmodAD1GGWP.pcf 
+xst -intstyle ise -ifn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.xst" -ofn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PmodAD1GGWP.ucf -p xc6slx16-csg324-3 "PmodAD1GGWP.ngc" PmodAD1GGWP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PmodAD1GGWP_map.ncd PmodAD1GGWP.ngd PmodAD1GGWP.pcf 
+par -w -intstyle ise -ol high -mt off PmodAD1GGWP_map.ncd PmodAD1GGWP.ncd PmodAD1GGWP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PmodAD1GGWP.twx PmodAD1GGWP.ncd -o PmodAD1GGWP.twr PmodAD1GGWP.pcf -ucf PmodAD1GGWP.ucf 
+bitgen -intstyle ise -f PmodAD1GGWP.ut PmodAD1GGWP.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PmodAD1GGWP.ucf -p xc6slx16-csg324-3 "PmodAD1GGWP.ngc" PmodAD1GGWP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PmodAD1GGWP_map.ncd PmodAD1GGWP.ngd PmodAD1GGWP.pcf 
+xst -intstyle ise -ifn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.xst" -ofn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PmodAD1GGWP.ucf -p xc6slx16-csg324-3 "PmodAD1GGWP.ngc" PmodAD1GGWP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PmodAD1GGWP_map.ncd PmodAD1GGWP.ngd PmodAD1GGWP.pcf 
+par -w -intstyle ise -ol high -mt off PmodAD1GGWP_map.ncd PmodAD1GGWP.ncd PmodAD1GGWP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PmodAD1GGWP.twx PmodAD1GGWP.ncd -o PmodAD1GGWP.twr PmodAD1GGWP.pcf -ucf PmodAD1GGWP.ucf 
+bitgen -intstyle ise -f PmodAD1GGWP.ut PmodAD1GGWP.ncd 
+xst -intstyle ise -ifn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.xst" -ofn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PmodAD1GGWP.ucf -p xc6slx16-csg324-3 "PmodAD1GGWP.ngc" PmodAD1GGWP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PmodAD1GGWP_map.ncd PmodAD1GGWP.ngd PmodAD1GGWP.pcf 
+par -w -intstyle ise -ol high -mt off PmodAD1GGWP_map.ncd PmodAD1GGWP.ncd PmodAD1GGWP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PmodAD1GGWP.twx PmodAD1GGWP.ncd -o PmodAD1GGWP.twr PmodAD1GGWP.pcf -ucf PmodAD1GGWP.ucf 
+bitgen -intstyle ise -f PmodAD1GGWP.ut PmodAD1GGWP.ncd 
+xst -intstyle ise -ifn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.xst" -ofn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PmodAD1GGWP.ucf -p xc6slx16-csg324-3 "PmodAD1GGWP.ngc" PmodAD1GGWP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PmodAD1GGWP_map.ncd PmodAD1GGWP.ngd PmodAD1GGWP.pcf 
+par -w -intstyle ise -ol high -mt off PmodAD1GGWP_map.ncd PmodAD1GGWP.ncd PmodAD1GGWP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PmodAD1GGWP.twx PmodAD1GGWP.ncd -o PmodAD1GGWP.twr PmodAD1GGWP.pcf -ucf PmodAD1GGWP.ucf 
+bitgen -intstyle ise -f PmodAD1GGWP.ut PmodAD1GGWP.ncd 
+xst -intstyle ise -ifn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.xst" -ofn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.syr" 
+xst -intstyle ise -ifn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.xst" -ofn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PmodAD1GGWP.ucf -p xc6slx16-csg324-3 "PmodAD1GGWP.ngc" PmodAD1GGWP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PmodAD1GGWP_map.ncd PmodAD1GGWP.ngd PmodAD1GGWP.pcf 
+par -w -intstyle ise -ol high -mt off PmodAD1GGWP_map.ncd PmodAD1GGWP.ncd PmodAD1GGWP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PmodAD1GGWP.twx PmodAD1GGWP.ncd -o PmodAD1GGWP.twr PmodAD1GGWP.pcf -ucf PmodAD1GGWP.ucf 
+bitgen -intstyle ise -f PmodAD1GGWP.ut PmodAD1GGWP.ncd 
+xst -intstyle ise -ifn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.xst" -ofn "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PmodAD1GGWP.ucf -p xc6slx16-csg324-3 "PmodAD1GGWP.ngc" PmodAD1GGWP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PmodAD1GGWP_map.ncd PmodAD1GGWP.ngd PmodAD1GGWP.pcf 
+par -w -intstyle ise -ol high -mt off PmodAD1GGWP_map.ncd PmodAD1GGWP.ncd PmodAD1GGWP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PmodAD1GGWP.twx PmodAD1GGWP.ncd -o PmodAD1GGWP.twr PmodAD1GGWP.pcf -ucf PmodAD1GGWP.ucf 
+bitgen -intstyle ise -f PmodAD1GGWP.ut PmodAD1GGWP.ncd 

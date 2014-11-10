@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Sun Nov  9 22:38:15 2014
+# Process ID: 10626
+# Log file: /home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/planAhead_run_2/planAhead.log
+# Journal file: /home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin T5 [get_ports calibrate1]
+endgroup
+startgroup
+set_property package_pin V8 [get_ports calibrate2]
+endgroup
+startgroup
+set_property package_pin U8 [get_ports calibrate3]
+endgroup
+startgroup
+set_property package_pin N8 [get_ports calibrate4]
+endgroup
+startgroup
+set_property package_pin M8 [get_ports calibrate5]
+endgroup
+save_constraints

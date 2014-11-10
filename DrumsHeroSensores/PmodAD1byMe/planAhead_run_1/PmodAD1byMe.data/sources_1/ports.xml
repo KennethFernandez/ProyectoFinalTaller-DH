@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Bus Id="led">
+			<Port Id="7" Dir="OUT"/>
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="Activadores">
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="SalidaSiete">
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Port Id="CLK" Dir="IN"/>
+		<Port Id="calibrate" Dir="IN"/>
+		<Port Id="dDATA1" Dir="IN"/>
+		<Port Id="dDATA2" Dir="IN"/>
+		<Port Id="dDATA3" Dir="IN"/>
+		<Port Id="dDATA4" Dir="IN"/>
+		<Port Id="dDATA5" Dir="IN"/>
+		<Port Id="CS1" Dir="OUT"/>
+		<Port Id="CS2" Dir="OUT"/>
+		<Port Id="CS3" Dir="OUT"/>
+		<Port Id="CLK12_5K1" Dir="OUT"/>
+		<Port Id="CLK12_5K2" Dir="OUT"/>
+		<Port Id="CLK12_5K3" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

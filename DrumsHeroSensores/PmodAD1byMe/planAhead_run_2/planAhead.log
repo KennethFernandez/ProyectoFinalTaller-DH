@@ -1,0 +1,109 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Sun Nov  9 22:38:15 2014
+# Process ID: 10626
+# Log file: /home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/planAhead_run_2/planAhead.log
+# Journal file: /home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from /home/rambontanga/Manually_Installed_Programs/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/home/rambontanga/Manually_Installed_Programs/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/home/rambontanga/Manually_Installed_Programs/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/pa.fromHdl.tcl}
+# create_project -name PmodAD1byMe -dir "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/planAhead_run_2" -part xc6slx16csg324-3
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 2629.328 ; gain = 27.188
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "PmodAD1GGWP.ucf" [current_fileset -constrset]
+Adding file '/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {SelectorM.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MaquinaAD1.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Filtro.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {DoubleDabbing.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ControladorSiete.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Clock25.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Clk12_5K.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {AD1_Informant.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {AD1_Controller.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {PmodAD1GGWP.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top PmodAD1GGWP $srcset
+# add_files [list {PmodAD1GGWP.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx16csg324-3
+Using Verific elaboration
+Parsing VHDL file "/home/rambontanga/Manually_Installed_Programs/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/SelectorM.v" into library work
+Analyzing Verilog file "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/MaquinaAD1.v" into library work
+Analyzing Verilog file "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/Filtro.v" into library work
+Analyzing Verilog file "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/DoubleDabbing.v" into library work
+Analyzing Verilog file "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/ControladorSiete.v" into library work
+Analyzing Verilog file "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/Clock25.v" into library work
+Analyzing Verilog file "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/Clk12_5K.v" into library work
+Analyzing Verilog file "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/AD1_Informant.v" into library work
+Analyzing Verilog file "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/AD1_Controller.v" into library work
+Analyzing Verilog file "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v" into library work
+Loading clock regions from /home/rambontanga/Manually_Installed_Programs/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from /home/rambontanga/Manually_Installed_Programs/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from /home/rambontanga/Manually_Installed_Programs/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from /home/rambontanga/Manually_Installed_Programs/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from /home/rambontanga/Manually_Installed_Programs/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from /home/rambontanga/Manually_Installed_Programs/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : /home/rambontanga/Manually_Installed_Programs/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.ucf]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'calibrate' [/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.ucf:32]
+Finished Parsing UCF File [/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 6b3c0083
+open_rtl_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:49 . Memory (MB): peak = 2788.988 ; gain = 142.984
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin T5 [get_ports calibrate1]
+endgroup
+startgroup
+set_property package_pin V8 [get_ports calibrate2]
+endgroup
+startgroup
+set_property package_pin U8 [get_ports calibrate3]
+endgroup
+startgroup
+set_property package_pin N8 [get_ports calibrate4]
+endgroup
+startgroup
+set_property package_pin M8 [get_ports calibrate5]
+endgroup
+save_constraints
+exit
+ERROR: [#UNDEF] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+ (See /home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/planAhead_pid10626.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sun Nov  9 22:42:30 2014...
+INFO: [Common 17-83] Releasing license: PlanAhead

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/GGWP_Test_isim_beh.exe" -prj "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/GGWP_Test_beh.prj" "work.GGWP_Test" "work.glbl" 

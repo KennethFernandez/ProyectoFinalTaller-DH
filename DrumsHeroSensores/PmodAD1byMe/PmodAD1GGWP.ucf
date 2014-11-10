@@ -1,0 +1,49 @@
+
+
+NET "CLK" LOC = V10;
+NET "dDATA1" LOC = F10;
+NET "dDATA2" LOC = F11;
+
+
+NET "led[7]" LOC = T11;
+NET "led[6]" LOC = R11;
+NET "led[5]" LOC = N11;
+NET "led[4]" LOC = M11;
+NET "led[3]" LOC = V15;
+NET "led[2]" LOC = U15;
+NET "led[1]" LOC = V16;
+NET "led[0]" LOC = U16;
+
+NET "Activadores[0]" LOC = P17;
+NET "Activadores[1]" LOC = P18;
+NET "Activadores[2]" LOC = N15;
+NET "Activadores[3]" LOC = N16;
+
+NET "SalidaSiete[0]" LOC = T17;
+NET "SalidaSiete[1]" LOC = T18;
+NET "SalidaSiete[2]" LOC = U17;
+NET "SalidaSiete[3]" LOC = U18;
+NET "SalidaSiete[4]" LOC = M14;
+NET "SalidaSiete[5]" LOC = N14;
+NET "SalidaSiete[6]" LOC = L14;
+
+
+NET "dDATA3" LOC = L7;
+NET "dDATA4" LOC = K6;
+NET "dDATA5" LOC = K1;
+
+
+NET "CLK12_5K1" LOC = E11;
+NET "CS1" LOC = G11;
+NET "CS2" LOC = H3;
+NET "CLK12_5K2" LOC = G3;
+NET "CS3" LOC = K2;
+NET "CLK12_5K3" LOC = L3;
+
+# PlanAhead Generated physical constraints 
+
+NET "calibrate1" LOC = T10;
+NET "calibrate2" LOC = T9;
+NET "calibrate3" LOC = V9;
+NET "calibrate4" LOC = M8;
+NET "calibrate5" LOC = N8;

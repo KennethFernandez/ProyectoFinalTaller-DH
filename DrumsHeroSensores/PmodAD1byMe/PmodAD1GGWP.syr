@@ -1,0 +1,1053 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> 
+Reading design: PmodAD1GGWP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PmodAD1GGWP.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PmodAD1GGWP"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : PmodAD1GGWP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/SelectorM.v" into library work
+Parsing module <SelectorM>.
+Analyzing Verilog file "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/MaquinaAD1.v" into library work
+Parsing module <MaquinaAD1>.
+Analyzing Verilog file "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/Filtro.v" into library work
+Parsing module <Filtro>.
+Analyzing Verilog file "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/DoubleDabbing.v" into library work
+Parsing module <DoubleDabbing>.
+Analyzing Verilog file "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/ControladorSiete.v" into library work
+Parsing module <ControladorSiete>.
+Analyzing Verilog file "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/Clock25.v" into library work
+Parsing module <Clock25>.
+Analyzing Verilog file "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/Clk12_5K.v" into library work
+Parsing module <Clk12_5K>.
+Analyzing Verilog file "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/AD1_Informant.v" into library work
+Parsing module <AD1_Informant>.
+Analyzing Verilog file "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/AD1_Controller.v" into library work
+Parsing module <AD1_Controller>.
+Analyzing Verilog file "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v" into library work
+Parsing module <PmodAD1GGWP>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <PmodAD1GGWP>.
+
+Elaborating module <AD1_Informant>.
+WARNING:HDLCompiler:91 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/AD1_Informant.v" Line 38: Signal <threshold> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/AD1_Informant.v" Line 39: Signal <threshold> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/AD1_Informant.v" Line 39: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:91 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/AD1_Informant.v" Line 40: Signal <threshold> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/AD1_Informant.v" Line 40: Result of 32-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:189 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v" Line 85: Size mismatch in connection of port <soundLevel>. Formal port size is 7-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:1127 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v" Line 85: Assignment to soundLevel1 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v" Line 86: Size mismatch in connection of port <soundLevel>. Formal port size is 7-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:1127 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v" Line 86: Assignment to soundLevel2 ignored, since the identifier is never used
+
+Elaborating module <AD1_Controller>.
+
+Elaborating module <MaquinaAD1>.
+WARNING:HDLCompiler:189 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v" Line 90: Size mismatch in connection of port <soundLevel>. Formal port size is 7-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:1127 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v" Line 90: Assignment to soundLevel3 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v" Line 91: Size mismatch in connection of port <soundLevel>. Formal port size is 7-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:1127 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v" Line 91: Assignment to soundLevel4 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v" Line 95: Size mismatch in connection of port <soundLevel>. Formal port size is 7-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:1127 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v" Line 95: Assignment to soundLevel5 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v" Line 96: Size mismatch in connection of port <dDATA2>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v" Line 97: Size mismatch in connection of port <DATAIn2>. Formal port size is 16-bit while actual signal size is 32-bit.
+
+Elaborating module <Clk12_5K>.
+WARNING:HDLCompiler:413 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/Clk12_5K.v" Line 30: Result of 32-bit expression is truncated to fit in 12-bit target.
+
+Elaborating module <Clock25>.
+WARNING:HDLCompiler:413 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/Clock25.v" Line 30: Result of 32-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <DoubleDabbing>.
+WARNING:HDLCompiler:413 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/DoubleDabbing.v" Line 49: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/DoubleDabbing.v" Line 50: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/DoubleDabbing.v" Line 51: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/DoubleDabbing.v" Line 52: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/DoubleDabbing.v" Line 55: Result of 6-bit expression is truncated to fit in 5-bit target.
+
+Elaborating module <Filtro>.
+
+Elaborating module <SelectorM>.
+
+Elaborating module <ControladorSiete>.
+WARNING:HDLCompiler:634 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v" Line 87: Net <CS> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <PmodAD1GGWP>.
+    Related source file is "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v".
+INFO:Xst:3210 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v" line 85: Output port <soundLevel> of the instance <ad1_informant_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v" line 86: Output port <soundLevel> of the instance <ad1_informant_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v" line 90: Output port <soundLevel> of the instance <ad1_informant_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v" line 91: Output port <soundLevel> of the instance <ad1_informant_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v" line 95: Output port <soundLevel> of the instance <ad1_informant_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v" line 96: Output port <DATA2> of the instance <ad1_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v" line 97: Output port <DATA2> of the instance <mad1_3> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <CS> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <PmodAD1GGWP> synthesized.
+
+Synthesizing Unit <AD1_Informant>.
+    Related source file is "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/AD1_Informant.v".
+WARNING:Xst:647 - Input <DATA<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DATA<15:10>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <threshold>.
+    Found 9-bit subtractor for signal <GND_2_o_GND_2_o_sub_6_OUT> created at line 39.
+    Found 8-bit comparator greater for signal <threshold[7]_DATA[9]_LessThan_5_o> created at line 38
+    Found 32-bit comparator greater for signal <GND_2_o_GND_2_o_LessThan_7_o> created at line 39
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <AD1_Informant> synthesized.
+
+Synthesizing Unit <AD1_Controller>.
+    Related source file is "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/AD1_Controller.v".
+    Found 16-bit register for signal <DATA2>.
+    Found 16-bit register for signal <DATA1>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <AD1_Controller> synthesized.
+
+Synthesizing Unit <MaquinaAD1>.
+    Related source file is "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/MaquinaAD1.v".
+    Found 1-bit register for signal <CS>.
+    Found 16-bit register for signal <DATA1>.
+    Found 16-bit register for signal <DATA2>.
+    Found 4-bit register for signal <count>.
+    Found 4-bit adder for signal <count[3]_GND_4_o_add_2_OUT> created at line 33.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  37 D-type flip-flop(s).
+Unit <MaquinaAD1> synthesized.
+
+Synthesizing Unit <Clk12_5K>.
+    Related source file is "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/Clk12_5K.v".
+    Found 1-bit register for signal <CLK12_5K>.
+    Found 12-bit register for signal <count>.
+    Found 13-bit adder for signal <n0013[12:0]> created at line 30.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  13 D-type flip-flop(s).
+Unit <Clk12_5K> synthesized.
+
+Synthesizing Unit <Clock25>.
+    Related source file is "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/Clock25.v".
+    Found 1-bit register for signal <clk25>.
+    Found 2-bit register for signal <contador>.
+    Found 3-bit adder for signal <n0011[2:0]> created at line 30.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 D-type flip-flop(s).
+Unit <Clock25> synthesized.
+
+Synthesizing Unit <DoubleDabbing>.
+    Related source file is "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/DoubleDabbing.v".
+    Found 5-bit register for signal <contador>.
+    Found 13-bit register for signal <EntradaTemp>.
+    Found 29-bit register for signal <Registro>.
+    Found 4-bit adder for signal <n0047> created at line 49.
+    Found 4-bit adder for signal <Registro[24]_GND_7_o_add_7_OUT> created at line 50.
+    Found 4-bit adder for signal <Registro[20]_GND_7_o_add_9_OUT> created at line 51.
+    Found 4-bit adder for signal <Registro[16]_GND_7_o_add_11_OUT> created at line 52.
+    Found 5-bit adder for signal <contador[4]_GND_7_o_add_12_OUT> created at line 55.
+    Found 13-bit comparator equal for signal <n0000> created at line 39
+    Found 4-bit comparator greater for signal <GND_7_o_Registro[28]_LessThan_5_o> created at line 49
+    Found 4-bit comparator greater for signal <GND_7_o_Registro[24]_LessThan_7_o> created at line 50
+    Found 4-bit comparator greater for signal <GND_7_o_Registro[20]_LessThan_9_o> created at line 51
+    Found 4-bit comparator greater for signal <GND_7_o_Registro[16]_LessThan_11_o> created at line 52
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred  47 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred  16 Multiplexer(s).
+Unit <DoubleDabbing> synthesized.
+
+Synthesizing Unit <Filtro>.
+    Related source file is "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/Filtro.v".
+    Summary:
+	inferred  10 Multiplexer(s).
+Unit <Filtro> synthesized.
+
+Synthesizing Unit <SelectorM>.
+    Related source file is "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/SelectorM.v".
+        Primero = 400
+        Segundo = 800
+        Tercero = 1200
+        Cuarto = 1600
+    Found 4-bit register for signal <Activadores>.
+    Found 11-bit register for signal <contador>.
+    Found 11-bit adder for signal <contador[10]_GND_9_o_add_2_OUT> created at line 39.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  15 D-type flip-flop(s).
+Unit <SelectorM> synthesized.
+
+Synthesizing Unit <ControladorSiete>.
+    Related source file is "/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/ControladorSiete.v".
+    Found 16x7-bit Read Only RAM for signal <Salida>
+    Summary:
+	inferred   1 RAM(s).
+Unit <ControladorSiete> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x7-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 16
+ 11-bit adder                                          : 1
+ 13-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 7
+ 5-bit adder                                           : 1
+ 9-bit subtractor                                      : 5
+# Registers                                            : 32
+ 1-bit register                                        : 5
+ 11-bit register                                       : 1
+ 12-bit register                                       : 1
+ 13-bit register                                       : 1
+ 16-bit register                                       : 12
+ 2-bit register                                        : 1
+ 29-bit register                                       : 1
+ 4-bit register                                        : 4
+ 5-bit register                                        : 1
+ 8-bit register                                        : 5
+# Comparators                                          : 15
+ 13-bit comparator equal                               : 1
+ 32-bit comparator greater                             : 5
+ 4-bit comparator greater                              : 4
+ 8-bit comparator greater                              : 5
+# Multiplexers                                         : 41
+ 1-bit 2-to-1 multiplexer                              : 20
+ 29-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 5
+ 4-bit 2-to-1 multiplexer                              : 10
+ 7-bit 2-to-1 multiplexer                              : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <EntradaTemp_8> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <EntradaTemp_9> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <EntradaTemp_10> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <EntradaTemp_11> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <EntradaTemp_12> has a constant value of 0 in block <CBD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <DATA2_10> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA2_11> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA2_12> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA2_13> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA2_14> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA2_15> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA1_10> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA1_11> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA1_12> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA1_13> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA1_14> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA1_15> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA2_10> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA2_11> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA2_12> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA2_13> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA2_14> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA2_15> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA1_10> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA1_11> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA1_12> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA1_13> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA1_14> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA1_15> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA1_10> of sequential type is unconnected in block <ad1_3>.
+WARNING:Xst:2677 - Node <DATA1_11> of sequential type is unconnected in block <ad1_3>.
+WARNING:Xst:2677 - Node <DATA1_12> of sequential type is unconnected in block <ad1_3>.
+WARNING:Xst:2677 - Node <DATA1_13> of sequential type is unconnected in block <ad1_3>.
+WARNING:Xst:2677 - Node <DATA1_14> of sequential type is unconnected in block <ad1_3>.
+WARNING:Xst:2677 - Node <DATA1_15> of sequential type is unconnected in block <ad1_3>.
+WARNING:Xst:2677 - Node <DATA1_0> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA1_1> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA1_10> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA1_11> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA1_12> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA1_13> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA1_14> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA1_15> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA2_0> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA2_1> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA2_10> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA2_11> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA2_12> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA2_13> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA2_14> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA2_15> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA1_0> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA1_1> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA1_10> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA1_11> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA1_12> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA1_13> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA1_14> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA1_15> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA2_0> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA2_1> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA2_10> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA2_11> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA2_12> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA2_13> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA2_14> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA2_15> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA1_0> of sequential type is unconnected in block <mad1_3>.
+WARNING:Xst:2677 - Node <DATA1_1> of sequential type is unconnected in block <mad1_3>.
+WARNING:Xst:2677 - Node <DATA1_10> of sequential type is unconnected in block <mad1_3>.
+WARNING:Xst:2677 - Node <DATA1_11> of sequential type is unconnected in block <mad1_3>.
+WARNING:Xst:2677 - Node <DATA1_12> of sequential type is unconnected in block <mad1_3>.
+WARNING:Xst:2677 - Node <DATA1_13> of sequential type is unconnected in block <mad1_3>.
+WARNING:Xst:2677 - Node <DATA1_14> of sequential type is unconnected in block <mad1_3>.
+WARNING:Xst:2677 - Node <DATA1_15> of sequential type is unconnected in block <mad1_3>.
+
+Synthesizing (advanced) Unit <Clk12_5K>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <Clk12_5K> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Clock25>.
+The following registers are absorbed into counter <contador>: 1 register on signal <contador>.
+Unit <Clock25> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ControladorSiete>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Salida> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Entrada>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Salida>        |          |
+    -----------------------------------------------------------------------
+Unit <ControladorSiete> synthesized (advanced).
+
+Synthesizing (advanced) Unit <DoubleDabbing>.
+The following registers are absorbed into counter <contador>: 1 register on signal <contador>.
+Unit <DoubleDabbing> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MaquinaAD1>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <MaquinaAD1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SelectorM>.
+The following registers are absorbed into counter <contador>: 1 register on signal <contador>.
+Unit <SelectorM> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x7-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 9
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 3
+ 9-bit subtractor                                      : 5
+# Counters                                             : 7
+ 11-bit up counter                                     : 1
+ 12-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 3
+ 5-bit up counter                                      : 1
+# Registers                                            : 283
+ Flip-Flops                                            : 283
+# Comparators                                          : 15
+ 13-bit comparator equal                               : 1
+ 32-bit comparator greater                             : 5
+ 4-bit comparator greater                              : 4
+ 8-bit comparator greater                              : 5
+# Multiplexers                                         : 41
+ 1-bit 2-to-1 multiplexer                              : 20
+ 29-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 5
+ 4-bit 2-to-1 multiplexer                              : 10
+ 7-bit 2-to-1 multiplexer                              : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <EntradaTemp_8> in Unit <DoubleDabbing> is equivalent to the following 4 FFs/Latches, which will be removed : <EntradaTemp_9> <EntradaTemp_10> <EntradaTemp_11> <EntradaTemp_12> 
+WARNING:Xst:1293 - FF/Latch <EntradaTemp_8> has a constant value of 0 in block <DoubleDabbing>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <AD1_Controller> ...
+
+Optimizing unit <PmodAD1GGWP> ...
+
+Optimizing unit <AD1_Informant> ...
+
+Optimizing unit <MaquinaAD1> ...
+
+Optimizing unit <DoubleDabbing> ...
+
+Optimizing unit <SelectorM> ...
+WARNING:Xst:2677 - Node <ad1_3/DATA1_15> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_3/DATA1_14> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_3/DATA1_13> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_3/DATA1_12> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_3/DATA1_11> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_3/DATA1_10> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_3/DATA2_15> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_3/DATA2_14> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_3/DATA2_13> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_3/DATA2_12> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_3/DATA2_11> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_3/DATA2_10> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_3/DATA2_9> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_3/DATA2_8> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_3/DATA2_7> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_3/DATA2_6> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_3/DATA2_5> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_3/DATA2_4> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_3/DATA2_3> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_3/DATA2_2> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_3/DATA2_1> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_3/DATA2_0> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_2/DATA1_15> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_2/DATA1_14> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_2/DATA1_13> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_2/DATA1_12> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_2/DATA1_11> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_2/DATA1_10> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_2/DATA2_15> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_2/DATA2_14> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_2/DATA2_13> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_2/DATA2_12> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_2/DATA2_11> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_2/DATA2_10> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_1/DATA1_15> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_1/DATA1_14> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_1/DATA1_13> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_1/DATA1_12> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_1/DATA1_11> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_1/DATA1_10> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_1/DATA2_15> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_1/DATA2_14> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_1/DATA2_13> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_1/DATA2_12> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_1/DATA2_11> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <ad1_1/DATA2_10> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA2_15> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA2_14> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA2_13> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA2_12> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA2_11> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA2_10> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA2_9> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA2_8> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA2_7> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA2_6> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA2_5> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA2_4> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA2_3> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA2_2> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA2_1> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA2_0> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA1_15> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA1_14> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA1_13> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA1_12> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA1_11> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA1_10> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA1_1> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_3/DATA1_0> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_2/DATA2_15> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_2/DATA2_14> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_2/DATA2_13> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_2/DATA2_12> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_2/DATA2_11> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_2/DATA2_10> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_2/DATA2_1> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_2/DATA2_0> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_2/DATA1_15> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_2/DATA1_14> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_2/DATA1_13> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_2/DATA1_12> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_2/DATA1_11> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_2/DATA1_10> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_2/DATA1_1> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_2/DATA1_0> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_1/DATA2_15> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_1/DATA2_14> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_1/DATA2_13> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_1/DATA2_12> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_1/DATA2_11> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_1/DATA2_10> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_1/DATA2_1> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_1/DATA2_0> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_1/DATA1_15> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_1/DATA1_14> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_1/DATA1_13> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_1/DATA1_12> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_1/DATA1_11> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_1/DATA1_10> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_1/DATA1_1> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:2677 - Node <mad1_1/DATA1_0> of sequential type is unconnected in block <PmodAD1GGWP>.
+WARNING:Xst:1293 - FF/Latch <clock50/contador_1> has a constant value of 0 in block <PmodAD1GGWP>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <clk12_5k/count_0> in Unit <PmodAD1GGWP> is equivalent to the following FF/Latch, which will be removed : <clock50/contador_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PmodAD1GGWP, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 216
+ Flip-Flops                                            : 216
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : PmodAD1GGWP.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 323
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 21
+#      LUT2                        : 45
+#      LUT3                        : 10
+#      LUT4                        : 21
+#      LUT5                        : 40
+#      LUT6                        : 55
+#      MUXCY                       : 61
+#      VCC                         : 1
+#      XORCY                       : 63
+# FlipFlops/Latches                : 216
+#      FD                          : 73
+#      FDE                         : 55
+#      FDR                         : 38
+#      FDR_1                       : 50
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 35
+#      IBUF                        : 10
+#      OBUF                        : 25
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             216  out of  18224     1%  
+ Number of Slice LUTs:                  197  out of   9112     2%  
+    Number used as Logic:               197  out of   9112     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    304
+   Number with an unused Flip Flop:      88  out of    304    28%  
+   Number with an unused LUT:           107  out of    304    35%  
+   Number of fully used LUT-FF pairs:   109  out of    304    35%  
+   Number of unique control sets:        19
+
+IO Utilization: 
+ Number of IOs:                          36
+ Number of bonded IOBs:                  36  out of    232    15%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 54    |
+clk12_5k/CLK12_5K                  | BUFG                   | 65    |
+mad1_3/CS                          | NONE(mad1_3/DATA1_9)   | 8     |
+mad1_2/CS                          | NONE(mad1_2/DATA2_9)   | 16    |
+mad1_1/CS                          | NONE(mad1_1/DATA2_9)   | 16    |
+clock50/clk25                      | BUFG                   | 57    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.583ns (Maximum Frequency: 218.188MHz)
+   Minimum input arrival time before clock: 2.346ns
+   Maximum output required time after clock: 8.624ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 3.893ns (frequency: 256.852MHz)
+  Total number of paths / destination ports: 236 / 26
+-------------------------------------------------------------------------
+Delay:               3.893ns (Levels of Logic = 2)
+  Source:            clk12_5k/count_7 (FF)
+  Destination:       clk12_5k/count_0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: clk12_5k/count_7 to clk12_5k/count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.447   0.981  clk12_5k/count_7 (clk12_5k/count_7)
+     LUT6:I0->O            2   0.203   0.721  clk12_5k/GND_5_o_GND_5_o_equal_5_o<11>1 (clk12_5k/GND_5_o_GND_5_o_equal_5_o<11>)
+     LUT2:I0->O           12   0.203   0.908  clk12_5k/GND_5_o_GND_5_o_equal_5_o<11>3 (clk12_5k/GND_5_o_GND_5_o_equal_5_o)
+     FDR:R                     0.430          clk12_5k/count_0
+    ----------------------------------------
+    Total                      3.893ns (1.283ns logic, 2.610ns route)
+                                       (33.0% logic, 67.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk12_5k/CLK12_5K'
+  Clock period: 2.737ns (frequency: 365.323MHz)
+  Total number of paths / destination ports: 138 / 72
+-------------------------------------------------------------------------
+Delay:               2.737ns (Levels of Logic = 1)
+  Source:            mad1_3/count_0 (FF)
+  Destination:       mad1_3/count_3 (FF)
+  Source Clock:      clk12_5k/CLK12_5K rising
+  Destination Clock: clk12_5k/CLK12_5K rising
+
+  Data Path: mad1_3/count_0 to mad1_3/count_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.447   0.973  mad1_3/count_0 (mad1_3/count_0)
+     LUT4:I1->O            4   0.205   0.683  mad1_3/count[3]_PWR_5_o_equal_5_o1 (mad1_3/count[3]_PWR_5_o_equal_5_o)
+     FDR:R                     0.430          mad1_3/count_0
+    ----------------------------------------
+    Total                      2.737ns (1.082ns logic, 1.655ns route)
+                                       (39.5% logic, 60.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock50/clk25'
+  Clock period: 4.583ns (frequency: 218.188MHz)
+  Total number of paths / destination ports: 1777 / 86
+-------------------------------------------------------------------------
+Delay:               4.583ns (Levels of Logic = 2)
+  Source:            CBD/Registro_0 (FF)
+  Destination:       CBD/Registro_28 (FF)
+  Source Clock:      clock50/clk25 rising
+  Destination Clock: clock50/clk25 rising
+
+  Data Path: CBD/Registro_0 to CBD/Registro_28
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.995  CBD/Registro_0 (CBD/Registro_0)
+     LUT6:I1->O           18   0.203   1.278  CBD/GND_7_o_GND_7_o_AND_1_o1 (CBD/GND_7_o_GND_7_o_AND_1_o1)
+     LUT6:I3->O           22   0.205   1.133  CBD/_n0082_inv1 (CBD/_n0082_inv)
+     FDE:CE                    0.322          CBD/Registro_14
+    ----------------------------------------
+    Total                      4.583ns (1.177ns logic, 3.406ns route)
+                                       (25.7% logic, 74.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 40 / 40
+-------------------------------------------------------------------------
+Offset:              2.346ns (Levels of Logic = 1)
+  Source:            calibrate5 (PAD)
+  Destination:       ad1_informant_5/threshold_7 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: calibrate5 to ad1_informant_5/threshold_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.222   0.802  calibrate5_IBUF (calibrate5_IBUF)
+     FDE:CE                    0.322          ad1_informant_5/threshold_0
+    ----------------------------------------
+    Total                      2.346ns (1.544ns logic, 0.802ns route)
+                                       (65.8% logic, 34.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk12_5k/CLK12_5K'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              1.903ns (Levels of Logic = 1)
+  Source:            dDATA5 (PAD)
+  Destination:       ad1_3/DATA1_0 (FF)
+  Destination Clock: clk12_5k/CLK12_5K falling
+
+  Data Path: dDATA5 to ad1_3/DATA1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  dDATA5_IBUF (dDATA5_IBUF)
+     FDR_1:D                   0.102          ad1_3/DATA1_0
+    ----------------------------------------
+    Total                      1.903ns (1.324ns logic, 0.579ns route)
+                                       (69.6% logic, 30.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mad1_3/CS'
+  Total number of paths / destination ports: 87 / 1
+-------------------------------------------------------------------------
+Offset:              8.624ns (Levels of Logic = 6)
+  Source:            mad1_3/DATA1_4 (FF)
+  Destination:       led<4> (PAD)
+  Source Clock:      mad1_3/CS rising
+
+  Data Path: mad1_3/DATA1_4 to led<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              10   0.447   1.221  mad1_3/DATA1_4 (mad1_3/DATA1_4)
+     LUT6:I0->O            1   0.203   0.580  ad1_informant_5/threshold[7]_DATA[9]_LessThan_5_o2 (ad1_informant_5/threshold[7]_DATA[9]_LessThan_5_o1)
+     LUT3:I2->O            1   0.205   0.580  ad1_informant_5/threshold[7]_DATA[9]_LessThan_5_o1_SW2 (N29)
+     LUT5:I4->O            1   0.205   0.684  ad1_informant_5/threshold[7]_DATA[9]_LessThan_5_o1 (ad1_informant_5/threshold[7]_DATA[9]_LessThan_5_o2)
+     LUT5:I3->O            1   0.203   0.944  ad1_informant_5/Mmux_soundIndicator11 (ad1_informant_5/Mmux_soundIndicator1)
+     LUT6:I0->O            1   0.203   0.579  ad1_informant_5/Mmux_soundIndicator13 (led_4_OBUF)
+     OBUF:I->O                 2.571          led_4_OBUF (led<4>)
+    ----------------------------------------
+    Total                      8.624ns (4.037ns logic, 4.587ns route)
+                                       (46.8% logic, 53.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 258 / 8
+-------------------------------------------------------------------------
+Offset:              8.365ns (Levels of Logic = 6)
+  Source:            ad1_informant_5/threshold_2 (FF)
+  Destination:       led<4> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: ad1_informant_5/threshold_2 to led<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.447   0.961  ad1_informant_5/threshold_2 (ad1_informant_5/threshold_2)
+     LUT6:I1->O            1   0.203   0.580  ad1_informant_5/threshold[7]_DATA[9]_LessThan_5_o2 (ad1_informant_5/threshold[7]_DATA[9]_LessThan_5_o1)
+     LUT3:I2->O            1   0.205   0.580  ad1_informant_5/threshold[7]_DATA[9]_LessThan_5_o1_SW2 (N29)
+     LUT5:I4->O            1   0.205   0.684  ad1_informant_5/threshold[7]_DATA[9]_LessThan_5_o1 (ad1_informant_5/threshold[7]_DATA[9]_LessThan_5_o2)
+     LUT5:I3->O            1   0.203   0.944  ad1_informant_5/Mmux_soundIndicator11 (ad1_informant_5/Mmux_soundIndicator1)
+     LUT6:I0->O            1   0.203   0.579  ad1_informant_5/Mmux_soundIndicator13 (led_4_OBUF)
+     OBUF:I->O                 2.571          led_4_OBUF (led<4>)
+    ----------------------------------------
+    Total                      8.365ns (4.037ns logic, 4.328ns route)
+                                       (48.3% logic, 51.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mad1_2/CS'
+  Total number of paths / destination ports: 174 / 2
+-------------------------------------------------------------------------
+Offset:              8.418ns (Levels of Logic = 6)
+  Source:            mad1_2/DATA2_4 (FF)
+  Destination:       led<3> (PAD)
+  Source Clock:      mad1_2/CS rising
+
+  Data Path: mad1_2/DATA2_4 to led<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   1.015  mad1_2/DATA2_4 (mad1_2/DATA2_4)
+     LUT6:I0->O            1   0.203   0.580  ad1_informant_4/threshold[7]_DATA[9]_LessThan_5_o2 (ad1_informant_4/threshold[7]_DATA[9]_LessThan_5_o1)
+     LUT3:I2->O            1   0.205   0.580  ad1_informant_4/threshold[7]_DATA[9]_LessThan_5_o1_SW2 (N31)
+     LUT5:I4->O            1   0.205   0.684  ad1_informant_4/threshold[7]_DATA[9]_LessThan_5_o1 (ad1_informant_4/threshold[7]_DATA[9]_LessThan_5_o2)
+     LUT5:I3->O            1   0.203   0.944  ad1_informant_4/Mmux_soundIndicator11 (ad1_informant_4/Mmux_soundIndicator1)
+     LUT6:I0->O            1   0.203   0.579  ad1_informant_4/Mmux_soundIndicator13 (led_3_OBUF)
+     OBUF:I->O                 2.571          led_3_OBUF (led<3>)
+    ----------------------------------------
+    Total                      8.418ns (4.037ns logic, 4.382ns route)
+                                       (48.0% logic, 52.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mad1_1/CS'
+  Total number of paths / destination ports: 174 / 2
+-------------------------------------------------------------------------
+Offset:              8.418ns (Levels of Logic = 6)
+  Source:            mad1_1/DATA2_4 (FF)
+  Destination:       led<1> (PAD)
+  Source Clock:      mad1_1/CS rising
+
+  Data Path: mad1_1/DATA2_4 to led<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   1.015  mad1_1/DATA2_4 (mad1_1/DATA2_4)
+     LUT6:I0->O            1   0.203   0.580  ad1_informant_2/threshold[7]_DATA[9]_LessThan_5_o2 (ad1_informant_2/threshold[7]_DATA[9]_LessThan_5_o1)
+     LUT3:I2->O            1   0.205   0.580  ad1_informant_2/threshold[7]_DATA[9]_LessThan_5_o1_SW2 (N35)
+     LUT5:I4->O            1   0.205   0.684  ad1_informant_2/threshold[7]_DATA[9]_LessThan_5_o1 (ad1_informant_2/threshold[7]_DATA[9]_LessThan_5_o2)
+     LUT5:I3->O            1   0.203   0.944  ad1_informant_2/Mmux_soundIndicator11 (ad1_informant_2/Mmux_soundIndicator1)
+     LUT6:I0->O            1   0.203   0.579  ad1_informant_2/Mmux_soundIndicator13 (led_1_OBUF)
+     OBUF:I->O                 2.571          led_1_OBUF (led<1>)
+    ----------------------------------------
+    Total                      8.418ns (4.037ns logic, 4.382ns route)
+                                       (48.0% logic, 52.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock50/clk25'
+  Total number of paths / destination ports: 312 / 11
+-------------------------------------------------------------------------
+Offset:              7.029ns (Levels of Logic = 4)
+  Source:            selector/Activadores_3 (FF)
+  Destination:       SalidaSiete<6> (PAD)
+  Source Clock:      clock50/clk25 rising
+
+  Data Path: selector/Activadores_3 to SalidaSiete<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              10   0.447   1.221  selector/Activadores_3 (selector/Activadores_3)
+     LUT6:I0->O            1   0.203   0.580  filtro/Mmux_Salida11 (filtro/Mmux_Salida1)
+     LUT6:I5->O            7   0.205   1.021  filtro/Mmux_Salida12 (dataSieteSegmentos<0>)
+     LUT4:I0->O            1   0.203   0.579  siete/Mram_Salida41 (SalidaSiete_4_OBUF)
+     OBUF:I->O                 2.571          SalidaSiete_4_OBUF (SalidaSiete<4>)
+    ----------------------------------------
+    Total                      7.029ns (3.629ns logic, 3.400ns route)
+                                       (51.6% logic, 48.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk12_5k/CLK12_5K'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.067ns (Levels of Logic = 1)
+  Source:            mad1_1/CS (FF)
+  Destination:       CS1 (PAD)
+  Source Clock:      clk12_5k/CLK12_5K rising
+
+  Data Path: mad1_1/CS to CS1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              18   0.447   1.049  mad1_1/CS (mad1_1/CS)
+     OBUF:I->O                 2.571          CS1_OBUF (CS1)
+    ----------------------------------------
+    Total                      4.067ns (3.018ns logic, 1.049ns route)
+                                       (74.2% logic, 25.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    3.893|         |         |         |
+mad1_1/CS      |    1.199|         |         |         |
+mad1_2/CS      |    1.199|         |         |         |
+mad1_3/CS      |    1.405|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk12_5k/CLK12_5K
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+clk12_5k/CLK12_5K|    2.737|         |    1.165|         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clock50/clk25
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock50/clk25  |    4.583|         |         |         |
+mad1_3/CS      |    4.583|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mad1_1/CS
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+clk12_5k/CLK12_5K|         |    1.165|         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mad1_2/CS
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+clk12_5k/CLK12_5K|         |    1.165|         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mad1_3/CS
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+clk12_5k/CLK12_5K|         |    1.165|         |         |
+-----------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 33.00 secs
+Total CPU time to Xst completion: 23.83 secs
+ 
+--> 
+
+
+Total memory usage is 391628 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  207 (   0 filtered)
+Number of infos    :   11 (   0 filtered)
+

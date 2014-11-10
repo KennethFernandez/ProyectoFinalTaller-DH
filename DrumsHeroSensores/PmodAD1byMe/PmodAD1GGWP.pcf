@@ -1,0 +1,43 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Nov 09 23:40:40 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "CS1" LOCATE = SITE "G11" LEVEL 1;
+COMP "CS2" LOCATE = SITE "H3" LEVEL 1;
+COMP "CS3" LOCATE = SITE "K2" LEVEL 1;
+COMP "CLK" LOCATE = SITE "V10" LEVEL 1;
+COMP "calibrate1" LOCATE = SITE "T10" LEVEL 1;
+COMP "calibrate2" LOCATE = SITE "T9" LEVEL 1;
+COMP "calibrate3" LOCATE = SITE "V9" LEVEL 1;
+COMP "calibrate4" LOCATE = SITE "M8" LEVEL 1;
+COMP "calibrate5" LOCATE = SITE "N8" LEVEL 1;
+COMP "Activadores<0>" LOCATE = SITE "P17" LEVEL 1;
+COMP "Activadores<1>" LOCATE = SITE "P18" LEVEL 1;
+COMP "Activadores<2>" LOCATE = SITE "N15" LEVEL 1;
+COMP "Activadores<3>" LOCATE = SITE "N16" LEVEL 1;
+COMP "SalidaSiete<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "SalidaSiete<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "SalidaSiete<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "SalidaSiete<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "SalidaSiete<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "SalidaSiete<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "SalidaSiete<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "CLK12_5K1" LOCATE = SITE "E11" LEVEL 1;
+COMP "CLK12_5K2" LOCATE = SITE "G3" LEVEL 1;
+COMP "CLK12_5K3" LOCATE = SITE "L3" LEVEL 1;
+COMP "dDATA1" LOCATE = SITE "F10" LEVEL 1;
+COMP "dDATA2" LOCATE = SITE "F11" LEVEL 1;
+COMP "dDATA3" LOCATE = SITE "L7" LEVEL 1;
+COMP "dDATA4" LOCATE = SITE "K6" LEVEL 1;
+COMP "dDATA5" LOCATE = SITE "K1" LEVEL 1;
+COMP "led<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "V15" LEVEL 1;
+COMP "led<4>" LOCATE = SITE "M11" LEVEL 1;
+COMP "led<5>" LOCATE = SITE "N11" LEVEL 1;
+COMP "led<6>" LOCATE = SITE "R11" LEVEL 1;
+COMP "led<7>" LOCATE = SITE "T11" LEVEL 1;
+SCHEMATIC END;
+
