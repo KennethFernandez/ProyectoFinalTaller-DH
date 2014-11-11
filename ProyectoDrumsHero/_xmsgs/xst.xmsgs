@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" Line 127: Port <arg fmt="%s" index="1">posicionYS</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" Line 132: Port <arg fmt="%s" index="1">posicionYS</arg> is not connected to this instance
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Tubo.v" Line 66: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
@@ -14,31 +14,133 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\clock32pps.v" Line 39: Result of <arg fmt="%d" index="1">20</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">19</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="604" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" Line 236: Module instantiation should have an instance name
+<msg type="warning" file="HDLCompiler" num="604" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" Line 241: Module instantiation should have an instance name
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PuntuacionTotal.v" Line 35: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="604" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" Line 276: Module instantiation should have an instance name
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DoubleDabbing.v" Line 49: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DoubleDabbing.v" Line 50: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DoubleDabbing.v" Line 51: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DoubleDabbing.v" Line 52: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DoubleDabbing.v" Line 55: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="604" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" Line 281: Module instantiation should have an instance name
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\RecorreRam.v" Line 37: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">26</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\RecorreRam.v" Line 48: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">26</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\RecorreRam.v" Line 49: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">26</arg>-bit target.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v</arg>&quot; line <arg fmt="%s" index="2">114</arg>: Output port &lt;<arg fmt="%s" index="3">p_tick</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">SincronizadorVga</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="604" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" Line 289: Module instantiation should have an instance name
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v</arg>&quot; line <arg fmt="%s" index="2">127</arg>: Output port &lt;<arg fmt="%s" index="3">posicionYS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">tubo1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\AD1_Informant.v" Line 38: Signal &lt;<arg fmt="%s" index="1">threshold</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v</arg>&quot; line <arg fmt="%s" index="2">127</arg>: Output port &lt;<arg fmt="%s" index="3">cubosHileraReg</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">tubo1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\AD1_Informant.v" Line 39: Signal &lt;<arg fmt="%s" index="1">threshold</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">boton</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\AD1_Informant.v" Line 39: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\AD1_Informant.v" Line 40: Signal &lt;<arg fmt="%s" index="1">threshold</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\AD1_Informant.v" Line 40: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">7</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 82: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">soundLevel</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 82: Assignment to <arg fmt="%s" index="1">soundLevel1</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 83: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">soundLevel</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 83: Assignment to <arg fmt="%s" index="1">soundLevel2</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 87: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">soundLevel</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 87: Assignment to <arg fmt="%s" index="1">soundLevel3</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 88: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">soundLevel</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 88: Assignment to <arg fmt="%s" index="1">soundLevel4</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 92: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">soundLevel</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 92: Assignment to <arg fmt="%s" index="1">soundLevel5</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 93: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">dDATA2</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 94: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">DATAIn2</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Clk12_5K.v" Line 30: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">12</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 84: Net &lt;<arg fmt="%s" index="1">CS</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v</arg>&quot; line <arg fmt="%s" index="2">119</arg>: Output port &lt;<arg fmt="%s" index="3">p_tick</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">SincronizadorVga</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v</arg>&quot; line <arg fmt="%s" index="2">132</arg>: Output port &lt;<arg fmt="%s" index="3">posicionYS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">tubo1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v</arg>&quot; line <arg fmt="%s" index="2">132</arg>: Output port &lt;<arg fmt="%s" index="3">cubosHileraReg</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">tubo1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v</arg>&quot; line <arg fmt="%s" index="2">82</arg>: Output port &lt;<arg fmt="%s" index="3">soundLevel</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ad1_informant_1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v</arg>&quot; line <arg fmt="%s" index="2">83</arg>: Output port &lt;<arg fmt="%s" index="3">soundLevel</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ad1_informant_2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v</arg>&quot; line <arg fmt="%s" index="2">87</arg>: Output port &lt;<arg fmt="%s" index="3">soundLevel</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ad1_informant_3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v</arg>&quot; line <arg fmt="%s" index="2">88</arg>: Output port &lt;<arg fmt="%s" index="3">soundLevel</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ad1_informant_4</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v</arg>&quot; line <arg fmt="%s" index="2">92</arg>: Output port &lt;<arg fmt="%s" index="3">soundLevel</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ad1_informant_5</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v</arg>&quot; line <arg fmt="%s" index="2">93</arg>: Output port &lt;<arg fmt="%s" index="3">DATA2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ad1_3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v</arg>&quot; line <arg fmt="%s" index="2">94</arg>: Output port &lt;<arg fmt="%s" index="3">DATA2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mad1_3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">CS</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DATA&lt;1:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DATA&lt;15:10&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
 <msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">cubosHileraReg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">tubo1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -54,6 +156,216 @@
 </msg>
 
 <msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">cubosHileraReg_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">tubo1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1_3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA2_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DATA1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mad1_3</arg>&gt;.
 </msg>
 
 <msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_Salida</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
@@ -80,6 +392,312 @@
 <msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">tubo1/cubosHileraReg_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">DrumHero</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_3/DATA1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_3/DATA1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_3/DATA1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_3/DATA1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_3/DATA1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_3/DATA1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_3/DATA2_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_3/DATA2_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_3/DATA2_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_3/DATA2_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_3/DATA2_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_3/DATA2_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_3/DATA2_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_3/DATA2_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_3/DATA2_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_3/DATA2_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_3/DATA2_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_3/DATA2_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_3/DATA2_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_3/DATA2_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_3/DATA2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_3/DATA2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_2/DATA1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_2/DATA1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_2/DATA1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_2/DATA1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_2/DATA1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_2/DATA1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_2/DATA2_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_2/DATA2_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_2/DATA2_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_2/DATA2_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_2/DATA2_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_2/DATA2_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_1/DATA1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_1/DATA1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_1/DATA1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_1/DATA1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_1/DATA1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_1/DATA1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_1/DATA2_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_1/DATA2_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_1/DATA2_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_1/DATA2_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_1/DATA2_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/ad1_1/DATA2_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA2_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA2_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA2_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA2_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA2_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA2_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA2_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA2_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA2_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA2_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA2_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA2_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA2_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA2_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA1_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_3/DATA1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_2/DATA2_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_2/DATA2_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_2/DATA2_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_2/DATA2_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_2/DATA2_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_2/DATA2_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_2/DATA2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_2/DATA2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_2/DATA1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_2/DATA1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_2/DATA1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_2/DATA1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_2/DATA1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_2/DATA1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_2/DATA1_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_2/DATA1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_1/DATA2_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_1/DATA2_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_1/DATA2_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_1/DATA2_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_1/DATA2_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_1/DATA2_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_1/DATA2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_1/DATA2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_1/DATA1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_1/DATA1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_1/DATA1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_1/DATA1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_1/DATA1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_1/DATA1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_1/DATA1_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">_i000016/mad1_1/DATA1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt;.
+</msg>
+
 <msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">tubo1/posicionYS_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">DrumHero</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
@@ -99,6 +717,9 @@
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">tubo1/posicionYS_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">DrumHero</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;tubo1/posicionYS_7&gt; &lt;tubo1/posicionYS_4&gt; &lt;tubo1/posicionYS_3&gt; &lt;tubo1/posicionYS_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>

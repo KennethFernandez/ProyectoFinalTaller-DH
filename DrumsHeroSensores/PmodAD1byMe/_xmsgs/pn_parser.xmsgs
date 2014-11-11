@@ -8,7 +8,34 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/PmodAD1GGWP.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/DrumsHeroSensores/PmodAD1byMe/AD1_Controller.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/DrumsHeroSensores/PmodAD1byMe/AD1_Informant.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/DrumsHeroSensores/PmodAD1byMe/Clk12_5K.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/DrumsHeroSensores/PmodAD1byMe/Clock25.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/DrumsHeroSensores/PmodAD1byMe/ControladorSiete.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/DrumsHeroSensores/PmodAD1byMe/DoubleDabbing.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/DrumsHeroSensores/PmodAD1byMe/Filtro.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/DrumsHeroSensores/PmodAD1byMe/MaquinaAD1.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/DrumsHeroSensores/PmodAD1byMe/PmodAD1GGWP.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/DrumsHeroSensores/PmodAD1byMe/SelectorM.v&quot; into library work</arg>
 </msg>
 
 </messages>

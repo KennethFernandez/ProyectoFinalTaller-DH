@@ -26,12 +26,12 @@ module RecorreRam(habilitador,DireccionRAM,enable,nivel2,nivel3,boton);
 	 input nivel2,nivel3;
 	 output [25:0] DireccionRAM;
 	 reg [25:0] DireccionRAMTemp1 = 26'b0;
-	 reg [25:0] DireccionRAMTemp2 = 26'b00100000000000000000000000;
+	 reg [25:0] DireccionRAMTemp2 = 26'b00001010000101111111110000;
 	 
 	 always @(negedge habilitador) begin 
 	 
-	 // 26'b00001010000000000000000000
-	 // 26'd2621440
+	 // 26'b00001010000101111111110000
+	 // 26'd2646000
 	 // Inicial : 26'H0
 	 
 	 DireccionRAMTemp1 <= ( DireccionRAMTemp1 <= 26'b00001010000101111111110000 & !enable)? 
@@ -43,10 +43,13 @@ module RecorreRam(habilitador,DireccionRAM,enable,nivel2,nivel3,boton);
 	 
 	 // 26'b00100000000000000000000000
 	 // 26'd8388608
-	 // 26'H800000
+	 // 26'H285FF0
 	 
-	 DireccionRAMTemp2 <= (DireccionRAMTemp2 <= 26'b00100010000000000000000000 & !enable)? 
-							DireccionRAMTemp2 + 2 + nivel2 + nivel3: 26'b00100000000000000000000000;
+	 
+	 DireccionRAMTemp2 <= (boton & DireccionRAMTemp2 == 26'b0 & !enable)? 26'b1: 
+							    (DireccionRAMTemp2 >= 26'b00000000000000000000000001 &
+								  DireccionRAMTemp2 <= 26'b00000000011000000000000000 & !enable)? 
+							    DireccionRAMTemp2 + 3 + nivel2 + nivel3: 26'b0;
 							
 	end
 	

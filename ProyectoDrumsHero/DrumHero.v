@@ -18,11 +18,10 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module DrumHero(clk,boton1,boton2,boton3,boton4,
-					 boton5,nivel2,nivel3,start,hsync,vsync,rgb,
+module DrumHero(clk,nivel2,nivel3,start,hsync,vsync,rgb,
 					 Activadores, SalidaSiete,SalidaLeds,
 					 DireccionRAM, DataRAM,SenalesRAM,
-					 MCLK,LRCLK,SDIN
+					 MCLK,LRCLK,SDIN,Calibrador,dDATA,CS,CLK12_5K
 					 );
 
 	 //Las entradas necesarias
@@ -30,7 +29,7 @@ module DrumHero(clk,boton1,boton2,boton3,boton4,
 	input start;
 	input clk;
 	input nivel2,nivel3;
-	input boton1,boton2,boton3,boton4,boton5;
+	wire boton1,boton2,boton3,boton4,boton5;
 
 	output [7:0] rgb;
 	output hsync, vsync;
@@ -45,6 +44,11 @@ module DrumHero(clk,boton1,boton2,boton3,boton4,
 	output [25:0] DireccionRAM;
 	output [7:0]  SenalesRAM;
 	input  [15:0] DataRAM;
+	
+	input  [4:0] Calibrador;
+	input  [4:0] dDATA;
+	output [2:0] CS;
+	output [2:0] CLK12_5K;
 	
 	wire comenzar, reiniciar,stop,perdio;
 	wire [4:0] EntradaMaquinaPintar;
@@ -76,6 +80,8 @@ module DrumHero(clk,boton1,boton2,boton3,boton4,
 	wire clk50;
 	wire LClock;
 	wire clk32SinStop;
+	
+	wire [4:0] SalidaLedsTemp;
 
 	parameter posicionBandaStatic = 410;
 	parameter posicionInici1 = 0;
@@ -84,7 +90,6 @@ module DrumHero(clk,boton1,boton2,boton3,boton4,
 	parameter posicionInici4 = 282;
 	
 	parameter todosLosCubos = 31; 
-	
 	
 	Clock25 clock50(.clk(clk),.clk25(clk50));
 
@@ -226,7 +231,7 @@ module DrumHero(clk,boton1,boton2,boton3,boton4,
 	.perdio(perdio), 
 	.reset(start),
 	.botonesBaq({boton1,boton2,boton3,boton4,boton5}),
-	.leds(SalidaLeds),
+	.leds(SalidaLedsTemp),
 	.linea1(cubosLinea1),
 	.linea2(cubosLinea2),
 	.linea3(cubosLinea3),
@@ -276,10 +281,30 @@ module DrumHero(clk,boton1,boton2,boton3,boton4,
 	RecorreRam(
 	.habilitador(LClock),
 	.DireccionRAM(DireccionRAM),
-	.enable(1'b0),
+	.enable(stop),
 	.nivel2(nivel2),
 	.nivel3(nivel3),
-	.boton(1'b1));
-
+	.boton(boton1 | boton2 | boton3 | boton4 | boton5));
+	
+	PmodAD1GGWP(.CLK(clk), 
+					.calibrate1(Calibrador[0]), 
+					.calibrate2(Calibrador[1]), 
+					.calibrate3(Calibrador[2]), 
+					.calibrate4(Calibrador[3]),
+					.calibrate5(Calibrador[4]), 
+					.dDATA1(dDATA[0]), 
+					.dDATA2(dDATA[1]), 
+					.dDATA3(dDATA[2]), 
+					.dDATA4(dDATA[3]), 
+					.dDATA5(dDATA[4]), 
+					.CS1(CS[0]), 
+					.CS2(CS[1]), 
+					.CS3(CS[2]),
+					.CLK12_5K1(CLK12_5K[0]), 
+					.CLK12_5K2(CLK12_5K[1]), 
+					.CLK12_5K3(CLK12_5K[2]), 
+					.led({boton1,boton2,boton3,boton4,boton5}));
+					
+	assign SalidaLeds = (!stop)? SalidaLedsTemp: {boton1,boton2,boton3,boton4,boton5};
 
 endmodule

@@ -109,33 +109,13 @@
     <transform xil_pn:end_ts="1415592653" xil_pn:in_ck="-4141817227837722359" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1415592653">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Clock25.v"/>
-      <outfile xil_pn:name="ControladorSiete.v"/>
-      <outfile xil_pn:name="DoubleDabbing.v"/>
-      <outfile xil_pn:name="DrumHero.v"/>
-      <outfile xil_pn:name="Filtro.v"/>
-      <outfile xil_pn:name="ListaValores.v"/>
-      <outfile xil_pn:name="Lrclk.v"/>
-      <outfile xil_pn:name="MaquinaNivel1.v"/>
-      <outfile xil_pn:name="Maquina_pintar.v"/>
-      <outfile xil_pn:name="PruebaGuardarPuntuacionGlobal.v"/>
-      <outfile xil_pn:name="PruebaListaValores.v"/>
-      <outfile xil_pn:name="PruebaRecorreRam.v"/>
-      <outfile xil_pn:name="PruebaReloj32milis.v"/>
-      <outfile xil_pn:name="Puntuacion.v"/>
-      <outfile xil_pn:name="PuntuacionTotal.v"/>
-      <outfile xil_pn:name="RandomFourBits.v"/>
-      <outfile xil_pn:name="RandomTenBits.v"/>
-      <outfile xil_pn:name="RecorreRam.v"/>
-      <outfile xil_pn:name="RespuestaSonidoRam.v"/>
-      <outfile xil_pn:name="SelectorM.v"/>
-      <outfile xil_pn:name="Sonido.v"/>
-      <outfile xil_pn:name="TransmisionDAC.v"/>
-      <outfile xil_pn:name="Tubo.v"/>
-      <outfile xil_pn:name="clock32pps.v"/>
-      <outfile xil_pn:name="clockde50.v"/>
-      <outfile xil_pn:name="pruebaLrck.v"/>
-      <outfile xil_pn:name="vga_sync.v"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1415592712" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="366945454738719071" xil_pn:start_ts="1415592712">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -152,54 +132,36 @@
     <transform xil_pn:end_ts="1415592712" xil_pn:in_ck="-4141817227837722359" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1415592712">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Clock25.v"/>
-      <outfile xil_pn:name="ControladorSiete.v"/>
-      <outfile xil_pn:name="DoubleDabbing.v"/>
-      <outfile xil_pn:name="DrumHero.v"/>
-      <outfile xil_pn:name="Filtro.v"/>
-      <outfile xil_pn:name="ListaValores.v"/>
-      <outfile xil_pn:name="Lrclk.v"/>
-      <outfile xil_pn:name="MaquinaNivel1.v"/>
-      <outfile xil_pn:name="Maquina_pintar.v"/>
-      <outfile xil_pn:name="PruebaGuardarPuntuacionGlobal.v"/>
-      <outfile xil_pn:name="PruebaListaValores.v"/>
-      <outfile xil_pn:name="PruebaRecorreRam.v"/>
-      <outfile xil_pn:name="PruebaReloj32milis.v"/>
-      <outfile xil_pn:name="Puntuacion.v"/>
-      <outfile xil_pn:name="PuntuacionTotal.v"/>
-      <outfile xil_pn:name="RandomFourBits.v"/>
-      <outfile xil_pn:name="RandomTenBits.v"/>
-      <outfile xil_pn:name="RecorreRam.v"/>
-      <outfile xil_pn:name="RespuestaSonidoRam.v"/>
-      <outfile xil_pn:name="SelectorM.v"/>
-      <outfile xil_pn:name="Sonido.v"/>
-      <outfile xil_pn:name="TransmisionDAC.v"/>
-      <outfile xil_pn:name="Tubo.v"/>
-      <outfile xil_pn:name="clock32pps.v"/>
-      <outfile xil_pn:name="clockde50.v"/>
-      <outfile xil_pn:name="pruebaLrck.v"/>
-      <outfile xil_pn:name="vga_sync.v"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1415592746" xil_pn:in_ck="-4141817227837722359" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5215844326945849539" xil_pn:start_ts="1415592712">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="RespuestaSonidoRam_beh.prj"/>
-      <outfile xil_pn:name="RespuestaSonidoRam_isim_beh.exe"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1415592750" xil_pn:in_ck="-1871582393650145322" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6377967079717382400" xil_pn:start_ts="1415592746">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="RespuestaSonidoRam_isim_beh.wdb"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1413944983" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1413944983">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -229,7 +191,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1415590621" xil_pn:in_ck="-2567630170335644630" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="9073905661164996153" xil_pn:start_ts="1415590536">
+    <transform xil_pn:end_ts="1415689663" xil_pn:in_ck="7511858945916455859" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="9073905661164996153" xil_pn:start_ts="1415689572">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -247,23 +209,31 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1415505510" xil_pn:in_ck="3617049893029002642" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4784892190762576840" xil_pn:start_ts="1415505510">
+    <transform xil_pn:end_ts="1415682398" xil_pn:in_ck="3617049893029002642" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4784892190762576840" xil_pn:start_ts="1415682398">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
-    <transform xil_pn:end_ts="1415590654" xil_pn:in_ck="-3814537212668792866" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8745289385598126901" xil_pn:start_ts="1415590621">
+    <transform xil_pn:end_ts="1415689712" xil_pn:in_ck="-3814537212668792866" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8745289385598126901" xil_pn:start_ts="1415689663">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="DrumHero.bld"/>
       <outfile xil_pn:name="DrumHero.ngd"/>
       <outfile xil_pn:name="DrumHero_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1415590722" xil_pn:in_ck="-2146647697715807905" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1415590654">
+    <transform xil_pn:end_ts="1415689819" xil_pn:in_ck="-2146647697715807905" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1415689712">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="DrumHero.pcf"/>
       <outfile xil_pn:name="DrumHero_map.map"/>
@@ -275,9 +245,12 @@
       <outfile xil_pn:name="DrumHero_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1415590795" xil_pn:in_ck="-8619048351873470600" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1415590722">
+    <transform xil_pn:end_ts="1415689966" xil_pn:in_ck="-8619048351873470600" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1415689819">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="DrumHero.ncd"/>
       <outfile xil_pn:name="DrumHero.pad"/>
       <outfile xil_pn:name="DrumHero.par"/>
@@ -289,9 +262,10 @@
       <outfile xil_pn:name="DrumHero_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1415590861" xil_pn:in_ck="3617049893028995017" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1415590795">
+    <transform xil_pn:end_ts="1415690059" xil_pn:in_ck="3617049893028995017" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1415689966">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="DrumHero.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="drumhero.bgn"/>
@@ -305,11 +279,17 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1415590795" xil_pn:in_ck="-947134786995203365" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1415590774">
+    <transform xil_pn:end_ts="1415689966" xil_pn:in_ck="-947134786995203365" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1415689922">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="DrumHero.twr"/>
       <outfile xil_pn:name="DrumHero.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

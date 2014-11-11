@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-11-09T18:20:00</DateModified>
+  <DateModified>2014-11-11T00:10:41</DateModified>
   <ModuleName>PmodAD1GGWP</ModuleName>
   <SummaryTimeStamp>2014-11-09T18:19:28</SummaryTimeStamp>
-  <SavedFilePath>/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/iseconfig/PmodAD1GGWP.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/rambontanga/Documents/Xilinx Projects/PmodAD1byMe/</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/DrumsHeroSensores/PmodAD1byMe/iseconfig/PmodAD1GGWP.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Sonia/Documents/GitHub/ProyectoFinalTaller-DH/DrumsHeroSensores/PmodAD1byMe\</ImplementationReportsDirectory>
   <DateInitialized>2014-11-08T01:22:28</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

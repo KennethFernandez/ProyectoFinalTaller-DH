@@ -46,13 +46,13 @@ module DoubleDabbing(Entrada,Salidas,clk,reset);
 	EntradaTemp = EntradaTemp;end
 	else begin 
 	
-	if( Registro[28:25] > 4 )Registro[28:25] = {Registro[28:25] + 3}[3:0];
-	if( Registro[24:21] > 4 )Registro[24:21] = {Registro[24:21] + 3}[3:0];
-	if( Registro[20:17] > 4 )Registro[20:17] = {Registro[20:17] + 3}[3:0];
-	if( Registro[16:13] > 4 )Registro[16:13] = {Registro[16:13] + 3}[3:0];
+	if( Registro[28:25] > 4 )Registro[28:25] = Registro[28:25] + 3;
+	if( Registro[24:21] > 4 )Registro[24:21] = Registro[24:21] + 3;
+	if( Registro[20:17] > 4 )Registro[20:17] = Registro[20:17] + 3;
+	if( Registro[16:13] > 4 )Registro[16:13] = Registro[16:13] + 3;
 	
 	Registro = (Registro)<<1;
-	contador = {contador + 1}[4:0]; 
+	contador = contador + 1; 
 	EntradaTemp = Entrada;end
 
 	end

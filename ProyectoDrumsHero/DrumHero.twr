@@ -32,13 +32,33 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
+Setup/Hold to clock clk
+-------------+------------+------------+------------+------------+------------------+--------+
+             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source       | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+-------------+------------+------------+------------+------------+------------------+--------+
+Calibrador<0>|    2.926(R)|      SLOW  |   -1.541(R)|      SLOW  |clk_BUFGP         |   0.000|
+Calibrador<1>|    2.811(R)|      SLOW  |   -1.355(R)|      SLOW  |clk_BUFGP         |   0.000|
+Calibrador<2>|    1.517(R)|      SLOW  |   -0.497(R)|      SLOW  |clk_BUFGP         |   0.000|
+Calibrador<3>|    2.551(R)|      SLOW  |   -1.177(R)|      SLOW  |clk_BUFGP         |   0.000|
+Calibrador<4>|    2.245(R)|      SLOW  |   -1.041(R)|      FAST  |clk_BUFGP         |   0.000|
+-------------+------------+------------+------------+------------+------------------+--------+
+
 Clock clk to Pad
 -------------+-----------------+------------+-----------------+------------+------------------+--------+
              |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination  |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 -------------+-----------------+------------+-----------------+------------+------------------+--------+
-MCLK         |         7.990(R)|      SLOW  |         4.191(R)|      FAST  |clk_BUFGP         |   0.000|
-SenalesRAM<2>|         7.707(R)|      SLOW  |         4.023(R)|      FAST  |clk_BUFGP         |   0.000|
+CLK12_5K<0>  |         8.705(R)|      SLOW  |         4.684(R)|      FAST  |clk_BUFGP         |   0.000|
+CLK12_5K<1>  |         7.227(R)|      SLOW  |         3.771(R)|      FAST  |clk_BUFGP         |   0.000|
+CLK12_5K<2>  |         8.045(R)|      SLOW  |         4.265(R)|      FAST  |clk_BUFGP         |   0.000|
+MCLK         |         7.495(R)|      SLOW  |         3.902(R)|      FAST  |clk_BUFGP         |   0.000|
+SalidaLeds<0>|        13.042(R)|      SLOW  |         6.156(R)|      FAST  |clk_BUFGP         |   0.000|
+SalidaLeds<1>|        13.588(R)|      SLOW  |         5.909(R)|      FAST  |clk_BUFGP         |   0.000|
+SalidaLeds<2>|        13.613(R)|      SLOW  |         6.068(R)|      FAST  |clk_BUFGP         |   0.000|
+SalidaLeds<3>|        13.400(R)|      SLOW  |         6.148(R)|      FAST  |clk_BUFGP         |   0.000|
+SalidaLeds<4>|        15.637(R)|      SLOW  |         6.960(R)|      FAST  |clk_BUFGP         |   0.000|
+SenalesRAM<2>|         7.181(R)|      SLOW  |         3.707(R)|      FAST  |clk_BUFGP         |   0.000|
 -------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -46,18 +66,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    0.907|         |         |         |
+clk            |    3.387|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sun Nov 09 21:39:52 2014 
+Analysis completed Tue Nov 11 01:12:44 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 172 MB
+Peak Memory Usage: 174 MB
 
 
 

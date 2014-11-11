@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 2.43 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.55 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 2.46 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.56 secs
  
 --> Reading design: DrumHero.prj
 
@@ -109,8 +109,16 @@ Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\P
 Parsing module <TransmisionDAC>.
 Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\RandomTenBits.v" into library work
 Parsing module <RandomFourBits>.
+Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\MaquinaAD1.v" into library work
+Parsing module <MaquinaAD1>.
 Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Lrclk.v" into library work
 Parsing module <Lrclk>.
+Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Clk12_5K.v" into library work
+Parsing module <Clk12_5K>.
+Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\AD1_Informant.v" into library work
+Parsing module <AD1_Informant>.
+Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\AD1_Controller.v" into library work
+Parsing module <AD1_Controller>.
 Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\vga_sync.v" into library work
 Parsing module <vga_sync>.
 Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Tubo.v" into library work
@@ -125,6 +133,8 @@ Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\P
 Parsing module <PuntuacionTotal>.
 Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Puntuacion.v" into library work
 Parsing module <Puntuacion>.
+Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" into library work
+Parsing module <PmodAD1GGWP>.
 Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Maquina_pintar.v" into library work
 Parsing module <Maquina_pintar>.
 Analyzing Verilog file "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\MaquinaNivel1.v" into library work
@@ -147,7 +157,7 @@ Parsing module <DrumHero>.
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" Line 127: Port posicionYS is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" Line 132: Port posicionYS is not connected to this instance
 
 Elaborating module <DrumHero>.
 
@@ -170,12 +180,17 @@ Elaborating module <clock32pps>.
 WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\clock32pps.v" Line 39: Result of 20-bit expression is truncated to fit in 19-bit target.
 
 Elaborating module <Puntuacion>.
-WARNING:HDLCompiler:604 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" Line 236: Module instantiation should have an instance name
+WARNING:HDLCompiler:604 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" Line 241: Module instantiation should have an instance name
 
 Elaborating module <PuntuacionTotal>.
 WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PuntuacionTotal.v" Line 35: Result of 9-bit expression is truncated to fit in 8-bit target.
 
 Elaborating module <DoubleDabbing>.
+WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DoubleDabbing.v" Line 49: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DoubleDabbing.v" Line 50: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DoubleDabbing.v" Line 51: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DoubleDabbing.v" Line 52: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DoubleDabbing.v" Line 55: Result of 6-bit expression is truncated to fit in 5-bit target.
 
 Elaborating module <Filtro>.
 
@@ -188,11 +203,41 @@ Elaborating module <Sonido>.
 Elaborating module <Lrclk>.
 
 Elaborating module <TransmisionDAC>.
-WARNING:HDLCompiler:604 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" Line 276: Module instantiation should have an instance name
+WARNING:HDLCompiler:604 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" Line 281: Module instantiation should have an instance name
 
 Elaborating module <RecorreRam>.
 WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\RecorreRam.v" Line 37: Result of 32-bit expression is truncated to fit in 26-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\RecorreRam.v" Line 48: Result of 32-bit expression is truncated to fit in 26-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\RecorreRam.v" Line 49: Result of 32-bit expression is truncated to fit in 26-bit target.
+WARNING:HDLCompiler:604 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" Line 289: Module instantiation should have an instance name
+
+Elaborating module <PmodAD1GGWP>.
+
+Elaborating module <AD1_Informant>.
+WARNING:HDLCompiler:91 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\AD1_Informant.v" Line 38: Signal <threshold> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\AD1_Informant.v" Line 39: Signal <threshold> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\AD1_Informant.v" Line 39: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\AD1_Informant.v" Line 40: Signal <threshold> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\AD1_Informant.v" Line 40: Result of 32-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:189 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 82: Size mismatch in connection of port <soundLevel>. Formal port size is 7-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 82: Assignment to soundLevel1 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 83: Size mismatch in connection of port <soundLevel>. Formal port size is 7-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 83: Assignment to soundLevel2 ignored, since the identifier is never used
+
+Elaborating module <AD1_Controller>.
+
+Elaborating module <MaquinaAD1>.
+WARNING:HDLCompiler:189 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 87: Size mismatch in connection of port <soundLevel>. Formal port size is 7-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 87: Assignment to soundLevel3 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 88: Size mismatch in connection of port <soundLevel>. Formal port size is 7-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 88: Assignment to soundLevel4 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 92: Size mismatch in connection of port <soundLevel>. Formal port size is 7-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 92: Assignment to soundLevel5 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 93: Size mismatch in connection of port <dDATA2>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 94: Size mismatch in connection of port <DATAIn2>. Formal port size is 16-bit while actual signal size is 32-bit.
+
+Elaborating module <Clk12_5K>.
+WARNING:HDLCompiler:413 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Clk12_5K.v" Line 30: Result of 32-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:634 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" Line 84: Net <CS> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -206,11 +251,11 @@ Synthesizing Unit <DrumHero>.
         posicionInici3 = 188
         posicionInici4 = 282
         todosLosCubos = 31
-INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" line 114: Output port <p_tick> of the instance <SincronizadorVga> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" line 127: Output port <posicionYS> of the instance <tubo1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" line 127: Output port <cubosHileraReg> of the instance <tubo1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" line 119: Output port <p_tick> of the instance <SincronizadorVga> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" line 132: Output port <posicionYS> of the instance <tubo1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\DrumHero.v" line 132: Output port <cubosHileraReg> of the instance <tubo1> is unconnected or connected to loadless signal.
     Summary:
-	inferred   6 Multiplexer(s).
+	inferred   7 Multiplexer(s).
 Unit <DrumHero> synthesized.
 
 Synthesizing Unit <Clock25>.
@@ -484,23 +529,82 @@ Unit <TransmisionDAC> synthesized.
 
 Synthesizing Unit <RecorreRam>.
     Related source file is "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\RecorreRam.v".
-WARNING:Xst:647 - Input <boton> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 26-bit register for signal <DireccionRAMTemp2>.
     Found 26-bit register for signal <DireccionRAMTemp1>.
-    Found 27-bit adder for signal <n0041[26:0]> created at line 38.
-    Found 28-bit adder for signal <n0044[27:0]> created at line 38.
-    Found 29-bit adder for signal <n0047[28:0]> created at line 38.
-    Found 27-bit adder for signal <n0049[26:0]> created at line 49.
-    Found 28-bit adder for signal <n0052[27:0]> created at line 49.
-    Found 29-bit adder for signal <n0055[28:0]> created at line 49.
-    Found 26-bit comparator greater for signal <n0001> created at line 37
-    Found 26-bit comparator greater for signal <n0009> created at line 48
+    Found 27-bit adder for signal <n0049[26:0]> created at line 38.
+    Found 28-bit adder for signal <n0052[27:0]> created at line 38.
+    Found 29-bit adder for signal <n0055[28:0]> created at line 38.
+    Found 27-bit adder for signal <n0057[26:0]> created at line 52.
+    Found 28-bit adder for signal <n0060[27:0]> created at line 52.
+    Found 29-bit adder for signal <n0063[28:0]> created at line 52.
+    Found 26-bit comparator lessequal for signal <n0001> created at line 37
+    Found 26-bit comparator lessequal for signal <n0012> created at line 50
+    Found 26-bit comparator lessequal for signal <n0014> created at line 51
     Summary:
 	inferred   6 Adder/Subtractor(s).
 	inferred  52 D-type flip-flop(s).
-	inferred   2 Comparator(s).
+	inferred   3 Comparator(s).
 	inferred   1 Multiplexer(s).
 Unit <RecorreRam> synthesized.
+
+Synthesizing Unit <PmodAD1GGWP>.
+    Related source file is "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v".
+INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" line 82: Output port <soundLevel> of the instance <ad1_informant_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" line 83: Output port <soundLevel> of the instance <ad1_informant_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" line 87: Output port <soundLevel> of the instance <ad1_informant_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" line 88: Output port <soundLevel> of the instance <ad1_informant_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" line 92: Output port <soundLevel> of the instance <ad1_informant_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" line 93: Output port <DATA2> of the instance <ad1_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\PmodAD1GGWP.v" line 94: Output port <DATA2> of the instance <mad1_3> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <CS> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <PmodAD1GGWP> synthesized.
+
+Synthesizing Unit <AD1_Informant>.
+    Related source file is "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\AD1_Informant.v".
+WARNING:Xst:647 - Input <DATA<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DATA<15:10>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <threshold>.
+    Found 9-bit subtractor for signal <GND_23_o_GND_23_o_sub_6_OUT> created at line 39.
+    Found 8-bit comparator greater for signal <threshold[7]_DATA[9]_LessThan_5_o> created at line 38
+    Found 32-bit comparator greater for signal <GND_23_o_GND_23_o_LessThan_7_o> created at line 39
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <AD1_Informant> synthesized.
+
+Synthesizing Unit <AD1_Controller>.
+    Related source file is "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\AD1_Controller.v".
+    Found 16-bit register for signal <DATA2>.
+    Found 16-bit register for signal <DATA1>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <AD1_Controller> synthesized.
+
+Synthesizing Unit <MaquinaAD1>.
+    Related source file is "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\MaquinaAD1.v".
+    Found 1-bit register for signal <CS>.
+    Found 16-bit register for signal <DATA1>.
+    Found 16-bit register for signal <DATA2>.
+    Found 4-bit register for signal <count>.
+    Found 4-bit adder for signal <count[3]_GND_25_o_add_2_OUT> created at line 33.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  37 D-type flip-flop(s).
+Unit <MaquinaAD1> synthesized.
+
+Synthesizing Unit <Clk12_5K>.
+    Related source file is "C:\Users\Sonia\Documents\GitHub\ProyectoFinalTaller-DH\ProyectoDrumsHero\Clk12_5K.v".
+    Found 1-bit register for signal <CLK12_5K>.
+    Found 12-bit register for signal <count>.
+    Found 13-bit adder for signal <n0013[12:0]> created at line 30.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  13 D-type flip-flop(s).
+Unit <Clk12_5K> synthesized.
 
 =========================================================================
 HDL Synthesis Report
@@ -513,57 +617,61 @@ Macro Statistics
 # Multipliers                                          : 2
  17x1-bit multiplier                                   : 1
  18x1-bit multiplier                                   : 1
-# Adders/Subtractors                                   : 36
+# Adders/Subtractors                                   : 45
  10-bit adder                                          : 7
  11-bit adder                                          : 10
- 13-bit adder                                          : 1
+ 13-bit adder                                          : 2
  19-bit adder                                          : 1
  20-bit subtractor                                     : 1
  27-bit adder                                          : 2
  28-bit adder                                          : 2
  29-bit adder                                          : 2
  32-bit subtractor                                     : 1
- 4-bit adder                                           : 5
+ 4-bit adder                                           : 8
  4-bit subtractor                                      : 1
  5-bit adder                                           : 1
  8-bit adder                                           : 1
  9-bit adder                                           : 1
-# Registers                                            : 69
- 1-bit register                                        : 36
+ 9-bit subtractor                                      : 5
+# Registers                                            : 94
+ 1-bit register                                        : 40
  10-bit register                                       : 7
  11-bit register                                       : 1
+ 12-bit register                                       : 1
  13-bit register                                       : 3
- 16-bit register                                       : 1
+ 16-bit register                                       : 13
  19-bit register                                       : 1
  26-bit register                                       : 2
  29-bit register                                       : 1
- 4-bit register                                        : 4
+ 4-bit register                                        : 7
  5-bit register                                        : 6
  7-bit register                                        : 5
- 8-bit register                                        : 1
+ 8-bit register                                        : 6
  9-bit register                                        : 1
-# Comparators                                          : 89
+# Comparators                                          : 100
  10-bit comparator greater                             : 36
  10-bit comparator lessequal                           : 34
  11-bit comparator greater                             : 4
  13-bit comparator equal                               : 1
  13-bit comparator greater                             : 1
- 26-bit comparator greater                             : 2
+ 26-bit comparator lessequal                           : 3
  32-bit comparator equal                               : 2
+ 32-bit comparator greater                             : 5
  4-bit comparator greater                              : 4
  5-bit comparator equal                                : 4
- 8-bit comparator greater                              : 1
-# Multiplexers                                         : 83
+ 8-bit comparator greater                              : 6
+# Multiplexers                                         : 99
  1-bit 16-to-1 multiplexer                             : 1
- 1-bit 2-to-1 multiplexer                              : 23
+ 1-bit 2-to-1 multiplexer                              : 28
  10-bit 2-to-1 multiplexer                             : 2
  13-bit 2-to-1 multiplexer                             : 1
  19-bit 2-to-1 multiplexer                             : 1
  26-bit 2-to-1 multiplexer                             : 1
  29-bit 2-to-1 multiplexer                             : 1
- 32-bit 2-to-1 multiplexer                             : 5
+ 32-bit 2-to-1 multiplexer                             : 10
  4-bit 2-to-1 multiplexer                              : 15
- 5-bit 2-to-1 multiplexer                              : 2
+ 5-bit 2-to-1 multiplexer                              : 3
+ 7-bit 2-to-1 multiplexer                              : 5
  8-bit 2-to-1 multiplexer                              : 31
 # FSMs                                                 : 1
 # Xors                                                 : 1
@@ -580,6 +688,80 @@ WARNING:Xst:1293 - FF/Latch <cubosHileraReg_1> has a constant value of 1 in bloc
 WARNING:Xst:1293 - FF/Latch <cubosHileraReg_2> has a constant value of 1 in block <tubo1>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <cubosHileraReg_3> has a constant value of 1 in block <tubo1>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <cubosHileraReg_4> has a constant value of 1 in block <tubo1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <DATA2_10> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA2_11> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA2_12> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA2_13> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA2_14> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA2_15> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA1_10> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA1_11> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA1_12> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA1_13> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA1_14> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA1_15> of sequential type is unconnected in block <ad1_1>.
+WARNING:Xst:2677 - Node <DATA2_10> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA2_11> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA2_12> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA2_13> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA2_14> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA2_15> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA1_10> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA1_11> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA1_12> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA1_13> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA1_14> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA1_15> of sequential type is unconnected in block <ad1_2>.
+WARNING:Xst:2677 - Node <DATA1_10> of sequential type is unconnected in block <ad1_3>.
+WARNING:Xst:2677 - Node <DATA1_11> of sequential type is unconnected in block <ad1_3>.
+WARNING:Xst:2677 - Node <DATA1_12> of sequential type is unconnected in block <ad1_3>.
+WARNING:Xst:2677 - Node <DATA1_13> of sequential type is unconnected in block <ad1_3>.
+WARNING:Xst:2677 - Node <DATA1_14> of sequential type is unconnected in block <ad1_3>.
+WARNING:Xst:2677 - Node <DATA1_15> of sequential type is unconnected in block <ad1_3>.
+WARNING:Xst:2677 - Node <DATA1_0> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA1_1> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA1_10> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA1_11> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA1_12> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA1_13> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA1_14> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA1_15> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA2_0> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA2_1> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA2_10> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA2_11> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA2_12> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA2_13> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA2_14> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA2_15> of sequential type is unconnected in block <mad1_1>.
+WARNING:Xst:2677 - Node <DATA1_0> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA1_1> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA1_10> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA1_11> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA1_12> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA1_13> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA1_14> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA1_15> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA2_0> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA2_1> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA2_10> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA2_11> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA2_12> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA2_13> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA2_14> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA2_15> of sequential type is unconnected in block <mad1_2>.
+WARNING:Xst:2677 - Node <DATA1_0> of sequential type is unconnected in block <mad1_3>.
+WARNING:Xst:2677 - Node <DATA1_1> of sequential type is unconnected in block <mad1_3>.
+WARNING:Xst:2677 - Node <DATA1_10> of sequential type is unconnected in block <mad1_3>.
+WARNING:Xst:2677 - Node <DATA1_11> of sequential type is unconnected in block <mad1_3>.
+WARNING:Xst:2677 - Node <DATA1_12> of sequential type is unconnected in block <mad1_3>.
+WARNING:Xst:2677 - Node <DATA1_13> of sequential type is unconnected in block <mad1_3>.
+WARNING:Xst:2677 - Node <DATA1_14> of sequential type is unconnected in block <mad1_3>.
+WARNING:Xst:2677 - Node <DATA1_15> of sequential type is unconnected in block <mad1_3>.
+
+Synthesizing (advanced) Unit <Clk12_5K>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <Clk12_5K> synthesized (advanced).
 
 Synthesizing (advanced) Unit <ControladorSiete>.
 INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Salida> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
@@ -616,6 +798,10 @@ Unit <ListaValores> synthesized (advanced).
 Synthesizing (advanced) Unit <Lrclk>.
 The following registers are absorbed into counter <contador>: 1 register on signal <contador>.
 Unit <Lrclk> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MaquinaAD1>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <MaquinaAD1> synthesized (advanced).
 
 Synthesizing (advanced) Unit <Puntuacion>.
 The following registers are absorbed into counter <teclasPasadas>: 1 register on signal <teclasPasadas>.
@@ -667,7 +853,7 @@ Macro Statistics
  17x1-to-32-bit MAC                                    : 1
 # Multipliers                                          : 1
  18x1-bit multiplier                                   : 1
-# Adders/Subtractors                                   : 24
+# Adders/Subtractors                                   : 29
  10-bit adder                                          : 5
  11-bit adder                                          : 9
  19-bit adder                                          : 1
@@ -676,38 +862,42 @@ Macro Statistics
  26-bit adder carry in                                 : 2
  3-bit adder                                           : 1
  4-bit adder                                           : 3
-# Counters                                             : 10
+ 9-bit subtractor                                      : 5
+# Counters                                             : 14
  10-bit up counter                                     : 2
  11-bit up counter                                     : 1
+ 12-bit up counter                                     : 1
  13-bit up counter                                     : 1
  19-bit up counter                                     : 1
  4-bit down counter                                    : 1
- 4-bit up counter                                      : 1
+ 4-bit up counter                                      : 4
  5-bit up counter                                      : 1
  8-bit up counter                                      : 1
  9-bit up counter                                      : 1
-# Registers                                            : 277
- Flip-Flops                                            : 277
-# Comparators                                          : 89
+# Registers                                            : 513
+ Flip-Flops                                            : 513
+# Comparators                                          : 100
  10-bit comparator greater                             : 36
  10-bit comparator lessequal                           : 34
  11-bit comparator greater                             : 4
  13-bit comparator equal                               : 1
  13-bit comparator greater                             : 1
- 26-bit comparator greater                             : 2
+ 26-bit comparator lessequal                           : 3
  32-bit comparator equal                               : 2
+ 32-bit comparator greater                             : 5
  4-bit comparator greater                              : 4
  5-bit comparator equal                                : 4
- 8-bit comparator greater                              : 1
-# Multiplexers                                         : 91
+ 8-bit comparator greater                              : 6
+# Multiplexers                                         : 107
  1-bit 16-to-1 multiplexer                             : 1
- 1-bit 2-to-1 multiplexer                              : 36
+ 1-bit 2-to-1 multiplexer                              : 41
  19-bit 2-to-1 multiplexer                             : 1
  26-bit 2-to-1 multiplexer                             : 1
  29-bit 2-to-1 multiplexer                             : 1
- 32-bit 2-to-1 multiplexer                             : 5
+ 32-bit 2-to-1 multiplexer                             : 10
  4-bit 2-to-1 multiplexer                              : 14
- 5-bit 2-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 2
+ 7-bit 2-to-1 multiplexer                              : 5
  8-bit 2-to-1 multiplexer                              : 31
 # FSMs                                                 : 1
 # Xors                                                 : 1
@@ -732,9 +922,17 @@ Optimizing FSM <segundaEtapa/FSM_0> on signal <state[1:3]> with gray encoding.
  0011  | 101
 -------------------
 
+Optimizing unit <AD1_Controller> ...
+
 Optimizing unit <DrumHero> ...
 
 Optimizing unit <TransmisionDAC> ...
+
+Optimizing unit <PmodAD1GGWP> ...
+
+Optimizing unit <AD1_Informant> ...
+
+Optimizing unit <MaquinaAD1> ...
 
 Optimizing unit <clock32pps> ...
 
@@ -756,6 +954,108 @@ WARNING:Xst:1293 - FF/Latch <tubo1/cubosHileraReg_3> has a constant value of 1 i
 WARNING:Xst:1293 - FF/Latch <tubo1/cubosHileraReg_2> has a constant value of 1 in block <DrumHero>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <tubo1/cubosHileraReg_1> has a constant value of 1 in block <DrumHero>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <tubo1/cubosHileraReg_0> has a constant value of 1 in block <DrumHero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <_i000016/ad1_3/DATA1_15> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_3/DATA1_14> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_3/DATA1_13> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_3/DATA1_12> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_3/DATA1_11> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_3/DATA1_10> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_3/DATA2_15> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_3/DATA2_14> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_3/DATA2_13> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_3/DATA2_12> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_3/DATA2_11> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_3/DATA2_10> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_3/DATA2_9> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_3/DATA2_8> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_3/DATA2_7> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_3/DATA2_6> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_3/DATA2_5> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_3/DATA2_4> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_3/DATA2_3> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_3/DATA2_2> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_3/DATA2_1> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_3/DATA2_0> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_2/DATA1_15> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_2/DATA1_14> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_2/DATA1_13> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_2/DATA1_12> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_2/DATA1_11> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_2/DATA1_10> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_2/DATA2_15> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_2/DATA2_14> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_2/DATA2_13> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_2/DATA2_12> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_2/DATA2_11> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_2/DATA2_10> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_1/DATA1_15> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_1/DATA1_14> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_1/DATA1_13> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_1/DATA1_12> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_1/DATA1_11> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_1/DATA1_10> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_1/DATA2_15> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_1/DATA2_14> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_1/DATA2_13> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_1/DATA2_12> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_1/DATA2_11> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/ad1_1/DATA2_10> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA2_15> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA2_14> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA2_13> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA2_12> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA2_11> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA2_10> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA2_9> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA2_8> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA2_7> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA2_6> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA2_5> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA2_4> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA2_3> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA2_2> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA2_1> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA2_0> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA1_15> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA1_14> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA1_13> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA1_12> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA1_11> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA1_10> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA1_1> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_3/DATA1_0> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_2/DATA2_15> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_2/DATA2_14> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_2/DATA2_13> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_2/DATA2_12> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_2/DATA2_11> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_2/DATA2_10> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_2/DATA2_1> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_2/DATA2_0> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_2/DATA1_15> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_2/DATA1_14> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_2/DATA1_13> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_2/DATA1_12> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_2/DATA1_11> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_2/DATA1_10> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_2/DATA1_1> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_2/DATA1_0> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_1/DATA2_15> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_1/DATA2_14> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_1/DATA2_13> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_1/DATA2_12> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_1/DATA2_11> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_1/DATA2_10> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_1/DATA2_1> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_1/DATA2_0> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_1/DATA1_15> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_1/DATA1_14> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_1/DATA1_13> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_1/DATA1_12> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_1/DATA1_11> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_1/DATA1_10> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_1/DATA1_1> of sequential type is unconnected in block <DrumHero>.
+WARNING:Xst:2677 - Node <_i000016/mad1_1/DATA1_0> of sequential type is unconnected in block <DrumHero>.
 WARNING:Xst:1293 - FF/Latch <tubo1/posicionYS_9> has a constant value of 0 in block <DrumHero>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <tubo1/posicionYS_6> has a constant value of 0 in block <DrumHero>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <tubo1/posicionYS_5> has a constant value of 0 in block <DrumHero>. This FF/Latch will be trimmed during the optimization process.
@@ -766,7 +1066,7 @@ INFO:Xst:2261 - The FF/Latch <tubo1/posicionYS_8> in Unit <DrumHero> is equivale
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block DrumHero, actual ratio is 11.
+Found area constraint ratio of 100 (+ 5) on block DrumHero, actual ratio is 13.
 FlipFlop primeraEtapa/state has been replicated 1 time(s)
 
 Final Macro Processing ...
@@ -775,8 +1075,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 359
- Flip-Flops                                            : 359
+# Registers                                            : 517
+ Flip-Flops                                            : 517
 
 =========================================================================
 
@@ -799,36 +1099,36 @@ Top Level Output File Name         : DrumHero.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1370
+# BELS                             : 1628
 #      GND                         : 1
-#      INV                         : 17
-#      LUT1                        : 125
-#      LUT2                        : 63
-#      LUT3                        : 118
-#      LUT4                        : 166
-#      LUT5                        : 86
-#      LUT6                        : 310
-#      MUXCY                       : 278
-#      MUXF7                       : 4
+#      INV                         : 18
+#      LUT1                        : 135
+#      LUT2                        : 113
+#      LUT3                        : 125
+#      LUT4                        : 177
+#      LUT5                        : 125
+#      LUT6                        : 338
+#      MUXCY                       : 335
+#      MUXF7                       : 7
 #      MUXF8                       : 1
 #      VCC                         : 1
-#      XORCY                       : 200
-# FlipFlops/Latches                : 359
-#      FD                          : 128
+#      XORCY                       : 252
+# FlipFlops/Latches                : 517
+#      FD                          : 195
 #      FDC                         : 3
 #      FDCE                        : 20
-#      FDE                         : 15
+#      FDE                         : 53
 #      FDE_1                       : 16
-#      FDR                         : 110
-#      FDR_1                       : 26
-#      FDRE                        : 36
-#      FDS                         : 5
-# Clock Buffers                    : 4
-#      BUFG                        : 3
+#      FDR                         : 118
+#      FDR_1                       : 76
+#      FDRE                        : 32
+#      FDS                         : 4
+# Clock Buffers                    : 5
+#      BUFG                        : 4
 #      BUFGP                       : 1
-# IO Buffers                       : 87
-#      IBUF                        : 24
-#      OBUF                        : 63
+# IO Buffers                       : 98
+#      IBUF                        : 29
+#      OBUF                        : 69
 
 Device utilization summary:
 ---------------------------
@@ -837,23 +1137,23 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             359  out of  18224     1%  
- Number of Slice LUTs:                  885  out of   9112     9%  
-    Number used as Logic:               885  out of   9112     9%  
+ Number of Slice Registers:             517  out of  18224     2%  
+ Number of Slice LUTs:                 1031  out of   9112    11%  
+    Number used as Logic:              1031  out of   9112    11%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    930
-   Number with an unused Flip Flop:     571  out of    930    61%  
-   Number with an unused LUT:            45  out of    930     4%  
-   Number of fully used LUT-FF pairs:   314  out of    930    33%  
-   Number of unique control sets:        33
+ Number of LUT Flip Flop pairs used:   1161
+   Number with an unused Flip Flop:     644  out of   1161    55%  
+   Number with an unused LUT:           130  out of   1161    11%  
+   Number of fully used LUT-FF pairs:   387  out of   1161    33%  
+   Number of unique control sets:        37
 
 IO Utilization: 
- Number of IOs:                          88
- Number of bonded IOBs:                  88  out of    232    37%  
+ Number of IOs:                          99
+ Number of bonded IOBs:                  99  out of    232    42%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
+ Number of BUFG/BUFGCTRLs:                5  out of     16    31%  
 
 ---------------------------
 Partition Resource Summary:
@@ -873,14 +1173,19 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-clock50/contador                   | BUFG                   | 286   |
-clk                                | BUFGP                  | 1     |
-ModuloMusica/lrclk/clk2            | BUFG                   | 20    |
-ModuloMusica/lrclk/clk3            | BUFG                   | 52    |
------------------------------------+------------------------+-------+
+-----------------------------------+------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)        | Load  |
+-----------------------------------+------------------------------+-------+
+clk                                | BUFGP                        | 54    |
+clock50/contador                   | BUFG                         | 286   |
+ModuloMusica/lrclk/clk2            | BUFG                         | 20    |
+_i000016/clk12_5k/CLK12_5K         | BUFG                         | 65    |
+_i000016/mad1_3/CS                 | NONE(_i000016/mad1_3/DATA1_9)| 8     |
+_i000016/mad1_2/CS                 | NONE(_i000016/mad1_2/DATA2_9)| 16    |
+_i000016/mad1_1/CS                 | NONE(_i000016/mad1_1/DATA2_9)| 16    |
+ModuloMusica/lrclk/clk3            | BUFG                         | 52    |
+-----------------------------------+------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -900,9 +1205,32 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.893ns (frequency: 256.851MHz)
+  Total number of paths / destination ports: 236 / 26
+-------------------------------------------------------------------------
+Delay:               3.893ns (Levels of Logic = 2)
+  Source:            _i000016/clk12_5k/count_7 (FF)
+  Destination:       _i000016/clk12_5k/count_11 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: _i000016/clk12_5k/count_7 to _i000016/clk12_5k/count_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.447   0.981  _i000016/clk12_5k/count_7 (_i000016/clk12_5k/count_7)
+     LUT6:I0->O            2   0.203   0.721  _i000016/clk12_5k/GND_26_o_GND_26_o_equal_5_o<11>1 (_i000016/clk12_5k/GND_26_o_GND_26_o_equal_5_o<11>)
+     LUT2:I0->O           12   0.203   0.908  _i000016/clk12_5k/GND_26_o_GND_26_o_equal_5_o<11>3 (_i000016/clk12_5k/GND_26_o_GND_26_o_equal_5_o)
+     FDR:R                     0.430          _i000016/clk12_5k/count_0
+    ----------------------------------------
+    Total                      3.893ns (1.283ns logic, 2.610ns route)
+                                       (33.0% logic, 67.0% route)
+
+=========================================================================
 Timing constraint: Default period analysis for Clock 'clock50/contador'
   Clock period: 6.911ns (frequency: 144.695MHz)
-  Total number of paths / destination ports: 48468 / 481
+  Total number of paths / destination ports: 48813 / 468
 -------------------------------------------------------------------------
 Delay:               6.911ns (Levels of Logic = 9)
   Source:            _i000013/contador_5 (FF)
@@ -930,28 +1258,6 @@ Delay:               6.911ns (Levels of Logic = 9)
                                        (26.6% logic, 73.4% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 1.984ns (frequency: 504.007MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               1.984ns (Levels of Logic = 1)
-  Source:            clock50/contador (FF)
-  Destination:       clock50/contador (FF)
-  Source Clock:      clk rising
-  Destination Clock: clk rising
-
-  Data Path: clock50/contador to clock50/contador
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               3   0.447   0.650  clock50/contador (clock50/contador)
-     INV:I->O              1   0.206   0.579  clock50/contador_INV_1_o1_INV_0 (clock50/contador_INV_1_o)
-     FD:D                      0.102          clock50/contador
-    ----------------------------------------
-    Total                      1.984ns (0.755ns logic, 1.229ns route)
-                                       (38.1% logic, 61.9% route)
-
-=========================================================================
 Timing constraint: Default period analysis for Clock 'ModuloMusica/lrclk/clk2'
   Clock period: 3.036ns (frequency: 329.424MHz)
   Total number of paths / destination ports: 74 / 20
@@ -974,33 +1280,50 @@ Delay:               3.036ns (Levels of Logic = 1)
                                        (32.1% logic, 67.9% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'ModuloMusica/lrclk/clk3'
-  Clock period: 4.591ns (frequency: 217.829MHz)
-  Total number of paths / destination ports: 2740 / 104
+Timing constraint: Default period analysis for Clock '_i000016/clk12_5k/CLK12_5K'
+  Clock period: 2.737ns (frequency: 365.323MHz)
+  Total number of paths / destination ports: 138 / 72
 -------------------------------------------------------------------------
-Delay:               4.591ns (Levels of Logic = 8)
-  Source:            _i000015/DireccionRAMTemp2_0 (FF)
+Delay:               2.737ns (Levels of Logic = 1)
+  Source:            _i000016/mad1_3/count_0 (FF)
+  Destination:       _i000016/mad1_3/count_3 (FF)
+  Source Clock:      _i000016/clk12_5k/CLK12_5K rising
+  Destination Clock: _i000016/clk12_5k/CLK12_5K rising
+
+  Data Path: _i000016/mad1_3/count_0 to _i000016/mad1_3/count_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.447   0.973  _i000016/mad1_3/count_0 (_i000016/mad1_3/count_0)
+     LUT4:I1->O            4   0.205   0.683  _i000016/mad1_3/count[3]_PWR_27_o_equal_5_o1 (_i000016/mad1_3/count[3]_PWR_27_o_equal_5_o)
+     FDR:R                     0.430          _i000016/mad1_3/count_0
+    ----------------------------------------
+    Total                      2.737ns (1.082ns logic, 1.655ns route)
+                                       (39.5% logic, 60.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ModuloMusica/lrclk/clk3'
+  Clock period: 5.522ns (frequency: 181.092MHz)
+  Total number of paths / destination ports: 4794 / 91
+-------------------------------------------------------------------------
+Delay:               5.522ns (Levels of Logic = 3)
+  Source:            _i000015/DireccionRAMTemp2_1 (FF)
   Destination:       _i000015/DireccionRAMTemp2_25 (FF)
   Source Clock:      ModuloMusica/lrclk/clk3 rising
   Destination Clock: ModuloMusica/lrclk/clk3 rising
 
-  Data Path: _i000015/DireccionRAMTemp2_0 to _i000015/DireccionRAMTemp2_25
+  Data Path: _i000015/DireccionRAMTemp2_1 to _i000015/DireccionRAMTemp2_25
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              5   0.447   1.059  _i000015/DireccionRAMTemp2_0 (_i000015/DireccionRAMTemp2_0)
-     LUT5:I0->O            1   0.203   0.000  _i000015/Mcompar_n0009_lut<0> (_i000015/Mcompar_n0009_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  _i000015/Mcompar_n0009_cy<0> (_i000015/Mcompar_n0009_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Mcompar_n0009_cy<1> (_i000015/Mcompar_n0009_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Mcompar_n0009_cy<2> (_i000015/Mcompar_n0009_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Mcompar_n0009_cy<3> (_i000015/Mcompar_n0009_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Mcompar_n0009_cy<4> (_i000015/Mcompar_n0009_cy<4>)
-     MUXCY:CI->O           1   0.213   0.579  _i000015/Mcompar_n0009_cy<5> (_i000015/Mcompar_n0009_cy<5>)
-     INV:I->O             26   0.206   1.206  _i000015/Mcompar_n0009_cy<5>_inv1_INV_0 (_i000015/n0009)
-     FDR:R                     0.430          _i000015/DireccionRAMTemp2_0
+     FDR:C->Q              7   0.447   1.118  _i000015/DireccionRAMTemp2_1 (_i000015/DireccionRAMTemp2_1)
+     LUT6:I1->O            1   0.203   0.924  _i000015/boton_enable_AND_674_o266 (_i000015/boton_enable_AND_674_o265)
+     LUT6:I1->O           14   0.203   1.062  _i000015/boton_enable_AND_674_o267 (_i000015/boton_enable_AND_674_o)
+     LUT4:I2->O           13   0.203   0.932  _i000015/boton_enable_AND_674_o_01 (_i000015/boton_enable_AND_674_o_0)
+     FDR:R                     0.430          _i000015/DireccionRAMTemp2_1
     ----------------------------------------
-    Total                      4.591ns (1.747ns logic, 2.844ns route)
-                                       (38.1% logic, 61.9% route)
+    Total                      5.522ns (1.486ns logic, 4.036ns route)
+                                       (26.9% logic, 73.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'ModuloMusica/lrclk/clk2'
@@ -1022,8 +1345,46 @@ Offset:              1.903ns (Levels of Logic = 1)
                                        (69.6% logic, 30.4% route)
 
 =========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 40 / 40
+-------------------------------------------------------------------------
+Offset:              2.346ns (Levels of Logic = 1)
+  Source:            Calibrador<4> (PAD)
+  Destination:       _i000016/ad1_informant_5/threshold_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: Calibrador<4> to _i000016/ad1_informant_5/threshold_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.222   0.802  Calibrador_4_IBUF (Calibrador_4_IBUF)
+     FDE:CE                    0.322          _i000016/ad1_informant_5/threshold_0
+    ----------------------------------------
+    Total                      2.346ns (1.544ns logic, 0.802ns route)
+                                       (65.8% logic, 34.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock '_i000016/clk12_5k/CLK12_5K'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              1.903ns (Levels of Logic = 1)
+  Source:            dDATA<4> (PAD)
+  Destination:       _i000016/ad1_3/DATA1_0 (FF)
+  Destination Clock: _i000016/clk12_5k/CLK12_5K falling
+
+  Data Path: dDATA<4> to _i000016/ad1_3/DATA1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  dDATA_4_IBUF (dDATA_4_IBUF)
+     FDR_1:D                   0.102          _i000016/ad1_3/DATA1_0
+    ----------------------------------------
+    Total                      1.903ns (1.324ns logic, 0.579ns route)
+                                       (69.6% logic, 30.4% route)
+
+=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock50/contador'
-  Total number of paths / destination ports: 8185 / 132
+  Total number of paths / destination ports: 7874 / 114
 -------------------------------------------------------------------------
 Offset:              7.202ns (Levels of Logic = 17)
   Source:            nivel2 (PAD)
@@ -1060,51 +1421,48 @@ Offset:              7.202ns (Levels of Logic = 17)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'ModuloMusica/lrclk/clk3'
   Total number of paths / destination ports: 202 / 52
 -------------------------------------------------------------------------
-Offset:              3.444ns (Levels of Logic = 28)
+Offset:              4.255ns (Levels of Logic = 25)
   Source:            nivel2 (PAD)
-  Destination:       _i000015/DireccionRAMTemp2_25 (FF)
+  Destination:       _i000015/DireccionRAMTemp2_21 (FF)
   Destination Clock: ModuloMusica/lrclk/clk3 rising
 
-  Data Path: nivel2 to _i000015/DireccionRAMTemp2_25
+  Data Path: nivel2 to _i000015/DireccionRAMTemp2_21
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            16   1.222   1.109  nivel2_IBUF (nivel2_IBUF)
-     LUT3:I1->O            1   0.203   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_lut<0> (_i000015/Madd_n0055[28:0]_Madd_Madd_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0> (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_0 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>1)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_1 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>2)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_2 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>3)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_3 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>4)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_4 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>5)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_5 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>6)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_6 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>7)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_7 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>8)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_8 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>9)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_9 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>10)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_10 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>11)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_11 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>12)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_12 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>13)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_13 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>14)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_14 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>15)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_15 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>16)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_16 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>17)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_17 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>18)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_18 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>19)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_19 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>20)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_20 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>21)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_21 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>22)
-     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_22 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>23)
-     MUXCY:CI->O           0   0.019   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>_23 (_i000015/Madd_n0055[28:0]_Madd_Madd_cy<0>24)
-     XORCY:CI->O           1   0.180   0.000  _i000015/Madd_n0055[28:0]_Madd_Madd_xor<0>_24 (_i000015/n0055[28:0]<25>)
-     FDR:D                     0.102          _i000015/DireccionRAMTemp2_25
+     LUT3:I1->O            1   0.203   0.000  _i000015/Madd_n0063[28:0]_Madd_Madd_lut<0> (_i000015/Madd_n0063[28:0]_Madd_Madd_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  _i000015/Madd_n0063[28:0]_Madd_Madd_cy<0> (_i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>_0 (_i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>1)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>_1 (_i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>2)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>_2 (_i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>3)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>_3 (_i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>4)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>_4 (_i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>5)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>_5 (_i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>6)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>_6 (_i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>7)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>_7 (_i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>8)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>_8 (_i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>9)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>_9 (_i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>10)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>_10 (_i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>11)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>_11 (_i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>12)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>_12 (_i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>13)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>_13 (_i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>14)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>_14 (_i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>15)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>_15 (_i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>16)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>_16 (_i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>17)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>_17 (_i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>18)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>_18 (_i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>19)
+     MUXCY:CI->O           1   0.019   0.000  _i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>_19 (_i000015/Madd_n0063[28:0]_Madd_Madd_cy<0>20)
+     XORCY:CI->O           1   0.180   0.684  _i000015/Madd_n0063[28:0]_Madd_Madd_xor<0>_20 (_i000015/n0063[28:0]<21>)
+     LUT5:I3->O            1   0.203   0.000  _i000015/DireccionRAMTemp2_21_glue_rst (_i000015/DireccionRAMTemp2_21_glue_rst)
+     FD:D                      0.102          _i000015/DireccionRAMTemp2_21
     ----------------------------------------
-    Total                      3.444ns (2.335ns logic, 1.109ns route)
-                                       (67.8% logic, 32.2% route)
+    Total                      4.255ns (2.462ns logic, 1.793ns route)
+                                       (57.9% logic, 42.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock50/contador'
-  Total number of paths / destination ports: 1231 / 53
+  Total number of paths / destination ports: 1236 / 53
 -------------------------------------------------------------------------
 Offset:              9.980ns (Levels of Logic = 6)
   Source:            SincronizadorVga/h_count_reg_9 (FF)
@@ -1127,6 +1485,106 @@ Offset:              9.980ns (Levels of Logic = 6)
                                        (40.4% logic, 59.6% route)
 
 =========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock '_i000016/mad1_3/CS'
+  Total number of paths / destination ports: 87 / 1
+-------------------------------------------------------------------------
+Offset:              9.886ns (Levels of Logic = 7)
+  Source:            _i000016/mad1_3/DATA1_4 (FF)
+  Destination:       SalidaLeds<4> (PAD)
+  Source Clock:      _i000016/mad1_3/CS rising
+
+  Data Path: _i000016/mad1_3/DATA1_4 to SalidaLeds<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   1.015  _i000016/mad1_3/DATA1_4 (_i000016/mad1_3/DATA1_4)
+     LUT6:I0->O            1   0.203   0.808  _i000016/ad1_informant_5/threshold[7]_DATA[9]_LessThan_5_o2 (_i000016/ad1_informant_5/threshold[7]_DATA[9]_LessThan_5_o1)
+     LUT3:I0->O            1   0.205   0.580  _i000016/ad1_informant_5/threshold[7]_DATA[9]_LessThan_5_o11 (_i000016/ad1_informant_5/threshold[7]_DATA[9]_LessThan_5_o11)
+     LUT5:I4->O            1   0.205   0.808  _i000016/ad1_informant_5/threshold[7]_DATA[9]_LessThan_5_o12 (_i000016/ad1_informant_5/threshold[7]_DATA[9]_LessThan_5_o2)
+     LUT5:I2->O            1   0.205   0.944  _i000016/ad1_informant_5/Mmux_soundIndicator11 (_i000016/ad1_informant_5/Mmux_soundIndicator1)
+     LUT6:I0->O           12   0.203   0.909  _i000016/ad1_informant_5/Mmux_soundIndicator13 (n0056[4:0]<4>)
+     LUT6:I5->O            1   0.205   0.579  Mmux_SalidaLeds51 (SalidaLeds_4_OBUF)
+     OBUF:I->O                 2.571          SalidaLeds_4_OBUF (SalidaLeds<4>)
+    ----------------------------------------
+    Total                      9.886ns (4.244ns logic, 5.642ns route)
+                                       (42.9% logic, 57.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 260 / 10
+-------------------------------------------------------------------------
+Offset:              9.832ns (Levels of Logic = 7)
+  Source:            _i000016/ad1_informant_5/threshold_2 (FF)
+  Destination:       SalidaLeds<4> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: _i000016/ad1_informant_5/threshold_2 to SalidaLeds<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.447   0.961  _i000016/ad1_informant_5/threshold_2 (_i000016/ad1_informant_5/threshold_2)
+     LUT6:I1->O            1   0.203   0.808  _i000016/ad1_informant_5/threshold[7]_DATA[9]_LessThan_5_o2 (_i000016/ad1_informant_5/threshold[7]_DATA[9]_LessThan_5_o1)
+     LUT3:I0->O            1   0.205   0.580  _i000016/ad1_informant_5/threshold[7]_DATA[9]_LessThan_5_o11 (_i000016/ad1_informant_5/threshold[7]_DATA[9]_LessThan_5_o11)
+     LUT5:I4->O            1   0.205   0.808  _i000016/ad1_informant_5/threshold[7]_DATA[9]_LessThan_5_o12 (_i000016/ad1_informant_5/threshold[7]_DATA[9]_LessThan_5_o2)
+     LUT5:I2->O            1   0.205   0.944  _i000016/ad1_informant_5/Mmux_soundIndicator11 (_i000016/ad1_informant_5/Mmux_soundIndicator1)
+     LUT6:I0->O           12   0.203   0.909  _i000016/ad1_informant_5/Mmux_soundIndicator13 (n0056[4:0]<4>)
+     LUT6:I5->O            1   0.205   0.579  Mmux_SalidaLeds51 (SalidaLeds_4_OBUF)
+     OBUF:I->O                 2.571          SalidaLeds_4_OBUF (SalidaLeds<4>)
+    ----------------------------------------
+    Total                      9.832ns (4.244ns logic, 5.588ns route)
+                                       (43.2% logic, 56.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock '_i000016/mad1_2/CS'
+  Total number of paths / destination ports: 174 / 2
+-------------------------------------------------------------------------
+Offset:              9.722ns (Levels of Logic = 7)
+  Source:            _i000016/mad1_2/DATA2_4 (FF)
+  Destination:       SalidaLeds<3> (PAD)
+  Source Clock:      _i000016/mad1_2/CS rising
+
+  Data Path: _i000016/mad1_2/DATA2_4 to SalidaLeds<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   1.015  _i000016/mad1_2/DATA2_4 (_i000016/mad1_2/DATA2_4)
+     LUT6:I0->O            1   0.203   0.808  _i000016/ad1_informant_4/threshold[7]_DATA[9]_LessThan_5_o2 (_i000016/ad1_informant_4/threshold[7]_DATA[9]_LessThan_5_o1)
+     LUT3:I0->O            1   0.205   0.580  _i000016/ad1_informant_4/threshold[7]_DATA[9]_LessThan_5_o11 (_i000016/ad1_informant_4/threshold[7]_DATA[9]_LessThan_5_o11)
+     LUT5:I4->O            1   0.205   0.808  _i000016/ad1_informant_4/threshold[7]_DATA[9]_LessThan_5_o12 (_i000016/ad1_informant_4/threshold[7]_DATA[9]_LessThan_5_o2)
+     LUT5:I2->O            1   0.205   0.944  _i000016/ad1_informant_4/Mmux_soundIndicator11 (_i000016/ad1_informant_4/Mmux_soundIndicator1)
+     LUT6:I0->O            6   0.203   0.745  _i000016/ad1_informant_4/Mmux_soundIndicator13 (n0056[4:0]<3>)
+     LUT5:I4->O            1   0.205   0.579  Mmux_SalidaLeds41 (SalidaLeds_3_OBUF)
+     OBUF:I->O                 2.571          SalidaLeds_3_OBUF (SalidaLeds<3>)
+    ----------------------------------------
+    Total                      9.722ns (4.244ns logic, 5.478ns route)
+                                       (43.7% logic, 56.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock '_i000016/mad1_1/CS'
+  Total number of paths / destination ports: 174 / 2
+-------------------------------------------------------------------------
+Offset:              9.886ns (Levels of Logic = 7)
+  Source:            _i000016/mad1_1/DATA1_4 (FF)
+  Destination:       SalidaLeds<0> (PAD)
+  Source Clock:      _i000016/mad1_1/CS rising
+
+  Data Path: _i000016/mad1_1/DATA1_4 to SalidaLeds<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   1.015  _i000016/mad1_1/DATA1_4 (_i000016/mad1_1/DATA1_4)
+     LUT6:I0->O            1   0.203   0.808  _i000016/ad1_informant_1/threshold[7]_DATA[9]_LessThan_5_o2 (_i000016/ad1_informant_1/threshold[7]_DATA[9]_LessThan_5_o1)
+     LUT3:I0->O            1   0.205   0.580  _i000016/ad1_informant_1/threshold[7]_DATA[9]_LessThan_5_o11 (_i000016/ad1_informant_1/threshold[7]_DATA[9]_LessThan_5_o11)
+     LUT5:I4->O            1   0.205   0.808  _i000016/ad1_informant_1/threshold[7]_DATA[9]_LessThan_5_o12 (_i000016/ad1_informant_1/threshold[7]_DATA[9]_LessThan_5_o2)
+     LUT5:I2->O            1   0.205   0.944  _i000016/ad1_informant_1/Mmux_soundIndicator11 (_i000016/ad1_informant_1/Mmux_soundIndicator1)
+     LUT6:I0->O           12   0.203   0.909  _i000016/ad1_informant_1/Mmux_soundIndicator13 (n0056[4:0]<0>)
+     LUT6:I5->O            1   0.205   0.579  Mmux_SalidaLeds11 (SalidaLeds_0_OBUF)
+     OBUF:I->O                 2.571          SalidaLeds_0_OBUF (SalidaLeds<0>)
+    ----------------------------------------
+    Total                      9.886ns (4.244ns logic, 5.642ns route)
+                                       (42.9% logic, 57.1% route)
+
+=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ModuloMusica/lrclk/clk3'
   Total number of paths / destination ports: 52 / 26
 -------------------------------------------------------------------------
@@ -1147,23 +1605,23 @@ Offset:              4.619ns (Levels of Logic = 2)
                                        (69.7% logic, 30.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 2 / 2
+Timing constraint: Default OFFSET OUT AFTER for Clock '_i000016/clk12_5k/CLK12_5K'
+  Total number of paths / destination ports: 3 / 3
 -------------------------------------------------------------------------
-Offset:              3.668ns (Levels of Logic = 1)
-  Source:            clock50/contador (FF)
-  Destination:       SenalesRAM<2> (PAD)
-  Source Clock:      clk rising
+Offset:              4.067ns (Levels of Logic = 1)
+  Source:            _i000016/mad1_2/CS (FF)
+  Destination:       CS<1> (PAD)
+  Source Clock:      _i000016/clk12_5k/CLK12_5K rising
 
-  Data Path: clock50/contador to SenalesRAM<2>
+  Data Path: _i000016/mad1_2/CS to CS<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               3   0.447   0.650  clock50/contador (clock50/contador)
-     OBUF:I->O                 2.571          SenalesRAM_2_OBUF (SenalesRAM<2>)
+     FD:C->Q              18   0.447   1.049  _i000016/mad1_2/CS (_i000016/mad1_2/CS)
+     OBUF:I->O                 2.571          CS_1_OBUF (CS<1>)
     ----------------------------------------
-    Total                      3.668ns (3.018ns logic, 0.650ns route)
-                                       (82.3% logic, 17.7% route)
+    Total                      4.067ns (3.018ns logic, 1.049ns route)
+                                       (74.2% logic, 25.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ModuloMusica/lrclk/clk2'
@@ -1198,7 +1656,7 @@ Clock to Setup on destination clock ModuloMusica/lrclk/clk2
 Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------+---------+---------+---------+---------+
 ModuloMusica/lrclk/clk2|         |         |    3.036|         |
-clock50/contador       |         |         |    5.735|         |
+clock50/contador       |         |         |    5.874|         |
 -----------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ModuloMusica/lrclk/clk3
@@ -1206,36 +1664,80 @@ Clock to Setup on destination clock ModuloMusica/lrclk/clk3
                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------+---------+---------+---------+---------+
-ModuloMusica/lrclk/clk3|    4.591|         |    4.559|         |
+ModuloMusica/lrclk/clk3|    5.522|         |    4.661|         |
+_i000016/mad1_1/CS     |   11.740|         |         |         |
+_i000016/mad1_2/CS     |   11.462|         |         |         |
+_i000016/mad1_3/CS     |   11.643|         |         |         |
+clk                    |   11.686|         |         |         |
+clock50/contador       |    7.480|         |    4.093|         |
 -----------------------+---------+---------+---------+---------+
 
+Clock to Setup on destination clock _i000016/clk12_5k/CLK12_5K
+--------------------------+---------+---------+---------+---------+
+                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------+---------+---------+---------+---------+
+_i000016/clk12_5k/CLK12_5K|    2.737|         |    1.165|         |
+--------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock _i000016/mad1_1/CS
+--------------------------+---------+---------+---------+---------+
+                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------+---------+---------+---------+---------+
+_i000016/clk12_5k/CLK12_5K|         |    1.165|         |         |
+--------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock _i000016/mad1_2/CS
+--------------------------+---------+---------+---------+---------+
+                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------+---------+---------+---------+---------+
+_i000016/clk12_5k/CLK12_5K|         |    1.165|         |         |
+--------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock _i000016/mad1_3/CS
+--------------------------+---------+---------+---------+---------+
+                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------+---------+---------+---------+---------+
+_i000016/clk12_5k/CLK12_5K|         |    1.165|         |         |
+--------------------------+---------+---------+---------+---------+
+
 Clock to Setup on destination clock clk
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |    1.984|         |         |         |
----------------+---------+---------+---------+---------+
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+_i000016/mad1_1/CS|    1.199|         |         |         |
+_i000016/mad1_2/CS|    1.199|         |         |         |
+_i000016/mad1_3/CS|    1.199|         |         |         |
+clk               |    3.893|         |         |         |
+------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clock50/contador
-----------------+---------+---------+---------+---------+
-                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------+---------+---------+---------+---------+
-clock50/contador|    6.911|         |         |         |
-----------------+---------+---------+---------+---------+
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+_i000016/mad1_1/CS|   11.783|         |         |         |
+_i000016/mad1_2/CS|   11.763|         |         |         |
+_i000016/mad1_3/CS|   11.646|         |         |         |
+clk               |   11.729|         |         |         |
+clock50/contador  |    6.911|         |         |         |
+------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 58.00 secs
-Total CPU time to Xst completion: 58.01 secs
+Total REAL time to Xst completion: 81.00 secs
+Total CPU time to Xst completion: 81.30 secs
  
 --> 
 
-Total memory usage is 246436 kilobytes
+Total memory usage is 247972 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   24 (   0 filtered)
-Number of infos    :    8 (   0 filtered)
+Number of warnings :  223 (   0 filtered)
+Number of infos    :   16 (   0 filtered)
 
